@@ -3,11 +3,14 @@ This repo containts the PlanB blog built with [Next.js](https://nextjs.org/) and
 
 Everything is git-based. Blogposts are written in Markdown and can be submitted via a Pull-Request. A build pipeline generates the NextJS site and deploys it once the content is merged into `main`
 
+The posts are stored in `_content/posts`, images can be uploaded to `public/images`(which later becomes `/images`) and each author can create a profile in `_content/people`.
+
 This also applies for other content. Feel free to improve this blog in general and submit an PR.
 
 ## First time authors
 
 TBD Read here how to write your first psot
+
 
 ## Workflow and Content Planning
 
