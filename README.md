@@ -11,6 +11,9 @@ This also applies for other content. Feel free to improve this blog in general a
 
 TBD Read here how to write your first psot
 
+create a new people profile. post image as sqaure into public.
+
+then the blogpost itself.
 
 ## Workflow and Content Planning
 
@@ -19,6 +22,8 @@ TBD how you submit new posts and how we plan upcomming posts / collect ideas (gi
 ## Content Tricks and Tipps
 
 TBD how to write in details
+
+files into public. content into content
 
 ## General Architecture
 

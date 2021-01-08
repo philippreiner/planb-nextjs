@@ -2,15 +2,11 @@ import Layout from "@components/layout"
 import Header from "@components/header/header"
 import NextLink from "next/link"
 
-export default function Home() {
+export default function Example() {
   return (
     <Layout>
       <Header/>
-      <NextLink href="/posts/example">
-        <a>
-          Das ist ein Beispielpost
-        </a>
-      </NextLink>
+      Blogpost here
     </Layout>
   )
 }

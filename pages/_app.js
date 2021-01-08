@@ -4,8 +4,11 @@ import { extendTheme } from "@chakra-ui/react"
 
 /* Customize Chakra Theming */
 const theme = extendTheme({
+  useSystemColorMode: true,
+  initialColorMode: "light",
   colors: {
-    primary: "#FF5100"
+    primary: "#FF5100",
+    muted: "#F3EDEB"
   },
   fonts: {
     body: "-apple-system, system-ui,'Segoe UI', 'Roboto', sans-serif", /* Use the System for most text */

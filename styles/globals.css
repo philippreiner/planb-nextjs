@@ -1,15 +1,21 @@
 /* CSS Variables including dark mode set to the root element.*/
 :root {
   --base-font-size: 17px;
+
+  --base-foreground:#000;
+  --base-background:#fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-  
+    --base-foreground:#fff;
+    --base-background:#111;
   }
 }
 
 /* Some Stuff that Chakra does not well */
+html {
+}
 body {
   font-size:var(--base-font-size);
 }
