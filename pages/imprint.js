@@ -42,8 +42,8 @@ export default function Home() {
           Die folgende Datenschutzerklärung bezieht sich nur auf diese Domain.
         </em></p>
         <p>
-          Diese Webseite verwendet keine Cookies,mit Ausnahme von technisch
-          notwendigen Cookies im Einzelfall (z.B. zur Formularkontrolle).
+          Diese Webseite verwendet keine Cookies, mit Ausnahme von technisch
+          notwendigen Cookies im Einzelfall (z.B. zur Formularkontrolle). Sie werden auf Cookies hingewiesen.
         </p>
 
         <p>
@@ -51,8 +51,11 @@ export default function Home() {
           verschlüsselt.
         </p>
         <p>
+          Sollten Daten zu externen Anbietern übertragen werden (z.B. Youtube-Video) oder externe Cookies gespeichert bitten wir Sie in diesem Moment um Ihre Einverständnis. Ohne Einverständnis werden standardmäßig keine Daten übermittelt, es kann jedoch zu technisch bedingten funktionalen Einschränkungen kommen.
+        </p>
+        <p>
           Um dieses Onlineangebot sicher und effizient bereitstellen zu können,
-          nehmen wir die Leistungen von einem oder mehreren Webhosting-Anbietern
+          nehmen wir die Leistungen von einem oder mehreren <strong>Webhosting-Anbietern</strong>
           in Anspruch, von deren Servern (bzw. von ihnen verwalteten Servern)
           das Onlineangebot abgerufen werden kann. Zu diesen Zwecken können wir
           Infrastruktur- und Plattformdienstleistungen, Rechenkapazität,
@@ -74,7 +77,7 @@ export default function Home() {
           anfragende Provider gehören.
         </p>
         <p>
-          Zur Zählung der Besuchszahlen - und Zugriffen verwenden wir
+          Zur <strong>Zählung der Besuchszahlen - und Zugriffen</strong> verwenden wir
           "Plausible", einen Online-Dienst der keine personen-bezogenen Daten
           speichert oder verarbeitet. Die Analyse Ihres Surf-Verhaltens erfolgt anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden.    Es werden
           technisch notwendige Informationen wie IP-Adresse, Browsertyp,
@@ -86,7 +89,7 @@ export default function Home() {
           bzw. Deutschland gespeichert.
         </p>
         <p>
-          Bei der Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail,
+          Bei der <strong>Kontaktaufnahme</strong> mit uns (z.B. per Kontaktformular, E-Mail,
           Telefon oder via soziale Medien) werden die Angaben der anfragenden
           Personen verarbeitet, soweit dies zur Beantwortung der Kontaktanfragen
           und etwaiger angefragter Maßnahmen erforderlich ist. Die Beantwortung
@@ -101,7 +104,7 @@ export default function Home() {
           Website ist die oben genannte PlanB. GmbH bzw. Frau Anja Schmid.
         </p>
         <p>
-          Wir haben für unser Unternehmen einen Datenschutzbeauftragen bestellt.
+          Wir haben für unser Unternehmen einen <strong>Datenschutzbeauftragen</strong> bestellt.
           <br />
           HANAK-Datenschutz
           <br />
