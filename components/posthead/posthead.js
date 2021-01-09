@@ -5,7 +5,7 @@ import { Text, Heading, Box, Container, useColorModeValue } from "@chakra-ui/rea
 
 export default function Posthead({ title, author, published }) {
 
-  const bgcolor = useColorModeValue("primary.50", "gray.700")
+  const bgcolor = useColorModeValue("brand.50", "gray.700")
   const txtcolor = useColorModeValue("gray.500", "gray.300")
 
   return (
@@ -17,7 +17,7 @@ export default function Posthead({ title, author, published }) {
             {title}
           </Heading>
           <Text color={txtcolor}>
-            von <Text as="strong">{author}</Text> veröffentlich am {published}
+            von {author} veröffentlich am {published}
           </Text>
         </Box>
       </Container>

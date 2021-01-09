@@ -7,7 +7,8 @@ const theme = extendTheme({
   useSystemColorMode: true,
   initialColorMode: "light",
   colors: {
-    primary: 
+    primary:"#FF5100",
+    brand: 
     {
       50: '#f3edeb',
       100: '#ffcaaf',

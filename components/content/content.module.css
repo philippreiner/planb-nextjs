@@ -1,0 +1,74 @@
+.content h1,
+.content h2,
+.content h3,
+.content h4
+{
+    font-weight: bold;
+    font-family: 'Montserrat',sans-serif;
+    padding-top:1em;
+    padding-bottom:.25em;
+}
+.content h1 {
+    font-size: 32px;
+    color:#FF5100;
+}
+.content h2 {
+    font-size: 24px;
+}
+.content h3 {
+    font-size: 24px;
+}
+.content a {
+    color: #FF5100;
+    text-decoration: underline;
+}
+.content a:hover {
+    text-decoration: none;
+}
+.content p {
+    padding-bottom: .5em;
+}
+.content strong {
+    font-weight: bold;
+}
+.content em, .content i {
+    font-style: italic;
+}
+.content img,
+.content picture,
+.content figure {
+    padding-top:.5em;
+    padding-bottom:.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    max-width: calc(100% + 2em);
+}
+@media (min-width:54em) {
+    .content img,
+    .content picture,
+    .content figure {
+        margin-left: -7em;
+        margin-right: -7em;
+        max-width: calc(100% + 14em);
+    }
+}
+
+.content ul,
+.content ol {
+    margin-left:1em;
+    padding-bottom: .5em;
+    line-height: 1.5;
+}
+.content ul {
+    list-style: square;
+}
+.content blockquote {
+    font-size:1.5em;
+    margin-left:1em;
+    padding-left:1em;
+    border-left:3px solid #FF5100;
+    padding-top:.25em;
+    padding-bottom:.25em;
+    margin: .5em;
+    margin-left:1em;
+}
