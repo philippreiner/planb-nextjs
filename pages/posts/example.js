@@ -1,6 +1,8 @@
 import Layout from "@components/layout"
 import Content from "@components/content/content"
 import Posthead from "@components/posthead/posthead"
+import Postmeta from "@components/postmeta/postmeta"
+
 import { Container } from "@chakra-ui/react";
 
 export default function Example() {
@@ -11,7 +13,7 @@ export default function Example() {
         author="Aaron Czichon"
         published="2020-02-31"
         />
-        <Container maxW="40em" pt={[4, 6]}>
+        <Container maxW="40em" pt={[4, 6]} pb={[4, 6]}>
         <Content>
        <p>Tausende Links und tolle Blogartikel sieht man jeden Tag auf LinkedIn und Co. Einige sind Müll, einige kann man durchaus lesen und andere sind einfach großartig. Und manchmal sind die Informationen und Gedanken so fundiert, dass man sich wiederholt an Sie erinnert.</p>
 <p>Egal ob ich mit <em>euen Gründern</em>n rede oder wenn ich meinem vergangenen Ich eine Empfehlung geben könnte. Diese klugen Gedanken haben mir geholfen.</p>
@@ -51,6 +53,12 @@ export default function Example() {
 <p><a href="https://markmacleod.me/the-power-of-getting-1-better-daily/">Zum Blogpost</a></p>
 
         </Content>
+        </Container>
+        <Container maxW="44em" pt={[4, 6]} pb={[4, 6]}>
+          <Postmeta 
+            author="authorobjecttodo"
+            recommended="object with links and titles"
+          />
         </Container>
     </Layout>
   )

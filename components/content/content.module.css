@@ -36,7 +36,9 @@
 }
 .content img,
 .content picture,
-.content figure {
+.content figure,
+.content video,
+.content iframe {
     padding-top:.5em;
     padding-bottom:.5em;
     margin-left: -1em;
@@ -46,7 +48,9 @@
 @media (min-width:54em) {
     .content img,
     .content picture,
-    .content figure {
+    .content figure,
+    .content video,
+    .content iframe {
         margin-left: -7em;
         margin-right: -7em;
         max-width: calc(100% + 14em);
