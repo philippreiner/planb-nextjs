@@ -11,13 +11,13 @@ export default function Postmeta({ author, recommended }) {
   return (
     <Box borderColor={bordercolor} borderWidth="1px">
       <Box padding={[3,8]} borderBottomWidth="1px" borderColor={bordercolor}>
-        <Flex direction={["column-reverse","row"]}>
+        <Flex direction={["column-reverse","row"]} align={["flex-start","center"]}>
             <Box pr={[0,8]}>
-                <Text mb={[1,1]} color="gray.500" fontSize="sm">Von</Text>
+                <Text mb={[1,1]} color="gray.500" fontSize="sm" className={Style.hidden}>Von</Text>
                 <Text mb={[1,1]}><strong>Aaron Czichon</strong> ist Solution Expert mit Fokus auf performante Webanwendungen. Nach einigen Jahren als CTO und Autor macht er nun bei PlanB #epicshit</Text>
                 <Link href="#kontakturltodo" target="_blank" color="primary">Kontakt</Link>
             </Box>
-            <Box pt={[1,0]} mb={[1,0]} className={Style.avatar}>
+            <Box mb={[1,0]} className={Style.avatar}>
                 <NextImage
                     alt="Author Name"
                     src="/images/portrait.jpg"

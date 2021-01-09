@@ -1,7 +1,7 @@
 // Layout component defines the outer box including header to be used in every page.
 
 import NextHead from "next/head";
-import NextLink from "next/link";
+import Footer from "@components/footer/footer"
 import { Box } from "@chakra-ui/react";
 
 export default function Layout({ children }) {
@@ -16,6 +16,8 @@ export default function Layout({ children }) {
       </NextHead>
 
       {children}
+
+      <Footer />
 
       {process.env.NODE_ENV === "production" && (
         <script

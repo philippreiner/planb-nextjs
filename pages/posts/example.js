@@ -2,6 +2,8 @@ import Layout from "@components/layout"
 import Content from "@components/content/content"
 import Posthead from "@components/posthead/posthead"
 import Postmeta from "@components/postmeta/postmeta"
+import About from "@components/about/about"
+import {Gradient} from "@components/blocks/blocks"
 
 import { Container,Center, Link } from "@chakra-ui/react";
 
@@ -58,10 +60,14 @@ export default function Example() {
             author="authorobjecttodo"
             recommended="object with links and titles"
           />
-          <Center p={[2,6]}>
+          <Center pt={[4,6]}>
             <Link color="gray.500" href="#linkedinsharetodo">Auf LinkedIn teilen</Link>
           </Center>
         </Container>
+        <Gradient>
+            <About/>
+        </Gradient>
+       
     </Layout>
   )
 }

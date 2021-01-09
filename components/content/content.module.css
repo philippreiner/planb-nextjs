@@ -60,19 +60,21 @@
 .content ul,
 .content ol {
     margin-left:1em;
-    padding-bottom: .5em;
+    padding-bottom: .25em;
     line-height: 1.5;
 }
 .content ul {
     list-style: square;
 }
+.content li {
+    padding-bottom:.25em;;
+}
 .content blockquote {
     font-size:1.5em;
-    margin-left:1em;
     padding-left:1em;
     border-left:3px solid var(--base-primary);
     padding-top:.25em;
     padding-bottom:.25em;
     margin: .5em;
-    margin-left:1em;
+    margin-left:3px;
 }
