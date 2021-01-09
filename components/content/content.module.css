@@ -10,7 +10,7 @@
 }
 .content h1 {
     font-size: 32px;
-    color:#FF5100;
+    color:var(--base-primary);
 }
 .content h2 {
     font-size: 24px;
@@ -19,11 +19,11 @@
     font-size: 24px;
 }
 .content a {
-    color: #FF5100;
-    text-decoration: underline;
+    color: var(--base-primary);
+    text-decoration: none;
 }
 .content a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 .content p {
     padding-bottom: .5em;
@@ -70,7 +70,7 @@
     font-size:1.5em;
     margin-left:1em;
     padding-left:1em;
-    border-left:3px solid #FF5100;
+    border-left:3px solid var(--base-primary);
     padding-top:.25em;
     padding-bottom:.25em;
     margin: .5em;

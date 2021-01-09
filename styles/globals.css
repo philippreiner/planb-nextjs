@@ -2,6 +2,8 @@
 :root {
   --base-font-size: 17px;
 
+  --base-primary:#FF5100;
+
   --base-foreground:#000;
   --base-background:#fff;
 }
@@ -14,10 +16,13 @@
 }
 
 /* Some Stuff that Chakra does not well */
-html {
-}
 body {
   font-size:var(--base-font-size);
+}
+::selection {
+  background-color: var(--base-primary);
+  opacity:1;
+  color:#fff;
 }
 
 /* Custom Font montserrat-800 - latin. Adds about 19kb of file size once. */

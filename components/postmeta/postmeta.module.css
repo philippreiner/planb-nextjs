@@ -1,0 +1,15 @@
+.avatar {
+    position: relative;
+    flex-grow: 1;
+}
+.avatar img {
+    object-fit:cover;
+}
+@media (max-width:40em) {
+    .hidden {
+        display: none;
+        visibility: hidden;
+        height:0;
+        width: 0;
+    }
+}

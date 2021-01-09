@@ -3,14 +3,13 @@ import Content from "@components/content/content"
 import Posthead from "@components/posthead/posthead"
 import Postmeta from "@components/postmeta/postmeta"
 
-import { Container } from "@chakra-ui/react";
+import { Container,Center, Link } from "@chakra-ui/react";
 
 export default function Example() {
   return (
     <Layout>
         <Posthead 
         title="Entwicklerfreundliche Blogs einfach mit NextJS und dem modernen JAMSTACK in Rekordzeit entwickeln."
-        author="Aaron Czichon"
         published="2020-02-31"
         />
         <Container maxW="40em" pt={[4, 6]} pb={[4, 6]}>
@@ -59,6 +58,9 @@ export default function Example() {
             author="authorobjecttodo"
             recommended="object with links and titles"
           />
+          <Center p={[2,6]}>
+            <Link color="gray.500" href="#linkedinsharetodo">Auf LinkedIn teilen</Link>
+          </Center>
         </Container>
     </Layout>
   )
