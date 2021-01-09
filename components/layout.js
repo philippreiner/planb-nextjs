@@ -10,6 +10,7 @@ export default function Layout({ children }) {
       <NextHead>
         <title>PlanB Blog</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="Description" content="PlanB. Blog rund um Technologie und Software">
 
         <meta property="og:title" content="PlanB Blog"/>
         <meta name="author" content="PlanB. GmbH"/>
