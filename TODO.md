@@ -11,3 +11,4 @@ First small collection of todos before we start with Github Issues
 Smaller stuff (good first issue?)
 
 - Logo into own component. Replace in Head and footer
+- Centralize both widths for containers into component that returns the constant. currentlx hard-coded in many views

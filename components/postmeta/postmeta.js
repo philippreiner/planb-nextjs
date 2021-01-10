@@ -6,7 +6,6 @@ import NextLink from "next/link"
 
 export default function Postmeta({ author, recommended }) {
   const bordercolor = useColorModeValue("brand.50", "gray.700");
-  const portraitsize = useBreakpointValue({ base: "80", md: "140" })
 
   return (
     <Box borderColor={bordercolor} borderWidth="1px">
