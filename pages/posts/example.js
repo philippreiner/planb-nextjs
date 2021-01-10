@@ -5,6 +5,8 @@ import Postmeta from "@components/postmeta/postmeta"
 import About from "@components/about/about"
 import {Gradient} from "@components/blocks/blocks"
 
+import NextImage from 'next/image'
+
 import { Container,Center, Link } from "@chakra-ui/react";
 
 export default function Example() {
@@ -18,7 +20,10 @@ export default function Example() {
         <Content>
        <p>Tausende Links und tolle Blogartikel sieht man jeden Tag auf LinkedIn und Co. Einige sind Müll, einige kann man durchaus lesen und andere sind einfach großartig. Und manchmal sind die Informationen und Gedanken so fundiert, dass man sich wiederholt an Sie erinnert.</p>
 <p>Egal ob ich mit <em>euen Gründern</em>n rede oder wenn ich meinem vergangenen Ich eine Empfehlung geben könnte. Diese klugen Gedanken haben mir geholfen.</p>
-<p><img src="/images/portrait.jpg" alt="Bild mit Büchern"/></p>
+<p><img 
+src="/images/portrait.jpg" 
+alt="Bild mit Büchern"
+/></p>
 <h2>Business Plan</h2>
 <p>Den Business-Plan schreibst du für dich selbst - und erst danach für Banken, Investoren und deinem zukünftigen Team. Eine gute Outline für einen solchen Plan findet sich bei dem etablierte, großen Venture-Fond Sequoia Capital. Wer diese 10 Fragen ehrlich und tiefgehend beantwortet entdeckt ganz neue Perspektiven. Bonus wenn man dies dann noch jeweils in 2-3 Sätzen beantworten kann.</p>
 <p><a href="https://www.sequoiacap.com/article/writing-a-business-plan/">Writing a Business Plan, Sequioa Capital</a></p>

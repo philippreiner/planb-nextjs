@@ -3,7 +3,7 @@ import { Text, Box, useColorModeValue } from "@chakra-ui/react";
 
 // Just a gradient box for layouts
 export function Gradient({children}) {
-  const bggradient = useColorModeValue("linear(to-b, brand.50, transparent)", "linear(to-b, gray.700, transparent)");
+  const bggradient = useColorModeValue("linear(to-b, brand.50, white)", "linear(to-b, gray.700, gray.800)");
 
   return (
     <Box
