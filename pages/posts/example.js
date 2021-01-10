@@ -5,9 +5,8 @@ import Postmeta from "@components/postmeta/postmeta"
 import About from "@components/about/about"
 import {Gradient} from "@components/blocks/blocks"
 
-import NextImage from 'next/image'
-
 import { Container,Center, Link } from "@chakra-ui/react";
+
 
 export default function Example() {
   return (
