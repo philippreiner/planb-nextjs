@@ -1,0 +1,3 @@
+# Removing node_modules from Git
+node_modules
+.next
