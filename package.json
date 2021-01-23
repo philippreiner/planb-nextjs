@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "NODE_OPTIONS='--inspect' npx next dev",
+    "build": "npx next build",
+    "start": "npx next start"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.1.2",
@@ -13,9 +13,10 @@
     "@emotion/styled": "^11.0.0",
     "framer-motion": "^3.1.4",
     "gray-matter": "^4.0.2",
-    "next": "10.0.4",
+    "next": "^10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-markdown": "^5.0.3",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
   }
