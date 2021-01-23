@@ -38,19 +38,37 @@
 .content picture,
 .content figure,
 .content video,
-.content iframe {
+.content iframe,{
     padding-top:.5em;
     padding-bottom:.5em;
     margin-left: -1em;
     margin-right: -1em;
     max-width: calc(100% + 2em);
+
 }
+.image {
+    margin-top:.5em;
+    margin-bottom:.5em;
+    margin-left: -1em;
+    margin-right: -1em;
+
+    max-width: calc(100% + 2em);
+    min-height:100px;
+    height:9999px;
+    max-height:400px;
+    position: relative;
+    background-color: #efe;
+}
+.image img {
+   
+}
+
 @media (min-width:54em) {
     .content img,
     .content picture,
     .content figure,
     .content video,
-    .content iframe {
+    .content iframe,{
         margin-left: -7em;
         margin-right: -7em;
         max-width: calc(100% + 14em);
