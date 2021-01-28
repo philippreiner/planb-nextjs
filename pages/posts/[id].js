@@ -44,10 +44,10 @@ export default function Post({ postData }) {
         published={postData.date}
       />
       <Container maxW="40em" pt={[4, 6]} pb={[4, 6]}>
-        <Content>
+        <Content id="content">
           <ReactMarkdown
             children={postData.contentHtml}
-            renderers={markdownRenderers()}
+            renderers={markdownRenderers(postData.imageInfos)}
           />
         </Content>
       </Container>
