@@ -7,7 +7,7 @@ import { Text, HStack, Heading, Box, Container, useColorModeValue } from "@chakr
 
 export default function Posthead({ title, published }) {
 
-  const txtcolor = useColorModeValue("gray.500", "gray.300")
+  const txtcolor = useColorModeValue("gray.700", "gray.200")
 
   return (
     <Solid>
