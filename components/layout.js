@@ -14,8 +14,8 @@ export default function Layout({ children }) {
 
         <meta property="og:title" content="PlanB. Blog"/>
         <meta name="author" content="PlanB. GmbH"/>
-        <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff2" as="font" type="font/woff2" crossOrigin></link>
-        <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff" as="font" type="font/woff" crossOrigin></link>
+        <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff2" as="font" type="font/woff2"></link>
+        <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff" as="font" type="font/woff"></link>
       </NextHead>
 
       {children}

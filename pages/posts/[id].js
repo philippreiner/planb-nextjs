@@ -6,8 +6,7 @@ import About from "@components/about/about"
 import { Gradient } from "@components/blocks/blocks"
 import { getAllPostIds, getPostData } from "@library/posts"
 import NextHead from "next/head"
-import ReactMarkdown from "react-markdown"
-import { markdownRenderers } from '@library/renders';
+
 
 import { Container, Center, Link } from "@chakra-ui/react";
 
