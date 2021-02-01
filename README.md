@@ -1,5 +1,5 @@
 # PlanB Blog
-This repo containts the PlanB blog built with [Next.js](https://nextjs.org/) and static Markdown files. It is currently work in Progress.
+This repo contains the PlanB blog built with [Next.js](https://nextjs.org/) and static Markdown files. It is currently work in Progress.
 
 Everything is git-based. Blogposts are written in Markdown and can be submitted via a Pull-Request. A build pipeline generates the NextJS site and deploys it once the content is merged into `main`
 
