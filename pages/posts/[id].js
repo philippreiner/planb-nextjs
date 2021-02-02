@@ -4,7 +4,7 @@ import Posthead from "@components/posthead/posthead"
 import Postmeta from "@components/postmeta/postmeta"
 import About from "@components/about/about"
 import { Gradient } from "@components/blocks/blocks"
-import { getAllPostIds, getPostData } from "@library/posts"
+import { getAllPostIds, getPostData, getAuthorData } from "@library/posts"
 import NextHead from "next/head"
 import ReactMarkdown from "react-markdown"
 import { markdownRenderers } from '@library/renders';
@@ -14,9 +14,11 @@ import { Container, Center, Link } from "@chakra-ui/react";
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
+  const authorData = await getAuthorData(postData.author);
   return {
     props: {
       postData,
+      authorData
     },
   };
 }
@@ -29,7 +31,7 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Post({ postData }) {
+export default function Post({ postData, authorData }) {
 
   var title = postData.title + ' - PlanB. Blog'
   return (
@@ -53,8 +55,7 @@ export default function Post({ postData }) {
       </Container>
       <Container maxW="44em" pt={[4, 6]} pb={[4, 6]}>
         <Postmeta
-          author="authorobjecttodo"
-          recommended="object with links and titles"
+          data={authorData}
         />
         <Center pt={[4, 6]}>
           <Link color="gray.500" href="#linkedinsharetodo">Auf LinkedIn teilen</Link>
