@@ -70,20 +70,6 @@ export default function Home({ allPostsData }) {
               <Text color="gray.300">{date}</Text>
             </Flex>
           ))}
-
-          <Flex
-            pb={[2, 4]}
-            mb={[2, 4]}
-            borderBottomWidth={[0, "1px"]}
-            borderColor={bordercolor}
-            direction={["column", "row"]}
-          >
-            <NextLink href="/posts/example" passHref>
-              <Link color="primary">Testartikel</Link>
-            </NextLink>
-            <Spacer />
-            <Text color="gray.300">01/21</Text>
-          </Flex>
         </Box>
       </Container>
       <Gradient>
