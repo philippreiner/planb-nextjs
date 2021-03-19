@@ -55,6 +55,7 @@ export default function Home({ allPostsData }) {
         <Box pt={[2, 8]}>
           {allPostsData.map(({ id, title, date }) => (
             <Flex
+              key={id}
               pb={[2, 4]}
               mb={[2, 4]}
               borderBottomWidth={[0, "1px"]}
