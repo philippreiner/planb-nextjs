@@ -56,7 +56,7 @@ export default function Header() {
               </NextLink>
               <NextLink href="/work/">
                 <MenuItem padding={[3,4]}>
-                  Referenzen
+                  Use-Cases
                 </MenuItem>
               </NextLink>
               <NextLink href="/karriere/">

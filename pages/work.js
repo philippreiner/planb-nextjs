@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Header />
-      <Basicpage title="Referenzen">
+      <Basicpage title="Referenzen/Use-Cases">
        <DevNote>
        Liste an Use-Cases (Projekte die wir gemacht haben) als Referenz
          </DevNote>
