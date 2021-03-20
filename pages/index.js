@@ -33,28 +33,39 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Solid>
         <Header />
-        <Box p="10">
-        HERO
-        </Box>
-      </Solid>
-      <Box p="4">
-        Intro zur PlanB. <br/>
-        <NextLink href="/about" passHref>
+        <Container maxW="42em">
+          <Box pt={[12, 20]} pb={[4, 6]}>
+            <Heading
+              as="h1"
+              pb={[2, 4]}
+              fontSize={["xl", "3xl"]}
+              textTransform="uppercase"
+            >
+              Changing the way how people and businesses work, communicate and collaborate.
+            </Heading>
+            <Text pb={[2, 4]}>
+            PlanB sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
+            </Text>
+            <NextLink href="/about" passHref>
               <Link color="primary">Warum Kunden PlanB. empfehlen</Link>
-        </NextLink>
-      </Box>
-      <Box p="4">
+            </NextLink>
+          </Box>
+        </Container>
+      </Solid>
+      <Container maxW="42em">
+      <Box pt="4">
         Liste an Themen/Schwerpunkten wie AI/Teams/IOT... <br/>
         <NextLink href="/solutions" passHref>
               <Link color="primary">Unsere Lösungen</Link>
         </NextLink>
       </Box>
-      <Box p="4">
+      <Box pt="4">
         Arbeiten bei PlanB. <br/>
         <NextLink href="/karriere" passHref>
               <Link color="primary">Karriere & Ausbildung</Link>
         </NextLink>
       </Box>
+      </Container>
     </Layout>
   );
 }
