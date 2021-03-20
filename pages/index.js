@@ -33,13 +33,28 @@ export default function Home({ allPostsData }) {
     <Layout>
       <Solid>
         <Header />
+        <Box p="10">
+        HERO
+        </Box>
       </Solid>
-
-      <NextLink href="/blog/" passHref>
-        <Link color="primary">
-          Blog
-        </Link>
-      </NextLink>
+      <Box p="4">
+        Intro zur PlanB. <br/>
+        <NextLink href="/about" passHref>
+              <Link color="primary">Warum Kunden PlanB. empfehlen</Link>
+        </NextLink>
+      </Box>
+      <Box p="4">
+        Liste an Themen/Schwerpunkten wie AI/Teams/IOT... <br/>
+        <NextLink href="/solutions" passHref>
+              <Link color="primary">Unsere Lösungen</Link>
+        </NextLink>
+      </Box>
+      <Box p="4">
+        Arbeiten bei PlanB. <br/>
+        <NextLink href="/karriere" passHref>
+              <Link color="primary">Karriere & Ausbildung</Link>
+        </NextLink>
+      </Box>
     </Layout>
   );
 }

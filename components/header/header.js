@@ -44,33 +44,33 @@ export default function Header() {
             </Button>
             </MenuButton>
             <MenuList borderWidth="0">
-              <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+              <NextLink href="/solutions/">
+                <MenuItem padding={[3,4]}>
                   Lösungen
                 </MenuItem>
               </NextLink>
-              <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+              <NextLink href="/about/">
+                <MenuItem padding={[3,4]}>
                   Warum PlanB.?
                 </MenuItem>
               </NextLink>
-              <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+              <NextLink href="/work/">
+                <MenuItem padding={[3,4]}>
                   Referenzen
                 </MenuItem>
               </NextLink>
-              <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+              <NextLink href="/karriere/">
+                <MenuItem padding={[3,4]}>
                   Karriere
                 </MenuItem>
               </NextLink>
               <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+                <MenuItem padding={[3,4]}>
                   Blog
                 </MenuItem>
               </NextLink>
-              <NextLink href="/blog/">
-                <MenuItem padding={[2,4]}>
+              <NextLink href="/contact/">
+                <MenuItem padding={[3,4]}>
                   Kontakt
                 </MenuItem>
               </NextLink>
