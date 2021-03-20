@@ -1,7 +1,7 @@
 import Layout from "@components/layout";
 import Header from "@components/header/header";
 import { Basicpage } from "@components/content/content";
-
+import {DevNote} from "@components/atoms/atoms";
 import { Container } from "@chakra-ui/react";
 
 export default function Home() {
@@ -9,7 +9,9 @@ export default function Home() {
     <Layout>
       <Header />
       <Basicpage title="Karriere">
-       Erklärt warum arbeiten be ider PlanB sinn mcht, welche jobs und benefits es gibt und eine info zur ausbildung
+       <DevNote>
+       Erklärt warum arbeiten bei der PlanB toll ist (Und ein paar worte über die firma z.b. standorte), die vorteile des jobs, erwartungen und stellenanzeigen sowie Ausbildungsverweis.
+       </DevNote>
       </Basicpage>
     </Layout>
   );

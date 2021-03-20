@@ -2,7 +2,7 @@ import Layout from "@components/layout";
 import Header from "@components/header/header";
 import NextLink from "next/link";
 import { Solid, Gradient } from "@components/blocks/blocks";
-import { Lineheading } from "@components/atoms/atoms";
+import { Lineheading, DevNote } from "@components/atoms/atoms";
 import About from "@components/about/about";
 
 import { getSortedPostsData } from "@library/posts";
@@ -54,16 +54,24 @@ export default function Home({ allPostsData }) {
       </Solid>
       <Container maxW="42em">
       <Box pt="4">
+        <DevNote>
         Liste an Themen/Schwerpunkten wie AI/Teams/IOT... <br/>
-        <NextLink href="/solutions" passHref>
-              <Link color="primary">Unsere Lösungen</Link>
+        <NextLink href="/topics" passHref>
+              <Link color="primary">Schwerpunkte</Link>
         </NextLink>
+        <br/>
+        <NextLink href="/solutions" passHref>
+              <Link color="primary">Lösungen (DPF/MW)</Link>
+        </NextLink>
+        </DevNote>
       </Box>
       <Box pt="4">
+        <DevNote>
         Arbeiten bei PlanB. <br/>
         <NextLink href="/karriere" passHref>
               <Link color="primary">Karriere & Ausbildung</Link>
         </NextLink>
+        </DevNote>
       </Box>
       </Container>
     </Layout>

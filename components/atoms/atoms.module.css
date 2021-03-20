@@ -1,0 +1,12 @@
+.postit {
+    padding:2em;
+    background-color:#efeb88;
+    color:darkblue;
+    font-family:"Comic Sans MS", monospace;
+    margin:.5em 0;
+    box-shadow:0 1px 5px 0 rgba(0,0,0,.3);
+    border-radius: 2px;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 4px;
+    transform:rotate(-1deg) translateX(-13px);
+}

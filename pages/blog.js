@@ -2,7 +2,7 @@ import Layout from "@components/layout";
 import Header from "@components/header/header";
 import NextLink from "next/link";
 import { Solid, Gradient } from "@components/blocks/blocks";
-import { Lineheading } from "@components/atoms/atoms";
+import { Lineheading, DevNote } from "@components/atoms/atoms";
 import About from "@components/about/about";
 
 import { getSortedPostsData } from "@library/posts";
@@ -35,6 +35,9 @@ export default function Home({ allPostsData }) {
         <Header />
         <Container maxW="54em">
           <Box pt={[12, 20]} pb={[4, 6]}>
+            <DevNote>
+              Blog welcher dann im Layout reduziert wird später. Enhält auch "featured" firmennews.
+            </DevNote>
             <Heading
               as="h1"
               color="primary"

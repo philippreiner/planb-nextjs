@@ -7,8 +7,8 @@ import {
   Container,
   Flex,
   Spacer,
-  Link,
-  Stack
+  Stack,
+  Tooltip
 } from "@chakra-ui/react";
 import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import NextLink from "next/link";
@@ -21,8 +21,8 @@ export default function Posthead({ title, published }) {
   return (
     <Divided>
       <Container maxW="80em" pt={[4, 12]} pb={[4, 0]}>
-        <Flex as="header" align={["flex-start","center"]} direction={["column", "row"]}>
-          <Box pb={[4,0]}>
+        <Flex as="header" align={["flex-start", "center"]} direction={["column", "row"]}>
+          <Box pb={[4, 0]}>
             <NextLink href="/">
               <a>
                 <img
@@ -34,13 +34,16 @@ export default function Posthead({ title, published }) {
             </NextLink>
           </Box>
           <Spacer />
-          <Stack direction={["column", "row"]} spacing={[2,8]}>
-            <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon/> : <SunIcon/>} variant="ghost" onClick={toggleColorMode}/>
-           
-            <NextLink href="/imprint" passHref>
+          <Stack direction={["column", "row"]} spacing={[2, 8]}>
+            <Tooltip label={colorMode === "light" ? "Licht aus" : "Licht an"}>
+              <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} variant="ghost" onClick={toggleColorMode} />
+            </Tooltip>
+
+            <NextLink href="/agb" passHref>
               <Button variant="ghost" >AGB</Button>
             </NextLink>
             <NextLink href="/imprint" passHref>
+
               <Button variant="ghost">Impressum & Datenschutz</Button>
             </NextLink>
           </Stack>

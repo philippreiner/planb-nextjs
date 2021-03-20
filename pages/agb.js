@@ -8,12 +8,9 @@ export default function Home() {
   return (
     <Layout>
       <Header />
-      <Basicpage title="Referenzen">
+      <Basicpage title="Rechtliche Dokumente">
        <DevNote>
-       Liste an Use-Cases (Projekte die wir gemacht haben) als Referenz
-         </DevNote>
-         <DevNote>
-       Jede Referenz linkt wieder auf die Lösungsseite
+       Liste an rechtlichen Dokumenten wie AGBs, Datenschutz,.. für Verträge mit der PlanB.
          </DevNote>
       </Basicpage>
     </Layout>
