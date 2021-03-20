@@ -4,7 +4,7 @@ import { extendTheme } from "@chakra-ui/react"
 
 /* Customize Chakra Theming */
 const theme = extendTheme({
-  useSystemColorMode: true,
+  useSystemColorMode: false,
   initialColorMode: "dark",
   colors: {
     primary:"#FF5100",

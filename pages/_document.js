@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import { ColorModeScript } from "@chakra-ui/react"
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -11,6 +12,7 @@ class MyDocument extends Document {
       <Html lang="de">
         <Head />
         <body>
+        <ColorModeScript initialColorMode="system" />
           <Main />
           <NextScript />
         </body>
