@@ -2,4 +2,17 @@
     width:84px;
     height:84px;
     line-height:0;
+    min-width: 84px;
+}
+@media(max-width:40em) {
+    .desktop {
+        display:none;
+        visibility: hidden;
+    }
+}
+@media(min-width:40em) {
+    .only-desktop {
+        display:none;
+        visibility: hidden;
+    }
 }

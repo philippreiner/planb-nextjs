@@ -1,6 +1,8 @@
 // Footer with the boring legal stuff
 import {
   Box,
+  Button,
+  useColorMode,
   Container,
   Flex,
   Spacer,
@@ -12,6 +14,8 @@ import Style from "./footer.module.css";
 import { Divided } from "@components/blocks/blocks";
 
 export default function Posthead({ title, published }) {
+  const { colorMode, toggleColorMode } = useColorMode()
+
   return (
     <Divided>
       <Container maxW="54em" pt={[4, 12]} pb={[4, 0]}>
@@ -29,6 +33,9 @@ export default function Posthead({ title, published }) {
           </Box>
           <Spacer />
           <Stack direction={["column", "row"]} spacing={[2,8]}>
+          < Button onClick={toggleColorMode}>
+                Toggle {colorMode === "light" ? "Dark" : "Light"}
+            </Button>
             <NextLink href="/imprint" passHref>
               <Link color="primary">Impressum & Datenschutz</Link>
             </NextLink>

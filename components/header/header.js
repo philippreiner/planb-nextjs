@@ -1,6 +1,6 @@
 // Header used on every page, incldues the menu
 import NextLink from "next/link"
-import React from "react" 
+import React from "react"
 import Styles from "./header.module.css"
 
 import {
@@ -9,30 +9,76 @@ import {
   Spacer,
   Container,
   Button,
-  useColorMode
+  Menu,
+  MenuList,
+  MenuItem,
+  MenuButton,
+  HStack
 } from "@chakra-ui/react";
 
+import { HamburgerIcon, EmailIcon } from '@chakra-ui/icons'
+
 export default function Header() {
-    const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Container maxW="54em">
-        <Flex as="header" align="center">
+    <Container maxW="80em">
+      <Flex as="header" align="center">
         <Box>
-            <NextLink href="/">
+          <NextLink href="/">
             <a>
-                <img className={Styles.logo} src="/assets/planb-logo.png" alt="PlanB." />
+              <img className={Styles.logo} src="/assets/planb-logo.png" alt="PlanB." />
             </a>
-            </NextLink>
+          </NextLink>
         </Box>
-        <Spacer/>
-        <Box>
-                <Button onClick={toggleColorMode}>
-                Toggle {colorMode === "light" ? "Dark" : "Light"}
+        <Spacer />
+        <HStack spacing="4">
+        <NextLink  href="/contact/">
+            <Button className={Styles.desktop} variant="ghost">
+              Kontakt
             </Button>
-            MENÜ
-        </Box>
-        </Flex>
+          </NextLink>
+          <Menu isLazy={true} autoSelect={false}>
+            <MenuButton >
+            <Button rightIcon={<HamburgerIcon w={6} h={6} />} variant="ghost">
+                Menü
+            </Button>
+            </MenuButton>
+            <MenuList borderWidth="0">
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Lösungen
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Warum PlanB.?
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Referenzen
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Karriere
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Blog
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/blog/">
+                <MenuItem padding={[2,4]}>
+                  Kontakt
+                </MenuItem>
+              </NextLink>
+            </MenuList>
+          </Menu>
+        
+        </HStack>
+      </Flex>
     </Container>
   );
 }
