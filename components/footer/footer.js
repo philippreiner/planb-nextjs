@@ -2,6 +2,7 @@
 import {
   Box,
   Button,
+  IconButton,
   useColorMode,
   Container,
   Flex,
@@ -9,6 +10,7 @@ import {
   Link,
   Stack
 } from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import NextLink from "next/link";
 import Style from "./footer.module.css";
 import { Divided } from "@components/blocks/blocks";
@@ -18,7 +20,7 @@ export default function Posthead({ title, published }) {
 
   return (
     <Divided>
-      <Container maxW="54em" pt={[4, 12]} pb={[4, 0]}>
+      <Container maxW="80em" pt={[4, 12]} pb={[4, 0]}>
         <Flex as="header" align={["flex-start","center"]} direction={["column", "row"]}>
           <Box pb={[4,0]}>
             <NextLink href="/">
@@ -33,11 +35,13 @@ export default function Posthead({ title, published }) {
           </Box>
           <Spacer />
           <Stack direction={["column", "row"]} spacing={[2,8]}>
-          < Button onClick={toggleColorMode}>
-                Toggle {colorMode === "light" ? "Dark" : "Light"}
-            </Button>
+            <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon/> : <SunIcon/>} variant="ghost" onClick={toggleColorMode}/>
+           
             <NextLink href="/imprint" passHref>
-              <Link color="primary">Impressum & Datenschutz</Link>
+              <Button variant="ghost" >AGB</Button>
+            </NextLink>
+            <NextLink href="/imprint" passHref>
+              <Button variant="ghost">Impressum & Datenschutz</Button>
             </NextLink>
           </Stack>
         </Flex>
