@@ -20,7 +20,7 @@ export default function Posthead({ title, published }) {
 
   return (
     <Divided>
-      <Container maxW="80em" pt={[4, 12]} pb={[4, 0]}>
+      <Container maxW="90%" pt={[4, 12]} pb={[4, 0]}>
         <Flex as="header" align={["flex-start", "center"]} direction={["column", "row"]}>
           <Box pb={[4, 0]}>
             <NextLink href="/">

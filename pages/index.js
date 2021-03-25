@@ -1,9 +1,11 @@
 import Layout from "@components/layout";
 import Header from "@components/header/header";
+import Hero from "@components/hero/hero";
 import NextLink from "next/link";
 import { Solid, Gradient } from "@components/blocks/blocks";
 import { Lineheading, DevNote } from "@components/atoms/atoms";
 import About from "@components/about/about";
+import Styles from "styles/pages.module.css";
 
 import { getSortedPostsData } from "@library/posts";
 
@@ -28,22 +30,25 @@ export async function getStaticProps() {
 }
 
 export default function Home({ allPostsData }) {
-  const bordercolor = useColorModeValue("brand.50", "gray.700");
+  const bordercolor = useColorModeValue("gray.100", "gray.700");
   return (
     <Layout>
-      <Solid>
-        <Header />
-        <Container maxW="42em">
-          <Box pt={[12, 20]} pb={[4, 6]}>
+      <Hero>
+        <Container maxW="90%">
+          <Box pt={[12, 20, 32,48]} pb={[12, 20, 32]}>
             <Heading
               as="h1"
               pb={[2, 4]}
-              fontSize={["xl", "3xl"]}
+              fontSize={["xl", "4xl"]}
               textTransform="uppercase"
+              maxW={[null, null, null,"60%"]}
             >
-              Changing the way how people and businesses work, communicate and collaborate.
+              Changing the way how people and businesses communicate, work and collaborate.
             </Heading>
-            <Text pb={[2, 4]}>
+            <Text 
+            pb={[2, 4]}
+            maxW={[null, null, "80%"]}
+            >
             PlanB sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
             </Text>
             <NextLink href="/about" passHref>
@@ -51,7 +56,7 @@ export default function Home({ allPostsData }) {
             </NextLink>
           </Box>
         </Container>
-      </Solid>
+      </Hero>
       <Container maxW="42em">
       <Box pt="4">
         <DevNote>

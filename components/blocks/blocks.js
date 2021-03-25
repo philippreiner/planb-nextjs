@@ -1,5 +1,6 @@
 // Generic Blocks to be re-used in layouts
 import { Text, Box, useColorModeValue } from "@chakra-ui/react";
+import Styles from "./blocks.module.css";
 
 // Just a gradient box for layouts
 export function Gradient({children}) {
@@ -15,10 +16,10 @@ export function Gradient({children}) {
   );
 }
 
-// Just a gradient box for layouts
+// Just a solid box for layouts
 export function Solid({children}) {
 
-  const bgcolor = useColorModeValue("brand.50", "gray.700")
+  const bgcolor = useColorModeValue("gray.50", "gray.700")
 
   return (
     <Box bg={bgcolor}>
@@ -34,6 +35,19 @@ export function Divided({children}) {
 
   return (
     <Box borderTopWidth="1px" borderColor={bordercolor}>
+    {children}
+    </Box>
+  );
+}
+
+// Hero Wrap
+export function Fullheight({children}) {
+
+  const bgcolor = useColorModeValue("white", "gray.700")
+
+  return (
+    <Box bg={bgcolor} className={Styles.fullheight}>
+
     {children}
     </Box>
   );
