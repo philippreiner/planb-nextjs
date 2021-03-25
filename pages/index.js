@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
             <Heading
               as="h1"
               pb={[2, 4]}
-              fontSize={["xl", "4xl"]}
+              fontSize={["xl", "4xl",null,"6xl"]}
               textTransform="uppercase"
               maxW={[null, null, null,"60%"]}
             >
