@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
               pb={[2, 4]}
               fontSize={["xl", "4xl",null,"6xl"]}
               textTransform="uppercase"
-              maxW={[null, null, null,"60%"]}
+              maxW={[null, null, null,"90%"]}
             >
               Changing the way how people and businesses communicate, work and collaborate.
             </Heading>
