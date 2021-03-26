@@ -4,6 +4,10 @@
     line-height:0;
     min-width: 84px;
 }
+.header {
+    z-index: var(--z-house);
+    position:relative;
+}
 @media(max-width:40em) {
     .desktop {
         display:none;

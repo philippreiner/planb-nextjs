@@ -21,7 +21,7 @@ import { HamburgerIcon, EmailIcon } from '@chakra-ui/icons'
 export default function Header() {
 
   return (
-    <Container maxW="90%">
+    <Container className={Styles.header} maxW="90%">
       <Flex as="header" align="center">
         <Box>
           <NextLink href="/">

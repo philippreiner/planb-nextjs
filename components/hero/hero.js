@@ -2,15 +2,14 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import Styles from "./hero.module.css";
 import Header from "@components/header/header";
+import '@animxyz/core';
 
 // Hero Wrap
-export default function Hero({children}) {
+export default function Hero({children, background}) {
 
-    const bgcolor = useColorModeValue("white", "gray.700")
-    const bgImg = useColorModeValue("url(/assets/gradient2.jpg)", "url(/assets/gradient1.jpg)")
   
     return (
-      <Box bgImage={bgImg} className={Styles.hero}>
+      <Box bgImage={background} className={Styles.hero}>
             <Header /> 
             <Box className={Styles.center}>
                 {children}

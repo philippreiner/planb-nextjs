@@ -1,5 +1,5 @@
 // Generic Blocks to be re-used in layouts
-import { Text, Box, useColorModeValue } from "@chakra-ui/react";
+import { Container, Text, Box, useColorModeValue } from "@chakra-ui/react";
 import Styles from "./blocks.module.css";
 
 // Just a gradient box for layouts
@@ -52,3 +52,21 @@ export function Fullheight({children}) {
     </Box>
   );
 }
+
+// Main Container
+export function Main({children, maxW}) {
+
+  if(maxW === "full") maxW = "90%";
+  
+  return (
+    <Container
+      maxW={maxW}
+    >
+    {children}
+    </Container>
+  );
+}
+
+Main.defaultProps = {
+  maxW: "60em",
+};
