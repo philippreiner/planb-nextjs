@@ -1,6 +1,8 @@
 .hero {
     background-position:center center;
     background-size:cover;
+    background-repeat:no-repeat;
+    background-color: #f00;
 }
 @media(min-width:54em) {
     .hero {

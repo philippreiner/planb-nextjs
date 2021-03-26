@@ -10,7 +10,7 @@ export default function Hero({children}) {
     const bgImg = useColorModeValue("url(/assets/gradient2.jpg)", "url(/assets/gradient1.jpg)")
   
     return (
-      <Box bg={bgcolor} bgImage={bgImg} className={Styles.hero}>
+      <Box bgImage={bgImg} className={Styles.hero}>
             <Header /> 
             <Box className={Styles.center}>
                 {children}
