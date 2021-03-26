@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
             <Heading
               as="h1"
               pb={[2, 4]}
-              fontSize={["xl", "4xl",null,"6xl"]}
+              fontSize={["xl", "4xl","3vw","4vw"]}
               textTransform="uppercase"
               maxW={[null, null, null,"90%"]}
             >
@@ -60,7 +60,7 @@ export default function Home({ allPostsData }) {
       <Container maxW="42em">
       <Box pt="4">
         <DevNote>
-        Liste an Themen/Schwerpunkten wie AI/Teams/IOT... <br/>
+        Liste an Themen/Schwerpunkten wie AI/Teams/IOT/UX... <br/>
         <NextLink href="/topics" passHref>
               <Link color="primary">Schwerpunkte</Link>
         </NextLink>
