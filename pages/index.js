@@ -32,7 +32,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   const bordercolor = useColorModeValue("gray.100", "gray.700");
   return (
-    <Layout>
+    <Layout title="PlanB. - Experten für Modern Work und Software">
       <Hero>
         <Container maxW="90%">
           <Box pt={[12, 20, 32,48]} pb={[12, 20, 32]}>

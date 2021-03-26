@@ -7,10 +7,11 @@ import Header from "@components/header/header";
 export default function Hero({children}) {
 
     const bgcolor = useColorModeValue("white", "gray.700")
+    const bgImg = useColorModeValue("url(/assets/gradient2.jpg)", "url(/assets/gradient1.jpg)")
   
     return (
-      <Box bg={bgcolor} className={Styles.hero}>
-            <Header />
+      <Box bg={bgcolor} bgImage={bgImg} className={Styles.hero}>
+            <Header /> 
             <Box className={Styles.center}>
                 {children}
             </Box>

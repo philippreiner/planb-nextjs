@@ -1,3 +1,7 @@
+.hero {
+    background-position:center center;
+    background-size:cover;
+}
 @media(min-width:54em) {
     .hero {
         min-height: 100vh;

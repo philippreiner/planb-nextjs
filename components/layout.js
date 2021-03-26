@@ -4,11 +4,11 @@ import NextHead from "next/head";
 import Footer from "@components/footer/footer"
 import { Box } from "@chakra-ui/react";
 
-export default function Layout({ children }) {
+export default function Layout({ children, title }) {
   return (
     <Box as="main">
       <NextHead>
-        <title>PlanB. - Passion for Excellence</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="Description" content="PlanB. Blog rund um Technologie und Software"/>
 
@@ -33,3 +33,6 @@ export default function Layout({ children }) {
     </Box>
   );
 }
+Layout.defaultProps = {
+  title: "PlanB.",
+};
