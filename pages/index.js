@@ -60,6 +60,7 @@ export default function Home({ allPostsData }) {
           </Box>
         </Container>
       </Hero>
+
       <Main maxW="full">
        <DevNote>
           Liste an Themen/Schwerpunkten wie AI/Teams/IOT/UX... <br/>
@@ -117,8 +118,7 @@ export default function Home({ allPostsData }) {
         </SimpleGrid>
       </Main>
 
-
-
+     
       <Container maxW="42em">
       <Box pt="4">
         
@@ -132,6 +132,7 @@ export default function Home({ allPostsData }) {
         </DevNote>
       </Box>
       </Container>
+
     </Layout>
   );
 }

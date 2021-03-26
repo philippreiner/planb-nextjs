@@ -2,7 +2,6 @@
 import { Box, useColorModeValue } from "@chakra-ui/react";
 import Styles from "./hero.module.css";
 import Header from "@components/header/header";
-import '@animxyz/core';
 
 // Hero Wrap
 export default function Hero({children, background}) {
