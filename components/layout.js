@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <Box as="main">
       <NextHead>
-        <title>PlanB Blog</title>
+        <title>PlanB. - Passion for Excellence</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="Description" content="PlanB. Blog rund um Technologie und Software"/>
 
