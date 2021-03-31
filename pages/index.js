@@ -1,6 +1,7 @@
 import Layout from "@components/layout";
 
 import VideoHead from "@components/videohead/videohead";
+import Hero from "@components/hero/hero";
 import { TagWall, TagWallItem}from "@components/tagwall/tagwall";
 
 import NextLink from "next/link";
@@ -33,7 +34,6 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   const btnColor = useColorModeValue("primary", "primary");
-  const bgImg = useColorModeValue("url(/assets/gradient1.jpg)", "url(/assets/gradient1.jpg)")
 
   return (
     <Layout title="PlanB. - Experten für Modern Work und Software">
@@ -95,32 +95,6 @@ export default function Home({ allPostsData }) {
             url="/topics/user-experience"
           />
         </TagWall>
-
-        <SegmentHeading title="TODO"/>
-        <SimpleGrid 
-          columns={["1","2","3",null,"4","6"]}
-          spacing={[2,4,8]}
-        >
-          <Card>
-            Something
-          </Card>
-          <Card>
-            Something<br/>
-            Else
-          </Card>
-          <Card>
-            Something<br/>
-            Else
-          </Card>
-          <Card>
-            Something<br/>
-            Else
-          </Card>
-          <Card>
-            Something<br/>
-            Else
-          </Card>
-        </SimpleGrid>
       </Main>
 
      
