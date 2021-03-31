@@ -17,6 +17,10 @@
 .video {
     object-fit: cover;
 }
+.center {
+    position: relative;
+    z-index: var(--z-skyscraper);
+}
 @media(min-width:54em) {
     .videohead {
         min-height: 100vh;
@@ -30,7 +34,5 @@
         right:0;
         display: flex;
         align-items: center;
-        z-index: var(--z-skyscraper);
-        
     }
 }

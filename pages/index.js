@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
               PlanB. sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
               </Text>
               <NextLink href="/about" passHref>
-                <Button size="md" variant="link" color={btnColor} leftIcon={<ArrowForwardIcon w={6} h={6} />}>Warum Kunden PlanB. empfehlen</Button>
+                <Button whiteSpace={['break-spaces']} textAlign={['left']} size="md" variant="link" color={btnColor} rightIcon={<ArrowForwardIcon d={['none','block']} w={0,6} h={0,6}/>} >Warum Kunden PlanB. empfehlen</Button>
               </NextLink>
             </Box>
           </Container>
