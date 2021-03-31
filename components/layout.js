@@ -16,9 +16,8 @@ export default function Layout({ children, title }) {
       <NextHead>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="Description" content="PlanB. Blog rund um Technologie und Software"/>
 
-        <meta property="og:title" content="PlanB. Blog"/>
+        <meta property="og:title" content={title}/>
         <meta name="author" content="PlanB. GmbH"/>
         <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff2" as="font" type="font/woff2"></link>
         <link rel="preload" href="/assets/fonts/montserrat-v15-latin-800.woff" as="font" type="font/woff"></link>
@@ -32,7 +31,7 @@ export default function Layout({ children, title }) {
         <script
           async
           defer
-          data-domain="planb-nextjs.vercel.app" // ToDo: Add final domain here later, update Analytics
+          data-domain="planb-website.vercel.app" // ToDo: Add final domain here later, update Analytics
           src="https://plausible.io/js/plausible.js" // ToDo: Host on custom CNAME
         />
       )}
