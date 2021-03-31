@@ -1,6 +1,6 @@
 import Layout from "@components/layout";
 
-import Hero from "@components/hero/hero";
+import VideoHead from "@components/videohead/videohead";
 import { TagWall, TagWallItem}from "@components/tagwall/tagwall";
 
 import NextLink from "next/link";
@@ -17,7 +17,8 @@ import {
   useColorModeValue,
   Link,
   Button,
-  SimpleGrid
+  SimpleGrid,
+  DarkMode
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
@@ -32,34 +33,38 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   const btnColor = useColorModeValue("primary", "primary");
-  const bgImg = useColorModeValue(null, "url(/assets/gradient1.jpg)")
+  const bgImg = useColorModeValue("url(/assets/gradient1.jpg)", "url(/assets/gradient1.jpg)")
 
   return (
     <Layout title="PlanB. - Experten für Modern Work und Software">
-      <Hero background={bgImg}>
-        <Container maxW="90%">
-          <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
-              <Heading
-                as="h1"
-                pb={[2, 4]}
-                fontSize={["xl", "4xl","3vw","4vw"]}
-                textTransform="uppercase"
-                maxW={[null, null, null,"90%"]}
+      <DarkMode>
+        <VideoHead >
+          <Container maxW="90%">
+            <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
+                <Heading
+                  as="h1"
+                  pb={[2, 4]}
+                  fontSize={["xl", "4xl","3vw","4vw"]}
+                  textTransform="uppercase"
+                  maxW={[null, null, null,"90%"]}
+                  color="white"
+                >
+                  Changing the way how people and businesses communicate, work and collaborate.
+                </Heading>
+              <Text 
+              pb={[2, 4, 6]}
+              maxW={[null, null, "82%"]}
+              color="white"
               >
-                Changing the way how people and businesses communicate, work and collaborate.
-              </Heading>
-            <Text 
-            pb={[2, 4, 6]}
-            maxW={[null, null, "82%"]}
-            >
-            PlanB. sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
-            </Text>
-            <NextLink href="/about" passHref>
-              <Button size="md" variant="link" color={btnColor} leftIcon={<ArrowForwardIcon w={6} h={6} />}>Warum Kunden PlanB. empfehlen</Button>
-            </NextLink>
-          </Box>
-        </Container>
-      </Hero>
+              PlanB. sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
+              </Text>
+              <NextLink href="/about" passHref>
+                <Button size="md" variant="link" color={btnColor} leftIcon={<ArrowForwardIcon w={6} h={6} />}>Warum Kunden PlanB. empfehlen</Button>
+              </NextLink>
+            </Box>
+          </Container>
+        </VideoHead>
+      </DarkMode>
 
       <Main maxW="full">
        <DevNote>

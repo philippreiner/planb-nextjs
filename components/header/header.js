@@ -13,12 +13,14 @@ import {
   MenuList,
   MenuItem,
   MenuButton,
-  HStack
+  HStack,
+  useColorModeValue
 } from "@chakra-ui/react";
 
 import { HamburgerIcon, EmailIcon } from '@chakra-ui/icons'
 
 export default function Header() {
+  const menuColor = useColorModeValue("black", "white");
 
   return (
     <Container className={Styles.header} maxW="90%">
@@ -43,7 +45,7 @@ export default function Header() {
                 Menü
             </Button>
             </MenuButton>
-            <MenuList borderWidth="0">
+            <MenuList  color={menuColor} borderWidth="0">
               <NextLink href="/solutions/">
                 <MenuItem padding={[3,4]}>
                   Lösungen

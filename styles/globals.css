@@ -7,7 +7,13 @@
   --base-foreground:#000;
   --base-background:#fff;
 
-  --z-house: 100;
+  --z-basement:-1;
+  --z-street: 1;
+  --z-house: 10;
+  --z-tower: 100;
+  --z-skyscraper: 1000;
+  --z-clouds: 9998;
+  --z-heaven: 9999;
 }
 
 @media (prefers-color-scheme: dark) {
