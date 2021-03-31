@@ -3,6 +3,7 @@ import Header from "@components/header/header";
 import { Basicpage } from "@components/content/content";
 import {DevNote} from "@components/atoms/atoms";
 import { Solid, Gradient, Divided } from "@components/blocks/blocks";
+import About from "@components/about/about"
 
 import { Container } from "@chakra-ui/react";
 
@@ -206,6 +207,9 @@ Für unsere Kunden bedeutet dies zuverlässige Verbesserungen der Software – d
 Tobias Abele und Tobias Schmailzl?
 </Divided>  
       </Basicpage>
+      <Gradient>
+      <About />
+      </Gradient>
     </Layout>
   );
 }

@@ -39,12 +39,12 @@ export default function Posthead({ title, published }) {
               <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} variant="ghost" onClick={toggleColorMode} />
             </Tooltip>
 
-            <NextLink href="/agb" passHref>
-              <Button variant="ghost" >AGB</Button>
+            <NextLink href="/datenschutz" passHref>
+              <Button variant="ghost" >Datenschutz</Button>
             </NextLink>
             <NextLink href="/imprint" passHref>
 
-              <Button variant="ghost">Impressum & Datenschutz</Button>
+              <Button variant="ghost">Impressum</Button>
             </NextLink>
           </Stack>
         </Flex>

@@ -4,7 +4,13 @@ import NextHead from "next/head";
 import Footer from "@components/footer/footer"
 import { Box } from "@chakra-ui/react";
 
+const defaultTitle = 'PlanB. - Experten für Modern Work und Software';
+
 export default function Layout({ children, title }) {
+
+  if(title != defaultTitle) {
+    title = title + " - PlanB."
+  }
   return (
     <Box as="main">
       <NextHead>
@@ -34,5 +40,5 @@ export default function Layout({ children, title }) {
   );
 }
 Layout.defaultProps = {
-  title: "PlanB.",
+  title: defaultTitle,
 };
