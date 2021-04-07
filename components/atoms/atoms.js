@@ -27,10 +27,10 @@ export function SegmentHeading({title}) {
   return (
     <Heading
       as="h2"
-      pt={[4, 8, 12]}
-      pb={[2, 4, 8]}
+      pt={[4, 8, 12, 16]}
+      pb={[2, 4, 8, 12]}
       textTransform="uppercase"
-      fontSize={["xl", "2xl","2vw"]}
+      fontSize={["xl", "2xl","2vw",null,"3vw"]}
     >
       {title}
     </Heading>

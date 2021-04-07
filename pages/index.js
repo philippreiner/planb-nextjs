@@ -5,10 +5,12 @@ import Hero from "@components/hero/hero";
 import { TagWall, TagWallItem}from "@components/tagwall/tagwall";
 
 import NextLink from "next/link";
-import { Solid, Gradient, Main} from "@components/blocks/blocks";
+import { Solid, Gradient, Main, Fullheight} from "@components/blocks/blocks";
 import { SegmentHeading, DevNote, Card} from "@components/atoms/atoms";
 
 import { getSortedPostsData } from "@library/posts";
+import { Slide, Fade } from "react-awesome-reveal";
+
 
 import {
   Container,
@@ -39,7 +41,8 @@ export default function Home({ allPostsData }) {
     <Layout title="PlanB. - Experten für Modern Work und Software">
       <DarkMode>
         <VideoHead >
-        <Main maxW="full">
+        <Fade delay={100}>
+        <Main  maxW="full">
             <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
                 <Heading
                   as="h1"
@@ -63,11 +66,15 @@ export default function Home({ allPostsData }) {
               </NextLink>
             </Box>
           </Main>
+          </Fade>
         </VideoHead>
       </DarkMode>
-
-      <Main maxW="full">
-       <DevNote>
+      
+      <Fullheight>
+      <Slide fraction={0} delay={100} direction="up">
+        <Main maxW="full">
+        <SegmentHeading title="Use-Cases"/>
+        <DevNote>
           Liste an Themen/Schwerpunkten wie AI/Teams/IOT/UX... <br/>
           <NextLink href="/topics" passHref>
                 <Link color="primary">Schwerpunkte</Link>
@@ -77,41 +84,25 @@ export default function Home({ allPostsData }) {
                 <Link color="primary">Lösungen (DPF/MW)</Link>
           </NextLink>
         </DevNote>
-        <SegmentHeading title="Themen"/>
-        <TagWall>
-          <TagWallItem        
-            title="User Experience"
-            area="dpf"
-            url="/topics/user-experience"
-          />
-          <TagWallItem        
-            title="Microsoft 365"
-            area="mw"
-            url="/topics/user-experience"
-          />
-          <TagWallItem        
-            title="Artifical Intelligence"
-            area="dpf"
-            url="/topics/user-experience"
-          />
-        </TagWall>
-      </Main>
+        </Main>
+        </Slide>
+      </Fullheight>
 
-     
-      <Container maxW="42em">
-      <Box pt="4">
-        
-      </Box>
-      <Box pt="4">
+    <Gradient>
+      <Fullheight>
+      <Slide fraction={0} delay={100} direction="up">
+        <Main maxW="full">
+        <SegmentHeading title="Arbeiten bei PlanB."/>
         <DevNote>
         Arbeiten bei PlanB. <br/>
         <NextLink href="/karriere" passHref>
               <Link color="primary">Karriere & Ausbildung</Link>
         </NextLink>
         </DevNote>
-      </Box>
-      </Container>
-
+        </Main>
+        </Slide>
+      </Fullheight>
+      </Gradient>
     </Layout>
   );
 }

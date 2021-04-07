@@ -1,5 +1,9 @@
+.fullheight {
+    
+}
 @media(min-width:54em) {
     .fullheight {
+        padding:0;
         min-height: 100vh;
     }
 }

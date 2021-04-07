@@ -41,16 +41,17 @@ export function Divided({children}) {
 }
 
 // Hero Wrap
-export function Fullheight({children}) {
-
-  const bgcolor = useColorModeValue("white", "gray.700")
+export function Fullheight({children,bg}) {
 
   return (
-    <Box bg={bgcolor} className={Styles.fullheight}>
+    <Box bg={bg} className={Styles.fullheight}>
 
     {children}
     </Box>
   );
+}
+Fullheight.defaultProps = {
+  bg: null
 }
 
 // Main Container
