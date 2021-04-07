@@ -56,7 +56,7 @@ export function Fullheight({children}) {
 // Main Container
 export function Main({children, maxW}) {
 
-  if(maxW === "full") maxW = "90%";
+  if(maxW === "full") maxW = ["100em",null,null,null,"90%"];
   
   return (
     <Container

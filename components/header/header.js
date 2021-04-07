@@ -23,7 +23,7 @@ export default function Header() {
   const menuColor = useColorModeValue("black", "white");
 
   return (
-    <Container className={Styles.header} maxW="90%">
+    <Container className={Styles.header} maxW={["100em",null,null,null,"90%"]}>
       <Flex as="header" align="center">
         <Box>
           <NextLink href="/">

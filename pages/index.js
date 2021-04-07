@@ -39,7 +39,7 @@ export default function Home({ allPostsData }) {
     <Layout title="PlanB. - Experten für Modern Work und Software">
       <DarkMode>
         <VideoHead >
-          <Container maxW="90%">
+        <Main maxW="full">
             <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
                 <Heading
                   as="h1"
@@ -62,7 +62,7 @@ export default function Home({ allPostsData }) {
                 <Button whiteSpace={['break-spaces']} textAlign={['left']} size="md" variant="link" color={btnColor} rightIcon={<ArrowForwardIcon d={['none','block']} w={0,6} h={0,6}/>} >Warum Kunden PlanB. empfehlen</Button>
               </NextLink>
             </Box>
-          </Container>
+          </Main>
         </VideoHead>
       </DarkMode>
 
