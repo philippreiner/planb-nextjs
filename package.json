@@ -15,7 +15,7 @@
     "framer-motion": "^3.1.4",
     "gray-matter": "^4.0.2",
     "image-size": "^0.9.3",
-    "next": "^10.0.4",
+    "next": "^10.1.4-canary.2",
     "parse-markdown-links": "^1.0.4",
     "react": "17.0.1",
     "react-awesome-reveal": "^3.7.1",
