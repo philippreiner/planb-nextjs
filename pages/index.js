@@ -5,7 +5,8 @@ import Hero from "@components/hero/hero";
 import { TagWall, TagWallItem}from "@components/tagwall/tagwall";
 
 import NextLink from "next/link";
-import { Solid, Gradient, Main, Fullheight} from "@components/blocks/blocks";
+import NextImage from "next/image";
+import { Solid, Wallpaper, Gradient, Main, Fullheight} from "@components/blocks/blocks";
 import { SegmentHeading, DevNote, Card} from "@components/atoms/atoms";
 
 import { getSortedPostsData } from "@library/posts";
@@ -13,15 +14,16 @@ import { Slide, Fade } from "react-awesome-reveal";
 
 
 import {
-  Container,
   Box,
   Heading,
   Text,
   useColorModeValue,
   Link,
   Button,
-  SimpleGrid,
-  DarkMode
+  DarkMode,
+  Center,
+  Flex,
+  Spacer
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
@@ -41,7 +43,7 @@ export default function Home({ allPostsData }) {
     <Layout title="PlanB. - Experten für Modern Work und Software">
       <DarkMode>
         <VideoHead >
-        <Fade delay={100}>
+        <Fade triggerOnce={true} delay={100}>
         <Main  maxW="full">
             <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
                 <Heading
@@ -71,7 +73,7 @@ export default function Home({ allPostsData }) {
       </DarkMode>
       
       <Fullheight>
-      <Slide fraction={0} delay={100} direction="up">
+      <Slide triggerOnce={true} fraction={0} delay={100} direction="up">
         <Main maxW="full">
         <SegmentHeading title="Use-Cases"/>
         <DevNote>
@@ -87,22 +89,29 @@ export default function Home({ allPostsData }) {
         </Main>
         </Slide>
       </Fullheight>
-
-    <Gradient>
-      <Fullheight>
-      <Slide fraction={0} delay={100} direction="up">
+    
+      <Wallpaper bgImage="/images/offices/huettlingen-baustelle.jpg">
         <Main maxW="full">
-        <SegmentHeading title="Arbeiten bei PlanB."/>
-        <DevNote>
-        Arbeiten bei PlanB. <br/>
-        <NextLink href="/karriere" passHref>
+          <Flex height={["500px",null,"70vh"]} direction="column">
+            <SegmentHeading title="Arbeiten bei PlanB."/>
+            <Box flex="1" cursor="pointer" pt={[2,4,16,24]}>
+                <Center>
+                  <NextLink href="/karriere" passHref>
+                    <NextImage
+                      src="/images/decorative/epicstuff.svg"
+                      width={968}
+                      height={149}
+                      alt="#epicstuff"
+                    />
+                  </NextLink>
+                </Center>
+            </Box>
+            <NextLink href="/karriere" passHref>
               <Link color="primary">Karriere & Ausbildung</Link>
-        </NextLink>
-        </DevNote>
+            </NextLink>
+          </Flex>
         </Main>
-        </Slide>
-      </Fullheight>
-      </Gradient>
+      </Wallpaper>
     </Layout>
   );
 }

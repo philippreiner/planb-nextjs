@@ -1,9 +1,34 @@
-.fullheight {
-    
+.wallpaper {
+    padding: 2em 0;
+    position: relative;
+    min-height: 500px;
+    color:#fff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,.42);
+}
+.wallpaperFrame {
+    z-index: var(--z-skyscraper);
+    position: relative;
+}
+@media(min-width:32em) {
+    .wallpaper {
+        padding:4em 0;
+        min-height: 500px;
+    }
 }
 @media(min-width:54em) {
     .fullheight {
         padding:0;
         min-height: 100vh;
+    }
+    .wallpaper {
+        padding:2em 0;
+        min-height: 80vh;
     }
 }

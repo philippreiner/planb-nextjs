@@ -1,6 +1,8 @@
 // Generic Blocks to be re-used in layouts
-import { Container, Text, Box, useColorModeValue } from "@chakra-ui/react";
+import { DarkMode, Container, Box, useColorModeValue } from "@chakra-ui/react";
 import Styles from "./blocks.module.css";
+import NextImage from 'next/image';
+import {Slide} from 'react-awesome-reveal';
 
 // Just a gradient box for layouts
 export function Gradient({children}) {
@@ -71,3 +73,31 @@ export function Main({children, maxW}) {
 Main.defaultProps = {
   maxW: "60em",
 };
+
+// Full Image Component
+export function Wallpaper({children,bgImage}) {
+  const bgcolor = useColorModeValue("gray.50", "gray.700")
+
+  return (
+    <Box bg={bgcolor} className={Styles.wallpaper}>
+        <NextImage 
+        src={bgImage}
+        layout="fill"
+        objectFit="cover"
+        />
+        <div className={Styles.overlay}>
+          
+        </div>
+        <Slide triggerOnce={true} fraction={0} delay={100} direction="up">
+        <DarkMode>
+          <Box className={Styles.wallpaperFrame}>
+            {children}
+          </Box>
+        </DarkMode>
+        </Slide>
+    </Box>
+  );
+}
+Wallpaper.defaultProps = {
+
+}
