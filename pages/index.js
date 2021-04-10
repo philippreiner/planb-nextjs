@@ -99,8 +99,8 @@ export default function Home({ allPostsData }) {
                   <NextLink href="/karriere" passHref>
                     <NextImage
                       src="/images/decorative/epicstuff.svg"
-                      width={968}
-                      height={149}
+                      width={968*2}
+                      height={149*2}
                       alt="#epicstuff"
                     />
                   </NextLink>
