@@ -22,8 +22,7 @@ import {
   Button,
   DarkMode,
   Center,
-  Flex,
-  Spacer
+  Flex
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 
