@@ -2,11 +2,12 @@ import Layout from "@components/layout";
 
 import VideoHead from "@components/videohead/videohead";
 
-import { Solid, Wallpaper, Gradient, Main, Fullheight} from "@components/blocks/blocks";
-import { SegmentHeading, DevNote, Arrowlink, Card} from "@components/atoms/atoms";
+import {Main} from "@components/blocks/blocks";
+import {Arrowlink} from "@components/atoms/atoms";
 
 import Solutions from "@components/homepage/solutions";
 import About from "@components/homepage/about";
+import Usecases from "@components/homepage/usecases";
 
 
 import { getSortedPostsData } from "@library/posts";
@@ -74,6 +75,7 @@ Jeden Tag arbeiten wir an digitalen Produkten, innovativen Geschäftsmodellen, s
       
       <Solutions/>
       <About/>
+      <Usecases/>
     </Layout>
   );
 }

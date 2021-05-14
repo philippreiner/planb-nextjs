@@ -2,7 +2,15 @@
     background-size: cover;
     background-position: center center;
 }
+.deco {
+    display: none;
+}
 @media(min-width: 48em) {
+    .deco {
+        display: block;
+        z-index: -1;
+        transform:translateY(-250px);
+    }
     .full {
         position: absolute;
         top:0;
