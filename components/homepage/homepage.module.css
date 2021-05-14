@@ -1,0 +1,13 @@
+.solutions {
+    background-size: cover;
+    background-position: center center;
+}
+@media(min-width: 48em) {
+    .full {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+    }
+}

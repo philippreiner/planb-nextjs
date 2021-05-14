@@ -34,41 +34,36 @@ export default function Header() {
         </Box>
         <Spacer />
         <HStack spacing="4">
-        <NextLink  href="/contact/">
+        <NextLink  href="/karriere/">
             <Button className={Styles.desktop} variant="ghost">
-              Kontakt
+              Karriere
             </Button>
           </NextLink>
           <Menu isLazy={true} autoSelect={false}>
             <MenuButton >
             <Button rightIcon={<HamburgerIcon w={6} h={6} />} variant="ghost">
-                Menü
+                <span className={Styles.desktop}>Menü</span>
             </Button>
             </MenuButton>
             <MenuList  color={menuColor} borderWidth="0">
-              <NextLink href="/solutions/">
+              <NextLink href="/dpf/">
                 <MenuItem padding={[3,4]}>
-                  Lösungen
+                  Digital Product Factory
+                </MenuItem>
+              </NextLink>
+              <NextLink href="/modern-work/">
+                <MenuItem padding={[3,4]}>
+                  Modern Work
                 </MenuItem>
               </NextLink>
               <NextLink href="/about/">
                 <MenuItem padding={[3,4]}>
-                  Warum PlanB.?
-                </MenuItem>
-              </NextLink>
-              <NextLink href="/work/">
-                <MenuItem padding={[3,4]}>
-                  Use-Cases
+                  Über PlanB.
                 </MenuItem>
               </NextLink>
               <NextLink href="/karriere/">
                 <MenuItem padding={[3,4]}>
                   Karriere
-                </MenuItem>
-              </NextLink>
-              <NextLink href="/blog/">
-                <MenuItem padding={[3,4]}>
-                  Blog
                 </MenuItem>
               </NextLink>
               <NextLink href="/contact/">

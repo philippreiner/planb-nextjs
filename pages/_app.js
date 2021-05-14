@@ -7,6 +7,7 @@ const theme = extendTheme({
   useSystemColorMode: false,
   colors: {
     primary:"#FF5100",
+    secondary:"#0097CE",
     brand: 
     {
       50: '#f3edeb',
@@ -35,14 +36,16 @@ const theme = extendTheme({
     }
   },
   fonts: {
-    body: "-apple-system, system-ui,'Segoe UI', 'Roboto', sans-serif", /* Use the System for most text */
-    heading: "'Montserrat', sans-serif",
+    body: "'Roboto', sans-serif",
+    heading: "'Roboto', sans-serif",
+    fat: "'Montserrat','Roboto',sans-serif",
     mono: "'Menlo', monospace",
   },  
   fontWeights: {
     normal: 400,
     medium: 500,
-    bold: 800,
+    bold: 700,
+    fat: 800
   },
   fontSizes: {
     md: "17px",
