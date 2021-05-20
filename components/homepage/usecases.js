@@ -8,7 +8,7 @@ import Styles from "./homepage.module.css";
 // List of Use-Cases
 export default function Usecases({children, background}) {
   return (
-      <Box as="section" pt={[4,8,12]}>
+      <Box as="section" pt={[4,8,12]} mb={[0,"-100px","-300px"]}>
         <Main maxW="full">
           <SegmentHeading title="Aktuelle Use-Cases"/>
           <Grid pt="3" position="relative" zIndex="10" gap="5" templateColumns={["100%","1fr 1fr", null, "1fr 1fr 1fr 1fr"]}>

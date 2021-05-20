@@ -8,7 +8,7 @@ import {Arrowlink} from "@components/atoms/atoms";
 import Solutions from "@components/homepage/solutions";
 import About from "@components/homepage/about";
 import Usecases from "@components/homepage/usecases";
-
+import Culture from "@components/homepage/culture";
 
 import { getSortedPostsData } from "@library/posts";
 import { Slide, Fade } from "react-awesome-reveal";
@@ -76,6 +76,7 @@ Jeden Tag arbeiten wir an digitalen Produkten, innovativen Geschäftsmodellen, s
       <Solutions/>
       <About/>
       <Usecases/>
+      <Culture/>
     </Layout>
   );
 }
