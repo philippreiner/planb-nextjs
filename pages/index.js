@@ -65,7 +65,6 @@ export default function Home({ allPostsData }) {
 PlanB. ist Ihr Partner für die digitale Transformation und Zukunft der Zusammenarbeit.
 Jeden Tag arbeiten wir an digitalen Produkten, innovativen Geschäftsmodellen, skalierbaren Cloud-Architekturen und der Zufriedenheit von hunderttausenden Menschen bei Ihrer Arbeit.
 
-
               </Text>
               <Arrowlink label="Warum Kunden PlanB. empfehlen" url="/about"/>
             </Box>
