@@ -9,6 +9,8 @@ import Solutions from "@components/homepage/solutions";
 import About from "@components/homepage/about";
 import Usecases from "@components/homepage/usecases";
 import Culture from "@components/homepage/culture";
+import Career from "@components/homepage/career";
+
 
 import { getSortedPostsData } from "@library/posts";
 import { Slide, Fade } from "react-awesome-reveal";
@@ -76,6 +78,7 @@ Jeden Tag arbeiten wir an digitalen Produkten, innovativen Geschäftsmodellen, s
       <About/>
       <Usecases/>
       <Culture/>
+      <Career/>
     </Layout>
   );
 }

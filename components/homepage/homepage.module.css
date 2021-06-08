@@ -1,9 +1,21 @@
-.solutions {
+.solutions,.career {
     background-size: cover;
     background-position: center center;
 }
 .deco {
     display: none;
+}
+.overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,.5);
+}
+.above {
+    z-index: 100;
+    position: relative;
 }
 @media(min-width: 48em) {
     .deco {
