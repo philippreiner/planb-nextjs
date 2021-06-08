@@ -21,7 +21,7 @@ export default function Career({children}) {
 <strong>Wir haben noch Platz für dich!</strong><br/>
 Egal ob hier, im Neubau oder in deinem persönlichen Homeoffice. 
                     </Heading>
-                    <Arrowlink url="/dpf" label="Zu unseren digitalen Lösungen"/>
+                    <Arrowlink url="/karriere" label="Werde Teil unseres Teams"/>
                   </Box>
           </Main>
           
