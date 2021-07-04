@@ -4,16 +4,15 @@ import Styles from "./hero.module.css";
 import Header from "@components/header/header";
 
 // Hero Wrap
-export default function Hero({children, background}) {
+export default function Hero({ children, background, backgroundSize, backgroundPosition, backgroundColor }) {
 
-  
-    return (
-      <Box bgImage={background} className={Styles.hero}>
-            <Header /> 
-            <Box className={Styles.center}>
-                {children}
-            </Box>
+
+  return (
+    <Box bgImage={background} bgSize={backgroundSize} bgPos={backgroundPosition} backgroundColor={backgroundColor} className={Styles.hero}>
+      <Header />
+      <Box className={Styles.center}>
+        {children}
       </Box>
-    );
-  }
-  
+    </Box>
+  );
+}
