@@ -1,0 +1,8 @@
+.headlinecollection {
+    text-transform: uppercase; 
+    word-break: keep-all;
+    white-space: nowrap; 
+    font-weight: normal;
+}
+@media(min-width:54em) {
+}
