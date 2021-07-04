@@ -49,7 +49,7 @@ export default function Home() {
                 maxW={[null, null, "80%", "45%"]}
                 color="white"
               >
-                Wit sind 130 kluge Köpfe für die digitale Transformation und Zukunft der Zusammenarbeit.
+                Wir sind 130 kluge Köpfe für die digitale Transformation und Zukunft der Zusammenarbeit.
                 Jeden Tag arbeiten wir an den digitalen Produkten, innovativen Geschäftsmodellen, 
                 skalierbaren Cloud-Architekturen und der Zufriedenheit von hunderttausenden Menschen bei Ihrer Arbeit.
               </Text>
