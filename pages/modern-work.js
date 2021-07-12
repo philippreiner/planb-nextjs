@@ -82,7 +82,7 @@ export default function Home() {
       </Box>
 
       {/* Slider */}
-      <Slider sliderItems={sliderItems}/>
+      <Slider backgroundColor="#0097CE" sliderItems={sliderItems}/>
 
       <About /> 
     </Layout>

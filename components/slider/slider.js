@@ -25,7 +25,7 @@ import {
 import NextImage from 'next/image';
 import React, { setState, useState } from "react";
 
-export default function Slider({sliderItems}) {
+export default function Slider({sliderItems, backgroundColor}) {
 
 
   const [index, setIndex] = useState(0);
@@ -41,7 +41,7 @@ export default function Slider({sliderItems}) {
 
   return (
       <Box w="full" maxW="full" pos="relative" as="section">
-        <Box bgColor="#0097CE" p={[4, 12]}>
+        <Box bgColor={backgroundColor} p={[4, 12]}>
           <SegmentHeading title="Projekte" />
           {/* Slider Header Desktop */}
           <Flex display={["none", "none", "flex", "flex"]} maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>

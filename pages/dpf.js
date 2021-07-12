@@ -21,9 +21,18 @@ import {
   HStack,
   List, ListItem, ListIcon, OrderedList, UnorderedList
 } from "@chakra-ui/react";
+import Slider from "@components/slider/slider";
 
 
 export default function Home() {
+
+  const sliderItems = [
+    { id: 0, title: "Augmented Reality App-Entwicklung", headline: 'Ein unterhaltsames AR-Spiel für einen knallharten Business-Case', image: "/images/slider/dpf/MRCS-Mockup-3.png", text: "Wie kann man ein klassisches Produktsortiment um digitale Value-Services erweitern? Für einen großen deutschen Hersteller von Alltagsprodukten stellte sich diese Frage und PlanB. wurde beauftragt eine Antwort zu finden – und entwickeln. Iterativ wurden verschiedene Ideen umgesetzt und verworfen. Am Ende wurde eine interaktive AR-Anwendung mit Unity für beide mobilen Betriebssysteme entwickelt die mit künstlicher Intelligenz Räume erkennt um so z.B. ein Sofa zu identifizieren. Da es sich um eine B2C-Anwendung handelt wurden Spielelemente implementiert und mit 3D-Modellen interaktive Erlebnisse geschaffen.", link: "/about" },
+    { id: 1, title: "Portal für virtuelle Hauptversammlungen", headline: 'Hauptversammlungen im virtuellen Raum neu gedacht oder wenn der Aktionär Homeoffice macht.', image: "/images/slider/dpf/hauptversammlung.png", text: "In Unterstützung unseres Kunden haben wir einen Service zur digitalen Durchführung von Haupt-, Gesellschafter- und Mitgliederversammlungen für Unternehmen, Verbände und Vereine entwickelt, der Nachhaltigkeit und die Zeit nach der Pandemie im Auge hat.", link: "/about" },
+    { id: 2, title: "App-Entwicklung für Luftreiniger/-Wäscher", headline: 'IoT für einfach gute Raumluft.', image: "/images/slider/modern-work/microsoft365.png", text: "Viele Menschen können ein Lied davon singen: schlaflose Nächte durch zu trockene Luft, gerötete Augen dank der alljährlich wiederkehrenden Pollenallergie oder eine schlechte Atmung durch Feinstaub daheim. Eine gute Luft in den eigenen vier Wänden trägt erheblich zur Lebensqualität bei. Luftwäscher und Luftreiniger unseres Kunden helfen bei der Optimierung der Raumluft durch Anpassung der Luftfeuchtigkeit und durch den Einsatz von Partikelfiltern. Wir haben den Auftrag erhalten das Leistungsspektrum der Geräte um eine funktionale Cloud-Lösung mit benutzerfreundlicher App für IOS und Android als Kommunikationsschnittstelle für den Nutzer zu seinem Gerät zu erweitert.", link: "/about" },
+    { id: 3, title: "Digitales Fahrzeugmanagement", headline: 'Auto öffne Dich – digitales Geschäftsmodell für einfaches, sicheres Fahrzeugmanagement.', image: "/images/slider/dpf/Witte-Laptop.png", text: "In unserer Partnerschaft mit WITTE Digital haben wir ein System zur Marktreife gebracht, welches eine einfache und effiziente Möglichkeit bietet, beliebig viele Nutzer und Fahrzeuge zu verwalten. Der Zugriff und die Weitergabe von Fahrzeugen ist so ganz einfach über digitale Rechtevergabe möglich. Ob für Teams, Mitarbeiter oder Kunden – die Freigabe und Verwaltung erfolgt unkompliziert und zielgerichtet. Dabei reichen drei einfache Schritte, um mit digitalem Schlüsselmanagement zu starten: Box im Fahrzeug platzieren, App herunterladen, beliebig viele Fahrer und Fahrzeuge über das Portal verwalten und schön können die Fahrzeuge mit dem Smartphone sicher geöffnet und wieder verschlossen werden.", link: "/about" },
+  ];
+
   return (
     <Layout>
       <Hero background="url(images/dpf_hero.png)">
@@ -80,23 +89,8 @@ export default function Home() {
           </Flex>
         </Box>
       </Box>
-<Box id="products">
-    <DevNote >
-        Virtueller Inspektions-Assistent
-        Augumented Reality App-Entwicklung
-        Portal für virtuelle Hauptversammlungen
-        App-Entwicklung for Luftreiniger/-Wäscher
-        Digitales Fahrzeugmanagement
 
-        Hauptversammlungen im virtuellen Raum neu gedacht oder wenn der Aktionär Homeoffice macht.
-        In Unterstützung unseres Kunden haben wir einen Service zur digitalen Durchführung von Hapt-, Gesellschafter- und Mitgliedsversammlungen Für
-        Unternehmen, Verbände und Vereine entwickelt, der Nachhaltigkeit und die Zeit nach der Pandemie im Auge hat.  
-      </DevNote>
-</Box>
-      
-
-
-
+      <Slider backgroundColor="#FF5100" sliderItems={sliderItems} />
 
     </Layout>
   );
