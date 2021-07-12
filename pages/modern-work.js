@@ -1,57 +1,35 @@
 import Layout from "@components/layout";
 
-import { Main, Fullheight, Wallpaper } from "@components/blocks/blocks";
+import { Main } from "@components/blocks/blocks";
 import { SegmentHeading, Arrowlink } from "@components/atoms/atoms";
 import HeadlineCollection from '@components/headlinecollection/headlinecollection';
-
 import Hero from '@components/hero/hero';
-
-
-import { Slide, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
+import  Slider  from '@components/slider/slider';
 
 
 import {
   Box,
   Heading,
   Text,
-  useColorModeValue,
-  Link,
-  Button,
-  DarkMode,
-  Center,
   Flex,
-  Spacer,
-  HStack,
-  List, ListItem, ListIcon, OrderedList, UnorderedList
 } from "@chakra-ui/react";
-
-import NextImage from 'next/image';
+import About from "@components/about/about";
 
 export default function Home() {
 
   const sliderItems = [
-    { selected: true, title: "Microsoft 365 Kooperationen", image: "/images/modern_work_hero.png", text: "Sample Text for testing", linkText: "sample link text", link: "/about" },
-    { selected: false, title: "Quick Roll-Out von Microsoft Teams", image: "url(images/modern_work_hero.png)", text: "Sample Text for testing", linkText: "sample link text", link: "/about" },
-    { selected: false, title: "Digitale Transformation des Arbeitsplatzes", image: "url(images/modern_work_hero.png)", text: "Sample Text for testing", linkText: "sample link text", link: "/about" },
-    { selected: false, title: "Low Code trifft XY", image: "url(images/modern_work_hero.png)", text: "Sample Text for testing", linkText: "sample link text", link: "/about" }
+    { id: 0, title: "Digitale Transformation des Arbeitsplatzes", headline: 'Nehmen Sie Ihre Mitarbeiter mit auf die Reise zu einem modernen Arbeitsplatzerlebnis', image: "/images/slider/modern-work/transform-work.png", text: "Die digitale Transformation verändert grundlegend die Art und Weise, wie Unternehmen Technologie nutzen, um Mitarbeiter zu befähigen, Abläufe zu optimieren, Produkte zu transformieren und Kunden zu begeistern - und gleichzeitig müssen sie Compliance- und regulatorische Anforderungen erfüllen. Um wettbewerbsfähig zu sein, musste sich unser Kunde die Frage stellen, wie sie die Chancen der Digitalisierung nutzen können und wie ihr zukünftiger Arbeitsplatz aussehen sollte, um ihre digitale Transformation kontinuierlich voranzutreiben.", link: "/about" },
+    { id: 1, title: "Quick Roll-Out von Microsoft Teams", headline: 'Quick Roll-Out von Microsoft Teams', image: "/images/slider/modern-work/rollout.png", text: "Durch COVID-19 wurde der Anteil der Home-Office Arbeiter stark erhöht. Die bestehende Video-, Voice- und Chat-Lösungen war diesen Anforderungen nicht gewachsen sowie nicht für die breite Anwenderbasis von mehreren tausend Anwendern verfügbar. Mit dem Roll-Out von Microsoft Teams ermöglichen wir es dem Kunden sein Tagesgeschäft in einer modernen, sicheren Umgebung aufrecht zu erhalten Nahtlose Kommunikationsmöglichkeit aus dem Homeoffice heraus wurde für jeden Mitarbeiter kurzfristig ermöglicht. Gemeinsame Arbeit in strukturierter Form, um den Betrieb sowie Projekte aufrecht zu halten. ", link: "/about" },
+    { id: 2, title: "Microsoft 365 Kooperationen", headline: 'Zusammenarbeit mit M365 über lange Distanzen in der Pandemie', image: "/images/slider/modern-work/microsoft365.png", text: "Mit dem Roll-out für Modern Workplace auf Basis von M365 von Microsoft bieten wir unseren Kunden einen weiteren Schritt auf dem Weg zum digitalen Unternehmen.Wo früher noch die Excel-Tabelle über den Server im Keller per Mail versendet wurde, gibt es nun kollaborative, neue Möglichkeiten mit Microsoft 365 für die gemeinsame Zusammenarbeit in der Cloud. Das reduziert dem Kunden Kosten, beschleunigt Alltagsaufgaben und schafft der IT Zeit für die Anforderungen aus den Fachabteilungen.", link: "/about" },
   ];
-
-  function clickItem(item) {
-    sliderItems.forEach(item => {
-      item.selected = false;
-    });
-    item.selected = true;
-
-    console.log(sliderItems);
-
-  }
 
   return (
     <Layout>
       <Hero background="url(images/modern_work_hero.png)" backgroundSize={["contain", "cover"]} backgroundPosition={["top", null]} backgroundColor="#0097CE">
         <Fade triggerOnce={true} delay={100}>
           <Main maxW="full">
-            <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
+            <Box mt={[10, null, null]} pt={[12, 20, 32]} pb={[12, 20, 32]}>
               <Heading
                 maxW="full"
                 as="h1"
@@ -81,7 +59,7 @@ export default function Home() {
         <Box pos="relative" maxW="full" pb="100">
           <SegmentHeading title="Modern Work &amp; Managed Services" />
           <HeadlineCollection tags={["Modern Workplace", "Power Platform", "Cloud", "Security", "Azure Arc", "Managed Services", "Microsoft 365"]} />
-          <Flex maxW={["full", "full", "80%"]} flexDir={["column", "row"]}>
+          <Flex maxW={["full", "full", "80%"]} flexDir={["column", "column", "row"]}>
             <Text pr={[4, 12, 24]} maxW={["100%", "100%", "50%"]} width={["full"]}>
               Die moderne IT-Landschaft wird ständig vielfältiger und Budgets kleiner.
               PlanB. ist als zuverlässiger Microsoft-Partner Ihre Lösung für die Migration in die Cloud und die Zukunft der digitalen Zusammenarbeit.
@@ -104,35 +82,9 @@ export default function Home() {
       </Box>
 
       {/* Slider */}
-      <Box pos="relative" as="section" maxW="full" width="full">
-        {/* Banner */}
-        <Box bgColor="#0097CE" p={[4, 12]}>
-          <SegmentHeading title="Projekte" />
-          <Flex maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>
-            {sliderItems.map((item) => (
-              <Text onClick={() => clickItem(item)} textDecoration={item.selected ? 'underline' : 'none'} cursor="pointer" flexGrow="1" textAlign="left" fontSize="20" fontWeight="bold">{item.title}</Text>
-            ))}
-          </Flex>
-        </Box>
+      <Slider sliderItems={sliderItems}/>
 
-        {/* Content */}
-        <Box>
-          <Flex>
-            {sliderItems.filter(item => item.selected).map(selected => (
-              <>
-                <Box>
-                  {/* <NextImage src={selected.image} layout="fill" /> */}
-                </Box>
-
-                <Box maxW="50%">
-                  <Text>{selected.text}</Text>
-                  <Arrowlink label={selected.linkText} url={selected.link} />
-                </Box>
-              </>
-            ))}
-          </Flex>
-        </Box>
-      </Box>
+      <About /> 
     </Layout>
   );
 }

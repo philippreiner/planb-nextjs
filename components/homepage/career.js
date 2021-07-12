@@ -9,7 +9,7 @@ import Styles from "./homepage.module.css";
 export default function Career({children}) {
   return (
       <Box pos="relative" as="section" py={[4,12,24]} bgImage="url('/images/offices/huettlingen-baustelle.jpg')" className={Styles.career}>
-          <div class={Styles.overlay}>&nbsp;</div>
+          <Box as="div" className={Styles.overlay}>&nbsp;</Box>
           <Main maxW="full">
             <SegmentHeading title="Karriere"/>
             <Box py={[4,12,24]} pos="relative">
