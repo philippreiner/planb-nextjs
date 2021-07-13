@@ -118,7 +118,7 @@ export default function Home({allMembers}) {
                     <Main maxW="full">
                         <Box maxW="full" py={[12, 20, 32]}>
                             <Heading
-                                maxW="2xl"
+                                maxW="full"
                                 w="120%"
                                 as="h1"
                                 pb={[2, 2]}
@@ -144,11 +144,11 @@ export default function Home({allMembers}) {
 
                                 {allMembers.map(employee => (
                                     <Box key={allMembers.indexOf(employee)}>
-                                        {/*  */}
-                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" w="100%" h="296px"></Box>
+                                        {/* Image */}
+                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w="100%" h="296px"></Box>
                                         {/* Name */}
                                         <Box h="51px" bgColor="tomato">
-                                            <Text px={[2, 4, 8]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold">{employee.name.split(' ')[0]}</Text>
+                                            <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold">{employee.name.split(' ')[0]}</Text>
                                         </Box>
                                         {/* Jahr(e) */}
                                         <Box>
@@ -156,7 +156,7 @@ export default function Home({allMembers}) {
                                         </Box>
                                         {/* Quote */}
                                         <Box>
-                                            <Text fontSize={["24px","24px","24px","24px"]} fontStyle="italic" pb={[2, 4]}>{employee.desc}</Text>
+                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}>"{employee.desc}"</Text>
                                         </Box>
                                     </Box>
                                 ))}
@@ -171,17 +171,17 @@ export default function Home({allMembers}) {
 
             <Box pos="relative" as="section" bgImage="url(images/offices/huettlingen-baustelle.jpg)" bgRepeat="no-repeat">
                 <Flex>
-                    <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%"]}>
-                        <SegmentHeading title="Unsere Mission" />
-                        <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "72px"]}>
-                            <strong>
+                    <Box p={[4, 12, 24]} pos="relative" maxW={["80%", "100%", "70%"]}>
+                        <SegmentHeading title="Karriere" />
+                        <Heading as="h2" pb="4" fontWeight="bold" fontSize={["36px", "44px", null, "72px"]}>
+                            
                                 Wir haben noch Platz für dich!
-                            </strong>
+                            
                         </Heading>
                         <Heading
                             fontSize={["36px", "44px", null, "72px"]}
                             pb="4"
-                            fontWeight="normal"
+                            fontWeight="lighter"
                         >
                             Egal ob hier, im Neubau oder in deinem persönlichen Homeoffice.
                         </Heading>
