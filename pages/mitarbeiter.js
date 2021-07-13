@@ -113,7 +113,7 @@ const pictureBoxes = ({allMembers}) => allMembers.map((employee) => {
 export default function Home({allMembers}) {
     return (
         <Layout>
-            <Hero background="#1D1D1D">
+            <Hero backgroundColor="#1D1D1D">
                 <Fade triggerOnce={true} delay={100}>
                     <Main maxW="full">
                         <Box maxW="full" py={[12, 20, 32]}>
@@ -140,23 +140,23 @@ export default function Home({allMembers}) {
 
                             </Text>
 
-                            <SimpleGrid pos="relative" columns={[1, 3, 5]} spacingX={["35px"]} spacingY={["19px"]}>
+                            <SimpleGrid pos="relative" columns={[1, 3, 5]} spacingX={["35px", "80px"]} spacingY={["19px"]}>
 
                                 {allMembers.map(employee => (
                                     <Box key={allMembers.indexOf(employee)}>
                                         {/* Image */}
                                         <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w="100%" h="296px"></Box>
                                         {/* Name */}
-                                        <Box h="51px" bgColor="tomato">
+                                        <Box h="51px" bgColor="#FF5100">
                                             <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold">{employee.name.split(' ')[0]}</Text>
                                         </Box>
                                         {/* Jahr(e) */}
                                         <Box>
-                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]}>{Date.now() - employee.year_started} bei PlanB.</Text>
+                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]} px="15px" >{Date.now() - employee.year_started} bei PlanB.</Text>
                                         </Box>
                                         {/* Quote */}
                                         <Box>
-                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}>"{employee.desc}"</Text>
+                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}  px="15px">"{employee.desc}"</Text>
                                         </Box>
                                     </Box>
                                 ))}
@@ -174,9 +174,7 @@ export default function Home({allMembers}) {
                     <Box p={[4, 12, 24]} pos="relative" maxW={["80%", "100%", "70%"]}>
                         <SegmentHeading title="Karriere" />
                         <Heading as="h2" pb="4" fontWeight="bold" fontSize={["36px", "44px", null, "72px"]}>
-                            
-                                Wir haben noch Platz für dich!
-                            
+                            Wir haben noch Platz für dich!
                         </Heading>
                         <Heading
                             fontSize={["36px", "44px", null, "72px"]}
@@ -192,10 +190,8 @@ export default function Home({allMembers}) {
 
                     </Box>
                 </Flex>
-
             </Box>
-            <box> <about /> </box>
-
+            
         </Layout>
     );
 }
