@@ -140,23 +140,24 @@ export default function Home({allMembers}) {
 
                             </Text>
 
-                            <SimpleGrid pos="relative" columns={[1, 3, 5]} spacingX={["35px", "80px"]} spacingY={["19px"]}>
-
+                            <SimpleGrid pos="relative" columns={[1, 2, 3, 4, 5]} spacingY={["19px"]} spacingX={[null, "10%"]} w="85vw">
+                            
                                 {allMembers.map(employee => (
-                                    <Box key={allMembers.indexOf(employee)}>
+                                    <Box key={allMembers.indexOf(employee)} >
+                                        
                                         {/* Image */}
-                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w="100%" h="296px"></Box>
+                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w={["324px","219px"]} h={["324px","245px"]}></Box>
                                         {/* Name */}
-                                        <Box h="51px" bgColor="#FF5100">
-                                            <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold">{employee.name.split(' ')[0]}</Text>
+                                        <Box h="51px" w={["324px","219px"]}bgColor="#FF5100">
+                                            <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold" w={["324px","219px"]}>{employee.name.split(' ')[0]}</Text>
                                         </Box>
                                         {/* Jahr(e) */}
                                         <Box>
-                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]} px="15px" >{Date.now() - employee.year_started} bei PlanB.</Text>
+                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]} pl="15px" w={["324px","219px"]}>{Date.now() - employee.year_started} bei PlanB.</Text>
                                         </Box>
                                         {/* Quote */}
                                         <Box>
-                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}  px="15px">"{employee.desc}"</Text>
+                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}  pl="15px" w={["324px","219px"]}>"{employee.desc}"</Text>
                                         </Box>
                                     </Box>
                                 ))}
