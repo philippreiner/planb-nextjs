@@ -10,6 +10,7 @@ import { getAllCompanyMembers } from '@library/posts';
 import Hero from "@components/hero/hero";
 import { Slide, Fade } from "react-awesome-reveal";
 
+import About from "@components/about/about";
 
 import NextLink from "next/link";
 import NextImage from "next/image";
@@ -192,7 +193,7 @@ export default function Home({allMembers}) {
                     </Box>
                 </Flex>
             </Box>
-            
+            <About /> 
         </Layout>
     );
 }
