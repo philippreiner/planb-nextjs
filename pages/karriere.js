@@ -223,16 +223,8 @@ export default function Home() {
         </Main>
       </Box>
 
-
-
-
-
       <Box as="section" pt={[4,12,24,44]} pb={[4,12,24]}>
         <Main  maxW="full">
-
-
-
-
 
           <Grid
               templateRows="2fr"
@@ -240,13 +232,27 @@ export default function Home() {
               gap={[4,8]}
             >
 
-            <GridItem pos="relative" colSpan={[1,null,4]}>
+            <GridItem pos="relative" colSpan={[1,null,4]} width="474px">
               <NextImage 
                 src="/images/ausbildung-portraits.png"
                 width="474px"
                 height="304px"
                 />
-                
+
+              <Box d="flex">
+                <Box w="49%">
+                  <Text align="center">
+                    <strong>Florian Schmid</strong><br/>
+                    Ausbilder im Bereich XY
+                  </Text>
+                </Box>
+                <Box w="49%">
+                  <Text align="center">
+                    <strong>Heiko Huber</strong><br/>
+                    Ausbilder im Bereich XY
+                  </Text>
+                </Box>
+              </Box>
             </GridItem>
 
             <GridItem colSpan={[1,null,8]}>
@@ -259,32 +265,15 @@ export default function Home() {
                     fontWeight="fat"
                     fontFamily="fat"
                     fontSize={["24px","36px","44px"]}
-                >
+                    >
                   Ausbildung und duales Studium bei PlanB.
                 </Heading>
-                <Text as="p" pb={[2,4,8]}>
-                Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. Aus diesem Grund bieten wir abwechslungsreiche Praktika-, Ausbildungs- und Studienmöglichkeiten an. Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
-                <br/>
-                
+                <Text>
+                  Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. Aus diesem Grund bieten wir abwechslungsreiche Praktika-, Ausbildungs- und Studienmöglichkeiten an. Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
+                  <br/>
                 </Text>
             </GridItem>
-            
-            <GridItem pos="relative" colSpan={[1,null,2]}>
-              <Text align="center" >
-                <strong>Florian Schmid</strong><br/>
-                Ausbilder im Bereich XY
-              </Text>
-            </GridItem>
-
-            <GridItem pos="relative" colSpan={[1,null,2]}>
-              <Text align="center" >
-                <strong>Heiko Huber</strong><br/>
-                Ausbilder im Bereich XY
-              </Text>
-            </GridItem>
-          
           </Grid>
-
         </Main>
       </Box>
       <About /> 
