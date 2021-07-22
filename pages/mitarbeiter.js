@@ -15,62 +15,6 @@ import About from "@components/about/about";
 import NextLink from "next/link";
 import NextImage from "next/image";
 
-// const employees = [
-//     {
-//         firstName: 'Jens',
-//         lastName: 'Reiner',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Cedric',
-//         lastName: 'Döz',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Jens',
-//         lastName: 'Reiner',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Cedric',
-//         lastName: 'Döz',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Jens',
-//         lastName: 'Reiner',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Cedric',
-//         lastName: 'Döz',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Jens',
-//         lastName: 'Reiner',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Cedric',
-//         lastName: 'Döz',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Jens',
-//         lastName: 'Reiner',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-//     {
-//         firstName: 'Cedric',
-//         lastName: 'Döz',
-//         picturePath: "url(images/Mitarbeiter/beispielimage-mitarbeiter.png)"
-//     },
-    
-// ]
-
-const employees = []; //async() => await getAllCompanyMembers();
-
 export async function getStaticProps() {
     const allMembers = await getAllCompanyMembers();
     return {
@@ -79,37 +23,6 @@ export async function getStaticProps() {
       },
     };
   }
-
-
-const pictureBoxes = ({allMembers}) => allMembers.map((employee) => {
-    // return (<Box bgImage={employee.picturePath} bgSize="cover" w="219px" h="296px">
-    //     <Box bg="tomato" pos="relative" bottom="-247" h="51px" w="100%">
-    //         <text py="auto">{employee.firstName}</text>
-    //     </Box>
-    //     <Box pos="relative" w="100%" h="51px">
-    //         <Text>This is a sample text for showing the difference between some nice work and other qoutes.</Text>
-    //     </Box>
-    // </Box>);
-
-    return (
-        <Box>
-            {/*  */}
-            <Box bgImage={employee.picturePath} bgSize="cover" w="100%" h="296px"></Box>
-            {/* Name */}
-            <Box h="51px" bgColor="tomato">
-                <Text px={[2, 4, 8]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold">{employee.firstName}</Text>
-            </Box>
-            {/* Jahr(e) */}
-            <Box>
-                <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]}>1. Jahr bei PlanB. / Solution Manager</Text>
-            </Box>
-            {/* Quote */}
-            <Box>
-                <Text fontSize={["24px","24px","24px","24px"]} fontStyle="italic" pb={[2, 4]}>"This is sample quote for showcasing some text features or other stuff."</Text>
-            </Box>
-        </Box>
-    );
-})
 
 export default function Home({allMembers}) {
     return (
