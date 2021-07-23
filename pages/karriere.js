@@ -43,12 +43,12 @@ import About from "@components/about/about";
 export default function Home() {
   return (
     <Layout >
-      <Hero background="url(images/karriere-hero.png)" >
+      <Hero background="url(images/karriere-hero.png)">
         <Fade triggerOnce={true} delay={100}>
           <Main maxW="full">
-            <Box maxW="full" py={[12, 20, 32]} w="800px">
+            <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
               <Heading
-                maxW="full"
+                maxW="2xl"
                 as="h1"
                 pb={[2, 4]}
                 fontSize={["24px", "36px", "54px", "72px"]}
@@ -59,13 +59,13 @@ export default function Home() {
               </Heading>
               <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
               <Text
-                pb={[1, 4, 6]}
-                maxW={[null, null, "20%", "58%", "58%"]}
+                pb={[2, 4, 6]}
+                maxW={[null, null, "80%", "45%"]}
                 color="white"
               >
                 Wir suchen #MitGestalter mit Leidenschaft für digitale Produkte. 
               </Text>
-              <Arrowlink label="Jetzt Bewerben" url="#products" />
+              <Arrowlink label="Die Menschen hinter PlanB." url="/about" />
             </Box>
           </Main>
         </Fade>
@@ -109,8 +109,7 @@ export default function Home() {
                 <GridItem pos="relative" colSpan={[1,null,6]}> {/*---Text 1. Reihe----*/}
                   <Text fontSize="24px"> <strong>PlanB. GmbH</strong> <br></br>Kocherstrasse 10<br></br>DE-73460 Hüttlingen</Text> 
                 </GridItem>
-              
-              
+
                 <GridItem pos="relative">{/*---phone Icon----*/}
                   <Center h="100%">
                     <NextImage 
@@ -120,11 +119,10 @@ export default function Home() {
                       />
                   </Center>
                 </GridItem>
-                
+
                 <GridItem pos="relative" colSpan={[1,null,6]}> {/*---Text 2. Reihe----*/} 
                     <Text fontSize="24px">+49 7361 55 62 10</Text> 
                 </GridItem>
-              
 
               
                 <GridItem pos="relative">{/*---mail Icon----*/}
@@ -140,7 +138,7 @@ export default function Home() {
                 <GridItem pos="relative" colSpan={[1,null,6]} > {/*---Text 3. Reihe----*/}
                     <Text fontSize="24px">info@plan-b-gmbh.com</Text> 
                 </GridItem>
-              
+
 
               {/*------------------------Social Media Icons------------------------*/}
 
@@ -209,7 +207,7 @@ export default function Home() {
                 <GridItem pos="relative" colSpan={[1,null,3]} rowSpan={[1,null,2]} >
                   <FormControl id="nachricht">
                   <FormLabel size="185">NACHRICHT</FormLabel>
-                  <Input type="nachricht" h="185" placeholder="Bitte geben Sie eine Nachricht ein..."  borderRadius="0" borderColor="white"/>
+                  <Textarea type="nachricht" h="185" placeholder="Bitte geben Sie eine Nachricht ein..." borderRadius="0" borderColor="white"/>
                   </FormControl>
                 </GridItem>
 
@@ -227,35 +225,40 @@ export default function Home() {
         <Main  maxW="full">
 
           <Grid
-              templateRows="2fr"
-              templateColumns={["repeat(12, 1fr)"]}
-              gap={[4,8]}
-            >
+            templateColumns={["1fr",null,"repeat(12, 1fr)"]}
+            gap={[4,8]}
+          >
 
-            <GridItem pos="relative" colSpan={[1,null,4]} width="474px">
+            <GridItem pos="relative" colSpan={[1,null,5]} >     
+
+            <Box boxSize="100%">
               <NextImage 
                 src="/images/ausbildung-portraits.png"
-                width="474px"
-                height="304px"
+                layout="fill"
+                objectFit="cover"
+                fit="left"
+                
                 />
-
-              <Box d="flex">
-                <Box w="49%">
-                  <Text align="center">
-                    <strong>Florian Schmid</strong><br/>
-                    Ausbilder im Bereich XY
-                  </Text>
-                </Box>
-                <Box w="49%">
-                  <Text align="center">
-                    <strong>Heiko Huber</strong><br/>
-                    Ausbilder im Bereich XY
-                  </Text>
-                </Box>
+            </Box>
+            <Box d="flex"  ml="2" mt="10px">
+              <Box w="49%">
+                <Text align="center">
+                  <strong>Florian Schmid</strong><br/>
+                  Ausbilder im Bereich XY
+                </Text>
               </Box>
+              <Box w="49%">
+                <Text align="center">
+                  <strong>Heiko Huber</strong><br/>
+                  Ausbilder im Bereich XY
+                </Text>
+              </Box>
+              
+            </Box>
+
             </GridItem>
 
-            <GridItem colSpan={[1,null,8]}>
+            <GridItem colSpan={[1,null,7]}>
               <SegmentHeading title="#YoungProfessionals"/>
                 <Heading
                     as="h2"
@@ -265,15 +268,16 @@ export default function Home() {
                     fontWeight="fat"
                     fontFamily="fat"
                     fontSize={["24px","36px","44px"]}
-                    >
+                >
                   Ausbildung und duales Studium bei PlanB.
                 </Heading>
-                <Text>
-                  Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. Aus diesem Grund bieten wir abwechslungsreiche Praktika-, Ausbildungs- und Studienmöglichkeiten an. Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
-                  <br/>
+                <Text as="p" pb={[2,4,8]}>
+                Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. Aus diesem Grund bieten wir abwechslungsreiche Praktika-, Ausbildungs- und Studienmöglichkeiten an. Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
                 </Text>
+
             </GridItem>
-          </Grid>
+
+        </Grid>
         </Main>
       </Box>
       <About /> 
