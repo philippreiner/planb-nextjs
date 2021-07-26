@@ -7,13 +7,7 @@ import Hero from '@components/hero/hero';
 import { Fade } from "react-awesome-reveal";
 import Slider from '@components/slider/slider';
 
-
-import {
-    Box,
-    Heading,
-    Text,
-    Flex,
-} from "@chakra-ui/react";
+import { Box, Heading, Text, Flex,} from "@chakra-ui/react";
 import About from "@components/about/about";
 
 export default function Home() {
@@ -82,7 +76,7 @@ export default function Home() {
             </Box>
 
             {/* Slider */}
-            <Slider backgroundColor="#0097CE" sliderItems={sliderItems} />
+            <Slider backgroundColor="#0097CE" label="Projekte" sliderItems={sliderItems} />
 
             <About />
         </Layout>
