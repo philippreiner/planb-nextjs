@@ -23,7 +23,7 @@ export default function Header() {
   const menuColor = useColorModeValue("black", "white");
 
   return (
-    <Container className={Styles.header} maxW={["100em",null,null,null,"90%"]}>
+    <Container className={Styles.header} maxW={["100em", null, null, null, "90%"]}>
       <Flex as="header" align="center">
         <Box>
           <NextLink href="/">
@@ -34,46 +34,51 @@ export default function Header() {
         </Box>
         <Spacer />
         <HStack spacing="4">
-        <NextLink  href="/karriere/">
+          <NextLink href="/karriere/">
             <Button className={Styles.desktop} variant="ghost">
               Karriere
             </Button>
           </NextLink>
-          <Menu isLazy={true} autoSelect={false}>
+          <Menu isLazy={true} autoSelect={false}>
             <MenuButton >
-            <Button rightIcon={<HamburgerIcon w={6} h={6} />} variant="ghost">
+              <Button rightIcon={<HamburgerIcon w={6} h={6} />} variant="ghost">
                 <span className={Styles.desktop}>Menü</span>
-            </Button>
+              </Button>
             </MenuButton>
-            <MenuList  color={menuColor} borderWidth="0">
+            <MenuList color={menuColor} borderWidth="0">
               <NextLink href="/dpf/">
-                <MenuItem padding={[3,4]}>
+                <MenuItem padding={[3, 4]}>
                   Digital Product Factory
                 </MenuItem>
               </NextLink>
               <NextLink href="/modern-work/">
-                <MenuItem padding={[3,4]}>
+                <MenuItem padding={[3, 4]}>
                   Modern Work
                 </MenuItem>
               </NextLink>
               <NextLink href="/about/">
-                <MenuItem padding={[3,4]}>
+                <MenuItem padding={[3, 4]}>
                   Über PlanB.
                 </MenuItem>
               </NextLink>
+              <NextLink href="/mitarbeiter/">
+                <MenuItem padding={[3, 4]}>
+                  Mitarbeiter
+                </MenuItem>
+              </NextLink>
               <NextLink href="/karriere/">
-                <MenuItem padding={[3,4]}>
+                <MenuItem padding={[3, 4]}>
                   Karriere
                 </MenuItem>
               </NextLink>
               <NextLink href="/contact/">
-                <MenuItem padding={[3,4]}>
+                <MenuItem padding={[3, 4]}>
                   Kontakt
                 </MenuItem>
               </NextLink>
             </MenuList>
           </Menu>
-        
+
         </HStack>
       </Flex>
     </Container>

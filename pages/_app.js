@@ -6,9 +6,9 @@ import { extendTheme } from "@chakra-ui/react"
 const theme = extendTheme({
   useSystemColorMode: false,
   colors: {
-    primary:"#FF5100",
-    secondary:"#0097CE",
-    brand: 
+    primary: "#FF5100",
+    secondary: "#0097CE",
+    brand:
     {
       50: '#f3edeb',
       100: '#ffcaaf',
@@ -21,7 +21,7 @@ const theme = extendTheme({
       800: '#4f1600',
       900: '#210400',
     },
-    gray: 
+    gray:
     {
       50: '#f2f2f2',
       100: '#d9d9d9',
@@ -40,7 +40,7 @@ const theme = extendTheme({
     heading: "'Roboto', sans-serif",
     fat: "'Montserrat','Roboto',sans-serif",
     mono: "'Menlo', monospace",
-  },  
+  },
   fontWeights: {
     normal: 400,
     medium: 500,
@@ -56,9 +56,9 @@ const theme = extendTheme({
 function App({ Component, pageProps }) {
   return (
     <>
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
