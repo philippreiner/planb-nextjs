@@ -43,10 +43,6 @@ export default function Posthead({ title, published }) {
 
             <Spacer/>
 
-            <Tooltip label={colorMode === "light" ? "Licht aus" : "Licht an"} >
-              <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} variant="ghost" onClick={toggleColorMode} />
-            </Tooltip>
-
             <Box display={[ "none","contents"]}>
               <Image src="/assets/icons/linkedin-icon-296px.png" width="16px"/>
               <Image src="/assets/icons/twitter-icon-296px.png" width="16px" ml="12px"/>
