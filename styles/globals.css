@@ -27,6 +27,14 @@
 body {
   font-size:var(--base-font-size);
 }
+
+/* Changes to the code element to be able for using it as highlight */
+code {
+  color: var(--base-primary);
+  font-family: 'Montserrat' !important;
+  font-weight: bold;
+}
+
 ::selection {
   background-color: var(--base-primary);
   opacity:1;

@@ -1,31 +1,16 @@
-import Layout from "@components/layout";
 
-import { Main, Fullheight, Wallpaper } from "@components/blocks/blocks";
 import { SegmentHeading, Arrowlink } from "@components/atoms/atoms";
-import HeadlineCollection from '@components/headlinecollection/headlinecollection';
-import Hero from '@components/hero/hero';
-import { Slide, Fade } from "react-awesome-reveal";
 
 
 import {
   Box,
-  Heading,
   Text,
-  useColorModeValue,
-  Link,
-  Button,
-  DarkMode,
-  Center,
-  Flex,
-  Spacer,
-  HStack,
-  List, ListItem, ListIcon, OrderedList, UnorderedList, propNames
-} from "@chakra-ui/react";
+  Flex} from "@chakra-ui/react";
 
 import NextImage from 'next/image';
-import React, { setState, useState } from "react";
+import React, { useState } from "react";
 
-export default function Slider({sliderItems, backgroundColor}) {
+export default function Slider({sliderItems, backgroundColor, label}) {
 
 
   const [index, setIndex] = useState(0);
@@ -41,18 +26,18 @@ export default function Slider({sliderItems, backgroundColor}) {
 
   return (
       <Box w="full" maxW="full" pos="relative" as="section">
-        <Box bgColor={backgroundColor} p={[4, 12]}>
-          <SegmentHeading title="Projekte" />
+        <Box bgColor={backgroundColor} p={[4, 6, 12]}>
+          <SegmentHeading title={label} />
           {/* Slider Header Desktop */}
           <Flex display={["none", "none", "flex", "flex"]} maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>
             {sliderItems.map((item, i) => (
-              <Text onClick={() => clickItem(item)} textAlign="left" fontSize="20px" cursor="pointer" flexGrow="1" textDecor={index === i ? 'underline' : 'none'} fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
+              <Text onClick={() => clickItem(item)} textAlign="left" maxW="100%" w="100%" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
             ))}
           </Flex>
 
           {/* Slider Header Mobile */}
-          <Flex pos="relative" display={["flex", "flex", "none", "none"]} maxW="full" w="full" py={[8, 12]} flexDir={["column", "row"]}>
-            <Text textAlign="left" maxW="60%" fontSize="20px" cursor="pointer" flexGrow="1" textDecor="underline" fontWeight="bold">{sliderItems[index].title}</Text>
+          <Flex pos="relative" display={["flex", "flex", "none", "none"]} maxW="full" w="full" py={[4, null]} flexDir={["column", "row"]}>
+            <Text textAlign="left" maxW="100%" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight="bold" pb="8">{sliderItems[index].title}</Text>
             <Flex pos="absolute" bottom="0px" right="0px">
               {sliderItems.map((item , i) => (
                 <Box pos="relative" p="4px">
