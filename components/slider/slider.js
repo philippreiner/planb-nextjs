@@ -1,31 +1,16 @@
-import Layout from "@components/layout";
 
-import { Main, Fullheight, Wallpaper } from "@components/blocks/blocks";
 import { SegmentHeading, Arrowlink } from "@components/atoms/atoms";
-import HeadlineCollection from '@components/headlinecollection/headlinecollection';
-import Hero from '@components/hero/hero';
-import { Slide, Fade } from "react-awesome-reveal";
 
 
 import {
   Box,
-  Heading,
   Text,
-  useColorModeValue,
-  Link,
-  Button,
-  DarkMode,
-  Center,
-  Flex,
-  Spacer,
-  HStack,
-  List, ListItem, ListIcon, OrderedList, UnorderedList, propNames
-} from "@chakra-ui/react";
+  Flex} from "@chakra-ui/react";
 
 import NextImage from 'next/image';
-import React, { setState, useState } from "react";
+import React, { useState } from "react";
 
-export default function Slider({sliderItems, backgroundColor}) {
+export default function Slider({sliderItems, backgroundColor, label}) {
 
 
   const [index, setIndex] = useState(0);
@@ -41,8 +26,8 @@ export default function Slider({sliderItems, backgroundColor}) {
 
   return (
       <Box w="full" maxW="full" pos="relative" as="section">
-        <Box bgColor={backgroundColor} p={[4, 12]}>
-          <SegmentHeading title="Projekte" />
+        <Box bgColor={backgroundColor} p={[4, 6, 12]}>
+          <SegmentHeading title={label} />
           {/* Slider Header Desktop */}
           <Flex display={["none", "none", "flex", "flex"]} maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>
             {sliderItems.map((item, i) => (
