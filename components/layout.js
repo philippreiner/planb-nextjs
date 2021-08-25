@@ -26,15 +26,13 @@ export default function Layout({ children, title }) {
       {children}
 
       <Footer />
-
-      {process.env.NODE_ENV === "production" && (
-        <script
+      <script
           async
           defer
-          data-domain="planb-website.vercel.app" // ToDo: Add final domain here later, update Analytics
-          src="https://plausible.io/js/plausible.js" // ToDo: Host on custom CNAME
+          data-domain="www.planb.net"
+          src="/js/p.js"
         />
-      )}
+
     </Box>
   );
 }

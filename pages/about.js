@@ -1,27 +1,23 @@
 import Layout from "@components/layout";
 
-import {Main, Fullheight} from "@components/blocks/blocks";
+import {Main} from "@components/blocks/blocks";
 import {SegmentHeading, Arrowlink} from "@components/atoms/atoms";
 
 import Hero from '@components/hero/hero';
 
 
-import { Slide, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
+
+import About from "@components/about/about";
 
 
 import {
   Box,
   Heading,
   Text,
-  useColorModeValue,
-  Link,
-  Button,
-  DarkMode,
-  Center,
   Flex,
   Spacer,
-  HStack,
-  List, ListItem, ListIcon, OrderedList, UnorderedList
+  ListItem, UnorderedList
 } from "@chakra-ui/react";
 
 import NextImage from 'next/image';
@@ -29,7 +25,7 @@ import NextImage from 'next/image';
 export default function Home() {
   return (
     <Layout>
-      <Hero background="url(images/background-solutions.jpg)">
+      <Hero background="url(images/human_meets_AI.png)" backgroundPosition={["0% -10%", null, null, null]} backgroundSize={["contain", "contain", "cover", "cover"]}>
         <Fade triggerOnce={true} delay={100}>
           <Main maxW="full">
             <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
@@ -47,8 +43,7 @@ export default function Home() {
               <Text
                 pb={[2, 4, 6]}
                 maxW={[null, null, "80%", "45%"]}
-                color="white"
-              >
+                color="white">
                 Wir sind 130 kluge Köpfe für die digitale Transformation und Zukunft der Zusammenarbeit.
                 Jeden Tag arbeiten wir an den digitalen Produkten, innovativen Geschäftsmodellen, 
                 skalierbaren Cloud-Architekturen und der Zufriedenheit von hunderttausenden Menschen bei Ihrer Arbeit.
@@ -60,12 +55,12 @@ export default function Home() {
       </Hero>
 
       {/* Mehr als nur Software */}
-      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/westhausen.jpg)">
+      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/about_faded_background.png)" backgroundSize="cover" backgroundRepeat="no-repeat">
         <Flex>
           <Spacer />
           <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%", "50%"]}>
             <SegmentHeading title="Wer wir sind und was wir machen" />
-            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]}>
+            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
               <strong>Mehr als nur Software</strong>
             </Heading>
             <Text pb={[2, 4, 6]}>
@@ -75,19 +70,23 @@ export default function Home() {
               Es sind Ergebnisse die jeden Tag Menschen glücklich machen und Mehrwert für das Unternehmen bringen.
             </Text>
             <Box pb="200">
-              <Arrowlink label="Digitale Prdouktfabrik" url="" />
-              <Arrowlink label="Modern Workplace" url="" />
+              <Box py="4">
+                <Arrowlink label="Digitale Produktfabrik" url="" />
+              </Box>
+              <Box>
+                <Arrowlink label="Modern Workplace" url="" />
+              </Box>
             </Box>
           </Box>
         </Flex>
       </Box>
 
       {/* Ihr Partner für Digitalisierung */}
-      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/falling-cubes.jpg)" bgRepeat="no-repeat" backgroundSize="cover">
+      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/destroyed_cubes.png)" bgRepeat="no-repeat" backgroundSize="cover">
         <Box pb="200">
           <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%"]}>
             <SegmentHeading title="Ihr Partner für Digitalisierung" />
-            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]}>
+            <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "72px"]}>
               <strong>Wachsende Komplexität Reduzieren</strong>
             </Heading>
             <Text pb={[2, 4, 6]}>
@@ -109,9 +108,9 @@ export default function Home() {
         {/* Unser Ansatz */}
         <Box pos="relative">
           <Box>
-            <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "45%"]}>
+            <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "50%"]}>
               <SegmentHeading title="Unser Ansatz" />
-              <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]}>
+              <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
                 <strong>Agilität, Wissen &amp; Partnerschaften</strong>
               </Heading>
               <Text pb={[2, 4, 6]}>
@@ -128,21 +127,21 @@ export default function Home() {
 
       {/* Microsoft Partnership */}
       <Box maxW="full" as="section" p={[4, 12, 24]} pos="relative">
-        <Flex>
-        <Box>Microsoft Partner Gold</Box>
+        <Flex flexDir={["column", "column", "row", "row"]}>
+          <NextImage src="/images/microsoft/partnership-device.png" width="600px" height="auto" objectFit="cover" />
           <Spacer />
-          <Box>Microsoft Partner Gold</Box>
+          <NextImage src="/images/microsoft/partnership-application.png"  width="600px" height="auto" objectFit="cover" />
           <Spacer />
-          <Box>Microsoft Partner Silver</Box>
+          <NextImage src="/images/microsoft/partnership-silver.png" width="600px" height="auto" objectFit="cover" />
         </Flex>
       </Box>
 
       {/* Unsere Mission */}
-      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/offices/huettlingen-baustelle.jpg)" bgRepeat="no-repeat">
+      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/future_is_creative.png)" bgSize="cover" bgRepeat="no-repeat">
         <Box>
-          <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%"]}>
+          <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "70%"]}>
             <SegmentHeading title="Unsere Mission" />
-            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]}>
+            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
               <strong>
                 Aus Gestern machen wir Zukunft
                 und gehen einen Schritt weiter
@@ -161,16 +160,16 @@ export default function Home() {
       </Box>
 
       {/* Von Glücklichen Kunden Empfohlen */}
-      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/offices/huettlingen-baustelle.jpg)" bgRepeat="no-repeat">
+      <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/cube_lines.png)" bgRepeat="no-repeat" bgSize="cover">
         <Box>
           <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "75%"]}>
             <SegmentHeading title="Von glücklichen Kunden empfohlen" />
-            <Heading as="h2" pb="4" fontWeight="normal"  fontSize={["36px", "44px", null, "72px"]}>
+            <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "72px"]}>
               <strong>
                 Warum Kunden PlanB. empfehlen
               </strong>
             </Heading>
-            <Flex>
+            <Flex flexDir={["column", "column", "row", "row"]}>
               <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "75%"]}>
                 <ListItem mb="4">Mit unserem <code>agilen Denkmuster</code> reduziert sich die <code>Time-to-Market</code> von Monaten auf wenige Wochen.</ListItem>
                 <ListItem mb="4">Projekte bieten <code>konstanten Fortschritt</code> anstatt ungeplanter Kosten - inkl. <code>Transparenz</code> durch gemeinsame Aufgabenplanung.</ListItem>
@@ -178,16 +177,18 @@ export default function Home() {
                 <ListItem mb="4">PlanB. ermöglicht <code>effizienteres Arbeiten</code> und <code>neue Geschäftsmodelle</code></ListItem>
                 <ListItem mb="4">Zugang zu <code>marktführenden Expert*Innen</code> und <code>neuester Technologie.</code></ListItem>
               </UnorderedList>
-              <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100", "75%"]}>
-                <ListItem mb="4">Umfangreiches Fachwissen wird durch langjährige Erfahrung, Training und Zertifizierung ausgebaut.</ListItem>
-                <ListItem mb="4">Ausbildung und eine vielseitiges und weitreichendes Netzwerk and Expert*Innen sorgen konstant für neue Mindsets im Team.</ListItem>
-                <ListItem mb="4">Als Microsoft Partner ermöglichen wir schon heute Zugang zu den Technologien von Morgen.</ListItem>
-                <ListItem mb="4">Zusammen mit Microsoft besitzt PlanB. einzigartige Referenzen und hatte in der Vergangenheit bereits unzählige Projekterfolge.</ListItem>
+              <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "75%"]}>
+                <ListItem mb="4">Umfangreiches <code>Fachwissen</code> wird durch langjährige Erfahrung, Training und Zertifizierung ausgebaut.</ListItem>
+                <ListItem mb="4"><code>Ausbildung</code> und eine vielseitiges und weitreichendes <code>Netzwerk and Expert*Innen</code> sorgen konstant für neue Mindsets im Team.</ListItem>
+                <ListItem mb="4">Als <code>Microsoft Partner</code> ermöglichen wir schon heute Zugang zu den Technologien von Morgen.</ListItem>
+                <ListItem mb="4">Zusammen mit Microsoft besitzt PlanB. <code>einzigartige Referenzen</code> und hatte in der Vergangenheit bereits unzählige <code>Projekterfolge</code>.</ListItem>
               </UnorderedList>
             </Flex>
           </Box>
         </Box>
       </Box>
+
+      <About />
     </Layout>
   );
 }
