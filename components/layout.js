@@ -30,7 +30,7 @@ export default function Layout({ children, title }) {
           async
           defer
           data-domain="www.planb.net"
-          src="/js/plausible.js"
+          src="/js/p.js"
         />
 
     </Box>

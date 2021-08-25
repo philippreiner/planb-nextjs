@@ -2,7 +2,7 @@ module.exports = {
     async rewrites() {
         return [
             {
-                source: '/js/plausible.js',
+                source: '/js/p.js',
                 destination: 'https://plausible.io/js/plausible.js'
             },
             {
