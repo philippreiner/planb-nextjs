@@ -25,7 +25,7 @@
 
 /* Some Stuff that Chakra does not well */
 body {
-  font-size:var(--base-font-size);
+  /* font-size:var(--base-font-size); */
 }
 
 /* Changes to the code element to be able for using it as highlight */
