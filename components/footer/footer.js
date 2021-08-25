@@ -35,10 +35,11 @@ export default function Posthead({ title, published }) {
           </Box>
           <Spacer />
           <Stack direction={["column", "row"]} spacing={[2, 8]}>
+{/* 
             <Tooltip label={colorMode === "light" ? "Licht aus" : "Licht an"}>
               <IconButton aria-label="Farbmodus" icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />} variant="ghost" onClick={toggleColorMode} />
-            </Tooltip>
-
+            </Tooltip> 
+*/}
             <NextLink href="/datenschutz" passHref>
               <Button variant="ghost" >Datenschutz</Button>
             </NextLink>
