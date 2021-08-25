@@ -31,13 +31,13 @@ export default function Slider({sliderItems, backgroundColor, label}) {
           {/* Slider Header Desktop */}
           <Flex display={["none", "none", "flex", "flex"]} maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>
             {sliderItems.map((item, i) => (
-              <Text onClick={() => clickItem(item)} textAlign="left" maxW="100%" w="100%" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
+              <Text onClick={() => clickItem(item)} textAlign="left" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
             ))}
           </Flex>
 
           {/* Slider Header Mobile */}
-          <Flex pos="relative" display={["flex", "flex", "none", "none"]} maxW="full" w="full" py={[4, null]} flexDir={["column", "row"]}>
-            <Text textAlign="left" maxW="100%" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight="bold" pb="8">{sliderItems[index].title}</Text>
+          <Flex pos="relative" display={["flex", "flex", "none", "none"]} maxW="full" w="full" py={[8, 12]} flexDir={["column", "row"]}>
+            <Text textAlign="left" maxW="60%" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight="bold">{sliderItems[index].title}</Text>
             <Flex pos="absolute" bottom="0px" right="0px">
               {sliderItems.map((item , i) => (
                 <Box pos="relative" p="4px">
