@@ -33,8 +33,9 @@ export default function Home() {
         </p>
 
         <p>
-          Datenschutzbeauftragte: Anja Schmid <br />
-          Tel.: +49 (0) 7361 - 556 21 0
+          Datenschutzbeauftragter: HANAK-Datenschutz <br />
+          info@hanak-datenschutz.de <br />
+          Tel.: +49 (0) 7161 - 354 026 2
         </p>
 
       </Basicpage>
