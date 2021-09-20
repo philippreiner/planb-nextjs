@@ -71,10 +71,10 @@ export default function Home() {
                         </Text>
                         <Box pb="200">
                             <Box py="4">
-                                <Arrowlink label="Digitale Produktfabrik" url="" />
+                                <Arrowlink label="Digitale Produktfabrik" url="dpf" />
                             </Box>
                             <Box>
-                                <Arrowlink label="Modern Workplace" url="" />
+                                <Arrowlink label="Modern Workplace" url="modern-work" />
                             </Box>
                         </Box>
                     </Box>
