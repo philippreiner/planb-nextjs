@@ -155,7 +155,7 @@ export default function Home() {
                             <Box width="100%" mt={[4, 8, 8]}>
                                 <Flex>
                                     <NextImage src="/assets/icons/mail-icon.png" height="21px" width="30px" />
-                                    <Text width="80%" ml="12px">info@plan-b-gmbh.com</Text>
+                                    <Text width="80%" ml="12px" as="a" href="mailto:info@plan-b-gmbh.com">info@plan-b-gmbh.com</Text>
                                 </Flex>
                             </Box>
                         </Flex>
