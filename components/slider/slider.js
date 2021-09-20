@@ -10,7 +10,7 @@ import {
 import NextImage from 'next/image';
 import React, { useState } from "react";
 
-export default function Slider({sliderItems, backgroundColor, label}) {
+export default function Slider({sliderItems, backgroundColor, label, layout}) {
 
 
   const [index, setIndex] = useState(0);
@@ -50,11 +50,11 @@ export default function Slider({sliderItems, backgroundColor, label}) {
 
         <Box maxW="100%" p={[4, 12, 24]}>
           <Flex w="100%" flexDir={["column", "column", "row"]}>
-            <Box w={["100%"]} p={[4, 8, 12]}>
+            <Box w={["100%", "100%", "50%"]} p={[4, 8, 12]}>
               <NextImage src={sliderItems[index].image} layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
             </Box>
 
-            <Box p={[4, 12, 24]}>
+            <Box w={["100%", "100%", "50%"]} p={[4, 12, 24]}>
               <Text fontSize={[20, 24]} pb={[4, 8, 12]} fontWeight="bold">{sliderItems[index].headline}</Text>
               <Text pb={[4, 8, 12]}>{sliderItems[index].text}</Text>
               <Arrowlink label="Mehr Informationen" url={sliderItems[index].link} />
