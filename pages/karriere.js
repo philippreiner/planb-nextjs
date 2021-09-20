@@ -90,13 +90,11 @@ export default function Home() {
                         <Flex py="24px">
                             <Box w="50%">
                                 <Text align="center" w="90%" fontWeight="bold" fontSize={["14px", "16px", "18px"]}>Florian Schmid</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder im Bereich</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>!TBD!</Text>
+                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder</Text>
                             </Box>
                             <Box w="50%">
                                 <Text align="center" w="90%" fontWeight="bold" fontSize={["14px", "16px", "18px"]}>Heiko Huber</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder im Bereich</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>!TBD!</Text>
+                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder</Text>
                             </Box>
                         </Flex>
                     </Box>
