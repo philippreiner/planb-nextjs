@@ -20,7 +20,7 @@ export default function About({children, background}) {
           <Box pt={[4,8,2]} pb={[2]}>
               <Countline number="130" label="Kluge Köpfe"/>
               <Countline number="2007" label="gegründet"/>
-              <Countline number="4" label="Standorte"/>
+              <Countline number="3" label="Standorte"/>
           </Box>
         </Main>
       </Box>

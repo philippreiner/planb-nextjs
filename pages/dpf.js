@@ -69,7 +69,7 @@ export default function Home() {
 
       <Box background="url(images/dpf_ui_ux.png)" backgroundSize="cover">
         <Box pt={[24, 12, 24]} px={[4, 12, 24]} pb={[4, 12, 24]} pos="relative" maxW="full">
-          <SegmentHeading title="Bereiche aus der Ditigal Product Factory" />
+          <SegmentHeading title="Bereiche aus der Digital Product Factory" />
           <Heading as="h2" pb="4" fontWeight="normal" fontSize={["24px", "36px", "54px"]} textTransform="uppercase">
 
           

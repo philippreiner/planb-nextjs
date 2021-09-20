@@ -31,7 +31,7 @@ export default function Solutions({children, background}) {
                     <Text pb={[4,8]} color="gray.100">
                       Unser komplette Lösung für erfolgreiche Produkte, neuste Technologien und digitale Geschäftsmodelle.
                     </Text>
-                    <Arrowlink url="/dpf" label="Zu unseren digitalen Lösungen"/>
+                    <Arrowlink url="/dpf" label="Zu unseren digitalen Lösungen" color="#FF5100"/>
                   </Box>
                 </Flex>
               </Box>
@@ -54,7 +54,7 @@ export default function Solutions({children, background}) {
                     </Heading>
                     <Text pb={[4,8]} color="gray.100">
                     Erfahrene ExpertInnen für die Transformation der Zusammenarbeit, Microsoft und Modern IT.                    </Text>
-                    <Arrowlink url="/modern-work" label="Serviceleistungen entdecken"/>
+                    <Arrowlink url="/modern-work" label="Serviceleistungen entdecken" color="#0097CE"/>
                   </Box>
                 </Flex>
               </Box>

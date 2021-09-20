@@ -37,7 +37,7 @@ export default function Home() {
                                 textTransform="uppercase"
                                 color="white"
                             >
-                                Agiles arbeiten &amp; besonderheiten der Plan.B
+                                Agiles arbeiten &amp; besonderheiten der PlanB.
                             </Heading>
                             <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
                             <Text
@@ -71,10 +71,10 @@ export default function Home() {
                         </Text>
                         <Box pb="200">
                             <Box py="4">
-                                <Arrowlink label="Digitale Produktfabrik" url="" />
+                                <Arrowlink label="Digitale Produktfabrik" url="dpf" />
                             </Box>
                             <Box>
-                                <Arrowlink label="Modern Workplace" url="" />
+                                <Arrowlink label="Modern Workplace" url="modern-work" />
                             </Box>
                         </Box>
                     </Box>
@@ -153,7 +153,7 @@ export default function Home() {
                             wie Menschen und Unternehmen handeln, kommunizieren und zusammenarbeiten verändert.
                             Unsere Mission ist es Kunden zu begeistern,
                             inspirieren und Menschen noch näher an ihre Ziele zu bringen.
-                            Dabei bieten wir eine Vielzahl an Lösungen für geschäftlichen Herausforderungen und digitalen Innovationen.
+                            Dabei bieten wir eine Vielzahl an Lösungen für geschäftliche Herausforderungen und digitale Innovationen.
                         </Text>
                     </Box>
                 </Box>

@@ -90,13 +90,11 @@ export default function Home() {
                         <Flex py="24px">
                             <Box w="50%">
                                 <Text align="center" w="90%" fontWeight="bold" fontSize={["14px", "16px", "18px"]}>Florian Schmid</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder im Bereich</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>!TBD!</Text>
+                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder</Text>
                             </Box>
                             <Box w="50%">
                                 <Text align="center" w="90%" fontWeight="bold" fontSize={["14px", "16px", "18px"]}>Heiko Huber</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder im Bereich</Text>
-                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>!TBD!</Text>
+                                <Text align="center" w="90%" fontSize={["14px", "16px", "18px"]}>Ausbilder</Text>
                             </Box>
                         </Flex>
                     </Box>
@@ -157,7 +155,7 @@ export default function Home() {
                             <Box width="100%" mt={[4, 8, 8]}>
                                 <Flex>
                                     <NextImage src="/assets/icons/mail-icon.png" height="21px" width="30px" />
-                                    <Text width="80%" ml="12px">info@plan-b-gmbh.com</Text>
+                                    <Text width="80%" ml="12px" as="a" href="mailto:info@plan-b-gmbh.com">info@plan-b-gmbh.com</Text>
                                 </Flex>
                             </Box>
                         </Flex>
@@ -166,16 +164,24 @@ export default function Home() {
                     <Box w="33%">
                         <Flex mt="36px" px="48px" alignItems="center" align="center" alignContent="center">
                             <Box w="25%">
-                                <NextImage src="/assets/icons/facebook-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.facebook.com/PlanBGmbH">
+                                    <NextImage src="/assets/icons/facebook-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/instagram-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.instagram.com/planb.gmbh/">
+                                    <NextImage src="/assets/icons/instagram-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/twitter-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://twitter.com/planbgmbh">
+                                    <NextImage src="/assets/icons/twitter-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/linkedin-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/">
+                                    <NextImage src="/assets/icons/linkedin-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                         </Flex>
                     </Box>
