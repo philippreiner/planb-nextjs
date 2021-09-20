@@ -37,7 +37,7 @@ export default function Home() {
                                 textTransform="uppercase"
                                 color="white"
                             >
-                                Agiles arbeiten &amp; besonderheiten der Plan.B
+                                Agiles arbeiten &amp; besonderheiten der PlanB.
                             </Heading>
                             <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
                             <Text
