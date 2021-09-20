@@ -34,20 +34,20 @@ export default function Posthead({ title, published }) {
                             </NextLink>
                             <Text display={["none", "inline"]} width="300px">© 2021 PlanB.GmbH</Text>
                             <Box display={["inline-flex", "none"]}>
-                                <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/"><Image src="/assets/icons/linkedin-icon-296px.png" width="16px" /></a>
-                                <a target="_blank" href="https://twitter.com/planbgmbh"><Image src="/assets/icons/twitter-icon-296px.png" width="16px" ml="12px" /></a>
-                                <a target="_blank" href="https://www.instagram.com/planb.gmbh/"><Image src="/assets/icons/instagram-icon-296px.png" width="16px" ml="12px" /></a>
-                                <a target="_blank" href="https://www.facebook.com/PlanBGmbH"><Image src="/assets/icons/facebook-icon-296px.png" width="16px" ml="12px" /></a>
+                                <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/"><Image src="/assets/icons/linkedin-icon-296px.png" width="16px" ml="16px"/></a>
+                                <a target="_blank" href="https://twitter.com/planbgmbh"><Image src="/assets/icons/twitter-icon-296px.png" width="16px" ml="16px" /></a>
+                                <a target="_blank" href="https://www.instagram.com/planb.gmbh/"><Image src="/assets/icons/instagram-icon-296px.png" width="16px" ml="16px" /></a>
+                                <a target="_blank" href="https://www.facebook.com/PlanBGmbH"><Image src="/assets/icons/facebook-icon-296px.png" width="16px" ml="16px"/></a>
                             </Box>
                         </Box>
 
                         <Spacer />
 
                         <Box display={["none", "contents"]}>
-                            <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/"><Image src="/assets/icons/linkedin-icon-296px.png" width="16px" /></a>
-                            <a target="_blank" href="https://twitter.com/planbgmbh"><Image src="/assets/icons/twitter-icon-296px.png" width="16px" ml="12px" /></a>
-                            <a target="_blank" href="https://www.instagram.com/planb.gmbh/"><Image src="/assets/icons/instagram-icon-296px.png" width="16px" ml="12px" /></a>
-                            <a target="_blank" href="https://www.facebook.com/PlanBGmbH"><Image src="/assets/icons/facebook-icon-296px.png" width="16px" ml="12px" /></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/"><Image src="/assets/icons/linkedin-icon-296px.png" width="16px" ml="16px" /></a>
+                            <a target="_blank" href="https://twitter.com/planbgmbh"><Image src="/assets/icons/twitter-icon-296px.png" width="16px" ml="16px" /></a>
+                            <a target="_blank" href="https://www.instagram.com/planb.gmbh/"><Image src="/assets/icons/instagram-icon-296px.png" width="16px" ml="16px" /></a>
+                            <a target="_blank" href="https://www.facebook.com/PlanBGmbH"><Image src="/assets/icons/facebook-icon-296px.png" width="16px" ml="16px" /></a>
                         </Box>
 
                         <NextLink href="/datenschutz" passHref>
