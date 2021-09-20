@@ -153,7 +153,7 @@ export default function Home() {
                             wie Menschen und Unternehmen handeln, kommunizieren und zusammenarbeiten verändert.
                             Unsere Mission ist es Kunden zu begeistern,
                             inspirieren und Menschen noch näher an ihre Ziele zu bringen.
-                            Dabei bieten wir eine Vielzahl an Lösungen für geschäftlichen Herausforderungen und digitalen Innovationen.
+                            Dabei bieten wir eine Vielzahl an Lösungen für geschäftliche Herausforderungen und digitale Innovationen.
                         </Text>
                     </Box>
                 </Box>
