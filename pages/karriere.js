@@ -166,16 +166,24 @@ export default function Home() {
                     <Box w="33%">
                         <Flex mt="36px" px="48px" alignItems="center" align="center" alignContent="center">
                             <Box w="25%">
-                                <NextImage src="/assets/icons/facebook-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.facebook.com/PlanBGmbH">
+                                    <NextImage src="/assets/icons/facebook-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/instagram-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.instagram.com/planb.gmbh/">
+                                    <NextImage src="/assets/icons/instagram-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/twitter-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://twitter.com/planbgmbh">
+                                    <NextImage src="/assets/icons/twitter-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                             <Box w="25%">
-                                <NextImage src="/assets/icons/linkedin-icon.png" width="30px" height="30px" />
+                                <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/">
+                                    <NextImage src="/assets/icons/linkedin-icon.png" width="30px" height="30px" />
+                                </a>
                             </Box>
                         </Flex>
                     </Box>
