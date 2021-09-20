@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <Layout>
       <Header />
-      <Basicpage title="TODO:Impressum & Datenschutz">
+      <Basicpage title="Impressum & Datenschutz">
         <p>Anbieter im Sinne des §5 TMG:​</p>
         <p>
           <strong>PlanB. GmbH</strong> <br />
