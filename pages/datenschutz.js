@@ -137,13 +137,13 @@ export default function Home() {
               </AccordionButton>
             </div>
             <AccordionPanel pb={4}>
-              <Link href="#todopdf">
+              <Link href="/downloads/privacy/kunden.pdf">
                 Für Kunden
               </Link><br/>
-              <Link href="#todopdf">
+              <Link href="/downloads/privacy/lieferanten.pdf">
                 Für Lieferanten
               </Link><br/>
-              <Link href="#todopdf">
+              <Link href="/downloads/privacy/bewerber.pdf">
                 Für BewerberInnen
               </Link>
             </AccordionPanel>

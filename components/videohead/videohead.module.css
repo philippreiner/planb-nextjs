@@ -3,7 +3,7 @@
     background-size:cover;
     background-repeat:no-repeat;
     position: relative;
-    min-height: 800px;
+    /* min-height: 800px; */
 }
 .overlay {
     position: absolute;
