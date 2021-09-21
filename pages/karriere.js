@@ -43,7 +43,7 @@ import About from "@components/about/about";
 export default function Home() {
     return (
         <Layout >
-            <Hero background="url(images/karriere-hero.png)">
+            <Hero background="url(images/karriere-hero.png)" arrowDisplay="none">
                 <Fade triggerOnce={true} delay={100}>
                     <Main maxW="full">
                         <Box pt={[12, 20, 32]} pb={[12, 20, 32]}>
@@ -65,7 +65,7 @@ export default function Home() {
                             >
                                 Wir suchen #MitGestalter mit Leidenschaft für digitale Produkte.
                             </Text>
-                            <Arrowlink label="Die Menschen hinter PlanB." url="/about" />
+                            {/* <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
                         </Box>
                     </Main>
                 </Fade>

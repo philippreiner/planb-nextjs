@@ -48,7 +48,7 @@ export default function Home() {
                                 Jeden Tag arbeiten wir an den digitalen Produkten, innovativen Geschäftsmodellen,
                                 skalierbaren Cloud-Architekturen und der Zufriedenheit von hunderttausenden Menschen bei Ihrer Arbeit.
                             </Text>
-                            <Arrowlink label="Die Menschen hinter PlanB." url="/about" />
+                            {/* <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
                         </Box>
                     </Main>
                 </Fade>
@@ -128,11 +128,11 @@ export default function Home() {
             {/* Microsoft Partnership */}
             <Box maxW="full" as="section" p={[4, 12, 24]} pos="relative">
                 <Flex flexDir={["column", "column", "row", "row"]}>
-                    <NextImage src="/images/microsoft/logo_2.svg" width="600px" height="auto" objectFit="cover" />
+                    <NextImage src="/images/microsoft/logo_2.svg" width="600px" height="auto" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/logo_3.svg" width="600px" height="auto" objectFit="cover" />
+                    <NextImage src="/images/microsoft/logo_3.svg" width="600px" height="auto" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/logo_1.svg" width="600px" height="auto" objectFit="cover" />
+                    <NextImage src="/images/microsoft/logo_1.svg" width="600px" height="auto" objectFit="contain" />
                 </Flex>
             </Box>
 

@@ -1,12 +1,25 @@
 // Show the info about our company
-import { Text, Stack, Box, Link, Heading, Container} from "@chakra-ui/react";
-import { Main } from "@components/blocks/blocks";
+import { Text, Stack, Box, Link, Heading, Container, Flex, Spacer} from "@chakra-ui/react";
+import { Main, } from "@components/blocks/blocks";
+import  NextImage from 'next/image';
 
 export default function About() {
 
+    function scrollUp() {
+        window.scroll(0, 0);
+    }
+
   return (
-    <Main>
-        <Box  pt={[4, 12]} pb={[4, 12]}>
+    <Main maxW="full">
+
+        <Flex>
+            <Spacer /> 
+            <Box transform="translateY(-50%)" borderRadius="50%" backgroundColor="red" width="58px" height="58px" lineHeight="58px" textAlign="center" cursor="pointer" onClick={() => scrollUp()}>
+                <NextImage src="/assets/icons/uparrow.png" layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
+            </Box>
+        </Flex>
+
+        <Box  pt={[4, 12]} pb={[4, 12]} px={[4, 8, 12]}>
        
         <Text mb={[2,4]} color="gray.500" fontSize="sm">Über PlanB.</Text>
         <Heading fontSize={["2xl","4xl"]} as="p" pb={[4,8]}>
