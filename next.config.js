@@ -17,12 +17,24 @@ module.exports = {
                 destination: `${baseUrl}/de-m365-modernmanagedservice`
             },
             {
+                source: '/en-m365-modernmanagedservice',
+                destination: `${baseUrl}/en-m365-modernmanagedservice`
+            },
+            {
                 source: '/de-azure-modernmanagedservice',
                 destination: `${baseUrl}/de-azure-modernmanagedservice`
             },
             {
+                source: '/en-azure-modernmanagedservice',
+                destination: `${baseUrl}/en-azure-modernmanagedservice`
+            },
+            {
                 source: '/de-useradoptionchangemanagement',
                 destination: `${baseUrl}/de-useradoptionchangemanagement`
+            },
+            {
+                source: '/en-useradoptionchangemanagement',
+                destination: `${baseUrl}/en-useradoptionchangemanagement`
             },
             {
                 source: '/cloud-native-apps',
