@@ -45,8 +45,3 @@ The `pages/` directory is mapped to `/`. Files in these directories are treated 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Credits
-
-Aaron Czichon
-Oliver Mucha
-Philipp Reiner

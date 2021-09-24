@@ -47,7 +47,7 @@ export default function Home() {
         <p>
           Um dieses Onlineangebot sicher und effizient bereitstellen zu können,
           nehmen wir die Leistungen von einem oder mehreren <strong>Webhosting-Anbietern</strong>
-           in Anspruch, von deren Servern (bzw. von ihnen verwalteten Servern)
+            in Anspruch, von deren Servern (bzw. von ihnen verwalteten Servern)
           das Onlineangebot abgerufen werden kann. Zu diesen Zwecken können wir
           Infrastruktur- und Plattformdienstleistungen, Rechenkapazität,
           Speicherplatz und Datenbankdienste sowie Sicherheitsleistungen und
@@ -66,18 +66,6 @@ export default function Home() {
           Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL
           (die zuvor besuchte Seite) und im Regelfall IP-Adressen und der
           anfragende Provider gehören.
-        </p>
-        <p>
-          Zur <strong>Zählung der Besuchszahlen - und Zugriffen</strong> verwenden wir
-          "Plausible", einen Online-Dienst der keine personen-bezogenen Daten
-          speichert oder verarbeitet. Die Analyse Ihres Surf-Verhaltens erfolgt anonym; das Surf-Verhalten kann nicht zu Ihnen zurückverfolgt werden.    Es werden
-          technisch notwendige Informationen wie IP-Adresse, Browsertyp,
-          Betriebssystem, angeforderte URL sowie die zuvor besuchte Seite
-          übermittelt und temporär gespeichert. Es ist dabei nicht
-          möglich einen Besucher zu identfizieren. Die gesammelten Daten werden anonymisiert und ohne
-          Personen-bezogenen Daten bei Plausible Insights OU und
-          deren beauftragen Webhosting-Anbieter (Digital Ocean) innerhalb der EU
-          bzw. Deutschland gespeichert.
         </p>
         <p>
           Bei der <strong>Kontaktaufnahme</strong> mit uns (z.B. per Kontaktformular, E-Mail,
@@ -123,7 +111,7 @@ export default function Home() {
         <p>Dieses Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte keinen Einfluss besteht. Deshalb kann für diese fremden Inhalte auch keine Gewähr übernommen werden. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden derartige Links umgehend entfernt.</p>
         <p>Der Nutzung von im Rahmen der Impressumpflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen.</p>
             <br/> <br/>
-            <em>Letzte Änderung: 01/2020</em>
+            <em>Letzte Änderung: 09/2021</em>
             </AccordionPanel>
           </AccordionItem>
 
