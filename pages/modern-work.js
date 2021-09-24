@@ -21,7 +21,6 @@ export default function Home() {
     return (
         <Layout>
             <Hero background="url(images/modern_work_hero.png)" backgroundSize={["contain", "cover"]} backgroundPosition={["top", null]} backgroundColor="#0097CE">
-                <Fade triggerOnce={true} delay={100}>
                     <Main maxW="full">
                         <Box mt={[10, null, null]} pt={[12, 20, 32]} pb={[12, 20, 32]}>
                             <Heading
@@ -45,7 +44,6 @@ export default function Home() {
                             <Arrowlink label="Zu den Projekten" url="#products" />
                         </Box>
                     </Main>
-                </Fade>
             </Hero>
 
             {/* Moder Work & Managed Services */}

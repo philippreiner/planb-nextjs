@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <Layout>
       <Hero background="url(images/dpf_hero.png)">
-        <Fade triggerOnce={true} delay={100}>
+        
           <Main maxW="full">
             <Box pt={[12, 20, 32]} pb={[null, 20, 32]}>
               <Heading
@@ -64,7 +64,7 @@ export default function Home() {
               <Arrowlink label="Zu den Projekten" url="#products" />
             </Box>
           </Main>
-        </Fade>
+    
       </Hero>
 
       <Box background="url(images/dpf_ui_ux.png)" backgroundSize="cover">
