@@ -44,8 +44,8 @@ export default function Home() {
     return (
         <Layout >
             <Hero background="url(images/karriere-hero.png)" arrowDisplay="none">
-                <Fade triggerOnce={true} delay={100}>
-                    <Main maxW="full" width="100%">
+
+                    <Main maxW="full">
                         <Box width="100%" pt={[12, 20, 32]} pb={[12, 20, 32]}>
                             <Heading
                                 wordBreak="keep-all"
@@ -71,7 +71,7 @@ export default function Home() {
                             {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
                         </Box>
                     </Main>
-                </Fade>
+
             </Hero>
 
 
