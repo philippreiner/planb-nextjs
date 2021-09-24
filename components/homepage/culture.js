@@ -36,7 +36,6 @@ export default function Culture({children}) {
                 </Text>
                 <VStack align="flex-start" spacing={[2,4]}>
                 <Arrowlink label="Werde Teil unseres Teams" url="/karriere"/>
-                <Arrowlink label="Die Menschen hinter PlanB" url="/404"/>
                 </VStack>
 
             </GridItem>
