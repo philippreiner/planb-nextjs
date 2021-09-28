@@ -54,12 +54,14 @@ export default function Home() {
             <Box pos="relative" as="section" p={[4, 12, 24]} bgImage={["url(images/modern_work_mobile.png)", "url(images/modern_work_and_managed_services.png)"]} backgroundSize="cover">
                 <Box pos="relative" maxW="full" pb="100">
                     <SegmentHeading title="Modern Work &amp; Managed Services" />
-                    <Wrap width={["75vw", "90vw"]} mb={["20px", "50px"]}>
+                    <Wrap width={["85vw", "90vw", "75vw"]} pb="10">
                         {arKeywords.map(item => (
-                        <Box pr={["5px", "40px"]}>
-                            <Text fontSize={["17px", "50px", "50px", "80px"]} fontWeight="extrabold" mb={["0 px", "-30px"]}>{[item]}</Text>
-                        </Box>))}
-                    </Wrap>                    
+                        <Box pr={["10px", "30px"]}>
+                        <Text fontSize={["17pt","30pt","44pt"]} fontWeight="extrabold">{[item]}</Text>
+                        </Box>
+
+                        ))}
+                    </Wrap>
                     <Flex maxW={["full", "full", "full", "80%"]} flexDir={["column", "column", "column", "row"]}>
                         <Text pr={[4, 12, 24]} maxW={["100%", "100%", "full", "50%"]} width={["full"]}>
                             Die moderne IT-Landschaft wird ständig vielfältiger und Budgets kleiner.

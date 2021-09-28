@@ -70,19 +70,14 @@ export default function Home() {
       <Box background="url(images/dpf_ui_ux.png)" backgroundSize="cover">
         <Box pt={[24, 12, 24]} px={[4, 12, 24]} pb={[4, 12, 24]} pos="relative" maxW="full">
           <SegmentHeading title="Bereiche aus der Ditigal Product Factory" />
-          <Heading as="h2" pb="4" fontWeight="normal" fontSize={["24px", "36px", "54px"]} textTransform="uppercase">
-
-          
-          <Wrap width={["85vw", "75vw"]}>
-            {arKeywords.map(item => (
-
-              <Box pr={["10px", "30px"]}>
-               <Text fontSize={["17px","44px"]} fontWeight="extrabold">{[item]}</Text>
-              </Box>
-
-            ))}
-          </Wrap>
-        
+          <Heading as="h2" pb="10" fontWeight="normal" fontSize={["24px", "36px", "54px"]} textTransform="uppercase">
+            <Wrap width={["85vw", "90vw", "75vw"]}>
+              {arKeywords.map(item => (
+                <Box pr={["10px", "30px"]}>
+                <Text fontSize={["17pt","30pt","44pt"]} fontWeight="extrabold">{[item]}</Text>
+                </Box>
+              ))}
+            </Wrap>
           </Heading>
           <Stack direction={["column", "row"]} >
            
