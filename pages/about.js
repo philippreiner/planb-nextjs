@@ -33,7 +33,7 @@ export default function Home() {
                                 maxW="2xl"
                                 as="h1"
                                 pb={[2, 4]}
-                                fontSize={["24px", "36px", "54px", "72px"]}
+                                fontSize={["24px", "36px", "54px", "60px"]}
                                 textTransform="uppercase"
                                 color="white"
                             >
@@ -60,7 +60,7 @@ export default function Home() {
                     <Spacer />
                     <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%", "50%"]}>
                         <SegmentHeading title="Wer wir sind und was wir machen" />
-                        <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
+                        <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "60px"]} textTransform="uppercase">
                             <strong>Mehr als nur Software</strong>
                         </Heading>
                         <Text pb={[2, 4, 6]}>
@@ -86,7 +86,7 @@ export default function Home() {
                 <Box pb="200">
                     <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "65%"]}>
                         <SegmentHeading title="Ihr Partner für Digitalisierung" />
-                        <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "72px"]}>
+                        <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "60px"]}>
                             <strong>Wachsende Komplexität Reduzieren</strong>
                         </Heading>
                         <Text pb={[2, 4, 6]}>
@@ -108,12 +108,12 @@ export default function Home() {
                 {/* Unser Ansatz */}
                 <Box pos="relative">
                     <Box>
-                        <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "60%"]}>
+                        <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "100%", "100%", "60%"]}>
                             <SegmentHeading title="Unser Ansatz" />
-                            <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
+                            <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "60px"]} textTransform="uppercase">
                                 <strong>Agilität, Wissen &amp; Partnerschaften</strong>
                             </Heading>
-                            <Text pb={[2, 4, 6]}>
+                            <Text pb={[2, 4, 6]} maxW={[null, null, null, "60%", null, null]}>
                                 Wir sind agil. Das bedeutet für unsere Kunden großartige Ergebnisse in kleinen Schritten. Jeden Tag arbeiten wir mit agilen Methoden und Denkweisen und validieren konstant Ergebnisse. Veränderungen bedeuten Wettbewerbsvorteile und daher bleiben wir flexibel. Das reduziert das Risiko und bringt unseren Kunden gleichzeitig konstant höheren Mehrwert.
                                 Warum empfehlen Kunden PlanB. gerne weiter? Mit unserem agilen Denkmuster reduziert sich die Time-to-Market von Monaten auf wenige Wochen. Projekte bieten konstanten Fortschritt anstatt ungeplanter Kosten – inkl. Transparenz durch gemeinsame Aufgabenplanung. Bisher versteckte Möglichkeiten der IT werden neu genutzt und verbessert. PlanB ermöglicht effizienteres Arbeiten und neue Geschäftsmodelle.
                                 Das Fachwissen der über 130 Köpfe bei PlanB hat sich aus jahrelanger Erfahrung entwickelt und wird auch morgen durch Trainings und Zertifizierungen stärker. Wir haben für jede Aufgabe der Digitalisierung die richtige Person. Wir sind ständig auf der Suche. Und unsere eigene Ausbildung und Netzwerke sorgen für konstant neue Mindsets im Team.
@@ -127,12 +127,12 @@ export default function Home() {
 
             {/* Microsoft Partnership */}
             <Box maxW="full" as="section" p={[4, 12, 24]} pos="relative">
-                <Flex flexDir={["column", "column", "row", "row"]}>
-                    <NextImage src="/images/microsoft/logo_2.svg" width="600px" height="auto" objectFit="contain" />
+                <Flex flexDir={["column", "column", "column", "row", "row"]}>
+                    <NextImage src="/images/microsoft/silver.png" width="600px" height="auto" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/logo_3.svg" width="600px" height="auto" objectFit="contain" />
+                    <NextImage src="/images/microsoft/gold_a.png" width="600px" height="auto" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/logo_1.svg" width="600px" height="auto" objectFit="contain" />
+                    <NextImage src="/images/microsoft/gold_d.png" width="600px" height="auto" objectFit="contain" />
                 </Flex>
             </Box>
 
@@ -141,7 +141,7 @@ export default function Home() {
                 <Box>
                     <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "70%"]}>
                         <SegmentHeading title="Unsere Mission" />
-                        <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "72px"]} textTransform="uppercase">
+                        <Heading as="h2" pb="4" fontWeight="normal" fontSize={["36px", "44px", null, "60px"]} textTransform="uppercase">
                             <strong>
                                 Aus Gestern machen wir Zukunft
                                 und gehen einen Schritt weiter
@@ -162,22 +162,22 @@ export default function Home() {
             {/* Von Glücklichen Kunden Empfohlen */}
             <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/cube_lines.png)" bgRepeat="no-repeat" bgSize="cover">
                 <Box>
-                    <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, "75%"]}>
+                    <Box p={[4, 12, 24]} pos="relative" maxW={[null, null, null, "75%"]}>
                         <SegmentHeading title="Von glücklichen Kunden empfohlen" />
-                        <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "72px"]}>
+                        <Heading as="h2" pb="4" fontWeight="normal" textTransform="uppercase" fontSize={["36px", "44px", null, "60px"]}>
                             <strong>
                                 Warum Kunden PlanB. empfehlen
                             </strong>
                         </Heading>
-                        <Flex flexDir={["column", "column", "row", "row"]}>
-                            <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "75%"]}>
+                        <Flex flexDir={["column", "column", "column", "row", "row"]}>
+                            <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "100%", "100%", "100%", "75%"]}>
                                 <ListItem mb="4">Mit unserem <code>agilen Denkmuster</code> reduziert sich die <code>Time-to-Market</code> von Monaten auf wenige Wochen.</ListItem>
                                 <ListItem mb="4">Projekte bieten <code>konstanten Fortschritt</code> anstatt ungeplanter Kosten - inkl. <code>Transparenz</code> durch gemeinsame Aufgabenplanung.</ListItem>
                                 <ListItem mb="4">Versteckte <code>Möglichkeiten der IT werden neu genutzt</code> und verbessert.</ListItem>
                                 <ListItem mb="4">PlanB. ermöglicht <code>effizienteres Arbeiten</code> und <code>neue Geschäftsmodelle</code></ListItem>
                                 <ListItem mb="4">Zugang zu <code>marktführenden Expert*Innen</code> und <code>neuester Technologie.</code></ListItem>
                             </UnorderedList>
-                            <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "75%"]}>
+                            <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "100%", "100%", "100%", "75%"]}>
                                 <ListItem mb="4">Umfangreiches <code>Fachwissen</code> wird durch langjährige Erfahrung, Training und Zertifizierung ausgebaut.</ListItem>
                                 <ListItem mb="4"><code>Ausbildung</code> und eine vielseitiges und weitreichendes <code>Netzwerk and Expert*Innen</code> sorgen konstant für neue Mindsets im Team.</ListItem>
                                 <ListItem mb="4">Als <code>Microsoft Partner</code> ermöglichen wir schon heute Zugang zu den Technologien von Morgen.</ListItem>

@@ -7,13 +7,13 @@ import Hero from '@components/hero/hero';
 import { Fade } from "react-awesome-reveal";
 import Slider from '@components/slider/slider';
 
-import { Box, Heading, Text, Flex,} from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, } from "@chakra-ui/react";
 import About from "@components/about/about";
 
 export default function Home() {
 
     const sliderItems = [
-        { id: 0, title: "Digitale Transformation des Arbeitsplatzes", headline: 'Nehmen Sie Ihre Mitarbeiter mit auf die Reise zu einem modernen Arbeitsplatzerlebnis', image: "/images/slider/modern-work/microsoft365.png", text: "Die digitale Transformation verändert grundlegend die Art und Weise, wie Unternehmen Technologie nutzen, um Mitarbeiter zu befähigen, Abläufe zu optimieren, Produkte zu transformieren und Kunden zu begeistern - und gleichzeitig müssen sie Compliance- und regulatorische Anforderungen erfüllen. Um wettbewerbsfähig zu sein, musste sich unser Kunde die Frage stellen, wie sie die Chancen der Digitalisierung nutzen können und wie ihr zukünftiger Arbeitsplatz aussehen sollte, um ihre digitale Transformation kontinuierlich voranzutreiben.", link: "/about" },
+        { id: 0, title: "Digitale Transformation des Arbeitsplatzes", headline: 'Nehmen Sie Ihre Mitarbeiter mit auf die Reise zu einem modernen Arbeitsplatzerlebnis', image: "/images/slider/modern-work/transform_work.png", text: "Die digitale Transformation verändert grundlegend die Art und Weise, wie Unternehmen Technologie nutzen, um Mitarbeiter zu befähigen, Abläufe zu optimieren, Produkte zu transformieren und Kunden zu begeistern - und gleichzeitig müssen sie Compliance- und regulatorische Anforderungen erfüllen. Um wettbewerbsfähig zu sein, musste sich unser Kunde die Frage stellen, wie sie die Chancen der Digitalisierung nutzen können und wie ihr zukünftiger Arbeitsplatz aussehen sollte, um ihre digitale Transformation kontinuierlich voranzutreiben.", link: "/about" },
         { id: 1, title: "Quick Roll-Out von Microsoft Teams", headline: 'Quick Roll-Out von Microsoft Teams', image: "/images/slider/modern-work/rollout.png", text: "Durch COVID-19 wurde der Anteil der Home-Office Arbeiter stark erhöht. Die bestehende Video-, Voice- und Chat-Lösungen war diesen Anforderungen nicht gewachsen sowie nicht für die breite Anwenderbasis von mehreren tausend Anwendern verfügbar. Mit dem Roll-Out von Microsoft Teams ermöglichen wir es dem Kunden sein Tagesgeschäft in einer modernen, sicheren Umgebung aufrecht zu erhalten Nahtlose Kommunikationsmöglichkeit aus dem Homeoffice heraus wurde für jeden Mitarbeiter kurzfristig ermöglicht. Gemeinsame Arbeit in strukturierter Form, um den Betrieb sowie Projekte aufrecht zu halten. ", link: "/about" },
         { id: 2, title: "Microsoft 365 Kooperationen", headline: 'Zusammenarbeit mit M365 über lange Distanzen in der Pandemie', image: "/images/slider/modern-work/microsoft365.png", text: "Mit dem Roll-out für Modern Workplace auf Basis von M365 von Microsoft bieten wir unseren Kunden einen weiteren Schritt auf dem Weg zum digitalen Unternehmen.Wo früher noch die Excel-Tabelle über den Server im Keller per Mail versendet wurde, gibt es nun kollaborative, neue Möglichkeiten mit Microsoft 365 für die gemeinsame Zusammenarbeit in der Cloud. Das reduziert dem Kunden Kosten, beschleunigt Alltagsaufgaben und schafft der IT Zeit für die Anforderungen aus den Fachabteilungen.", link: "/about" },
     ];
@@ -21,29 +21,29 @@ export default function Home() {
     return (
         <Layout>
             <Hero background="url(images/modern_work_hero.png)" backgroundSize={["contain", "cover"]} backgroundPosition={["top", null]} backgroundColor="#0097CE">
-                    <Main maxW="full">
-                        <Box mt={[10, null, null]} pt={[12, 20, 32]} pb={[12, 20, 32]}>
-                            <Heading
-                                maxW="full"
-                                as="h1"
-                                pb={[2, 4]}
-                                fontSize={["24px", "36px", "54px", "72px"]}
-                                textTransform="uppercase"
-                                color="white"
-                            >
-                                Modern work &amp; Consulting
-                            </Heading>
-                            <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
-                            <Text
-                                pb={[2, 4, 6]}
-                                maxW={[null, null, "full", "80%"]}
-                                color="white"
-                            >
-                                Der Arbeitsplatz von morgen ist digital, flexibel und vor allem sicher. Modern Work lässt Ihr Unternehmen effizienter und zuverlässig arbeiten.
-                            </Text>
-                            <Arrowlink label="Zu den Projekten" url="#products" />
-                        </Box>
-                    </Main>
+                <Main maxW="full">
+                    <Box mt={[10, null, null]} pt={[12, 20, 32]} pb={[12, 20, 32]}>
+                        <Heading
+                            maxW="full"
+                            as="h1"
+                            pb={[2, 4]}
+                            fontSize={["24px", "36px", "54px", "60px"]}
+                            textTransform="uppercase"
+                            color="white"
+                        >
+                            Modern work &amp; Consulting
+                        </Heading>
+                        <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
+                        <Text
+                            pb={[2, 4, 6]}
+                            maxW={[null, null, "full", "80%"]}
+                            color="white"
+                        >
+                            Der Arbeitsplatz von morgen ist digital, flexibel und vor allem sicher. Modern Work lässt Ihr Unternehmen effizienter und zuverlässig arbeiten.
+                        </Text>
+                        <Arrowlink label="Zu den Projekten" url="#products" />
+                    </Box>
+                </Main>
             </Hero>
 
             {/* Moder Work & Managed Services */}
