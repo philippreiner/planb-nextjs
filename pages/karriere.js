@@ -1,43 +1,18 @@
 import Layout from "@components/layout";
-import Header from "@components/header/header";
-import { Basicpage } from "@components/content/content";
-import { DevNote, SegmentHeading } from "@components/atoms/atoms";
-import { Wallpaper, Main } from "@components/blocks/blocks";
+import { SegmentHeading } from "@components/atoms/atoms";
+import { Main } from "@components/blocks/blocks";
 import NextImage from 'next/image';
 
 import Hero from '@components/hero/hero';
-import { Slide, Fade } from 'react-awesome-reveal'
 import { Arrowlink } from "@components/atoms/atoms";
 
 import {
     Heading,
     Text,
-    Center,
-    Link,
     Flex,
-    useColorModeValue,
-    Button,
-    DarkMode,
-    Spacer,
-    HStack,
-    List,
-    ListItem,
-    ListIcon,
-    OrderedList,
-    UnorderedList,
-    Box,
-    VStack,
-    Grid,
-    Textarea,
-    GridItem,
-    Input,
-    FormControl,
-    FormLabel,
-    FormErrorMessage,
-    FormHelperText
+    Box
 } from "@chakra-ui/react";
 
-import NextLink from "next/link";
 import About from "@components/about/about";
 
 export default function Home() {
@@ -65,9 +40,16 @@ export default function Home() {
                             >
                                 Wir suchen #MitGestalter mit Leidenschaft für digitale Produkte.
                             </Text> */}
-                        <Box pt="12px"><Arrowlink target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
-                        <Box pt="12px"><Arrowlink target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
-                        <Box pt="12px"><Arrowlink target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
+                        <Box display={["block", "block", "none", "none", "none"]}>
+                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
+                        </Box>
+                        <Box display={["none", "none", "block", "block", "block"]}>
+                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
+                        </Box>
                         {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
                     </Box>
                 </Main>

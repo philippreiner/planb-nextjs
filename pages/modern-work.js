@@ -7,7 +7,7 @@ import Hero from '@components/hero/hero';
 import { Fade } from "react-awesome-reveal";
 import Slider from '@components/slider/slider';
 
-import { Box, Heading, Text, Flex, } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex, Wrap } from "@chakra-ui/react";
 import About from "@components/about/about";
 
 export default function Home() {
@@ -17,6 +17,8 @@ export default function Home() {
         { id: 1, title: "Quick Roll-Out von Microsoft Teams", headline: 'Quick Roll-Out von Microsoft Teams', image: "/images/slider/modern-work/rollout.png", text: "Durch COVID-19 wurde der Anteil der Home-Office Arbeiter stark erhöht. Die bestehende Video-, Voice- und Chat-Lösungen war diesen Anforderungen nicht gewachsen sowie nicht für die breite Anwenderbasis von mehreren tausend Anwendern verfügbar. Mit dem Roll-Out von Microsoft Teams ermöglichen wir es dem Kunden sein Tagesgeschäft in einer modernen, sicheren Umgebung aufrecht zu erhalten Nahtlose Kommunikationsmöglichkeit aus dem Homeoffice heraus wurde für jeden Mitarbeiter kurzfristig ermöglicht. Gemeinsame Arbeit in strukturierter Form, um den Betrieb sowie Projekte aufrecht zu halten. ", link: "/about" },
         { id: 2, title: "Microsoft 365 Kooperationen", headline: 'Zusammenarbeit mit M365 über lange Distanzen in der Pandemie', image: "/images/slider/modern-work/microsoft365.png", text: "Mit dem Roll-out für Modern Workplace auf Basis von M365 von Microsoft bieten wir unseren Kunden einen weiteren Schritt auf dem Weg zum digitalen Unternehmen.Wo früher noch die Excel-Tabelle über den Server im Keller per Mail versendet wurde, gibt es nun kollaborative, neue Möglichkeiten mit Microsoft 365 für die gemeinsame Zusammenarbeit in der Cloud. Das reduziert dem Kunden Kosten, beschleunigt Alltagsaufgaben und schafft der IT Zeit für die Anforderungen aus den Fachabteilungen.", link: "/about" },
     ];
+
+    const arKeywords = ["Modern Workplace", "Power Platform", "Cloud", "Security", "Azure Arc", "Managed Services", "Microsoft 365"]
 
     return (
         <Layout>
@@ -50,7 +52,14 @@ export default function Home() {
             <Box pos="relative" as="section" p={[4, 12, 24]} bgImage={["url(images/modern_work_mobile.png)", "url(images/modern_work_and_managed_services.png)"]} backgroundSize="cover">
                 <Box pos="relative" maxW="full" pb="100">
                     <SegmentHeading title="Modern Work &amp; Managed Services" />
-                    <HeadlineCollection tags={["Modern Workplace", "Power Platform", "Cloud", "Security", "Azure Arc", "Managed Services", "Microsoft 365"]} />
+                    <Wrap width={["85vw", "90vw", "75vw"]} pb="10">
+                        {arKeywords.map(item => (
+                            <Box pr={["10px", "30px"]}>
+                                <Text fontSize={["17pt", "30pt", "44pt"]} fontWeight="extrabold">{[item]}</Text>
+                            </Box>
+
+                        ))}
+                    </Wrap>
                     <Flex maxW={["full", "full", "full", "80%"]} flexDir={["column", "column", "column", "row"]}>
                         <Text pr={[4, 12, 24]} maxW={["100%", "100%", "full", "50%"]} width={["full"]}>
                             Die moderne IT-Landschaft wird ständig vielfältiger und Budgets kleiner.

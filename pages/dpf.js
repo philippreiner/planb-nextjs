@@ -35,7 +35,7 @@ export default function Home() {
         { id: 3, title: "Digitales Fahrzeugmanagement ", headline: 'Auto öffne Dich – digitales Geschäftsmodell für einfaches, sicheres Fahrzeugmanagement.', image: "/images/slider/dpf/flinki.png", text: "In unserer Partnerschaft mit WITTE Digital haben wir ein System zur Marktreife gebracht, welches eine einfache und effiziente Möglichkeit bietet, beliebig viele Nutzer und Fahrzeuge zu verwalten. Der Zugriff und die Weitergabe von Fahrzeugen ist so ganz einfach über digitale Rechtevergabe möglich. Ob für Teams, Mitarbeiter oder Kunden – die Freigabe und Verwaltung erfolgt unkompliziert und zielgerichtet. Dabei reichen drei einfache Schritte, um mit digitalem Schlüsselmanagement zu starten: Box im Fahrzeug platzieren, App herunterladen, beliebig viele Fahrer und Fahrzeuge über das Portal verwalten und schön können die Fahrzeuge mit dem Smartphone sicher geöffnet und wieder verschlossen werden.", link: "/about" },
     ];
 
-    const arKeywords = ["UX+UI", "Data Science + AI", "DevOps", "Agile", "Software Engineering", "Testing", "Architecture", "Cloud Native Robotics", "Product Management", "Prototyping"]
+    const arKeywords = ["UX+UI", "Data Science + AI", "DevOps", "Agile", "Software Engineering", "Testing", "Architecture", "Cloud Native", "Robotics", "Product Management", "Prototyping"]
 
     return (
         <Layout>
