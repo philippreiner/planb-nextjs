@@ -18,13 +18,13 @@ import NextImage from "next/image";
 export async function getStaticProps() {
     const allMembers = await getAllCompanyMembers();
     return {
-      props: {
-        allMembers,
-      },
+        props: {
+            allMembers,
+        },
     };
-  }
+}
 
-export default function Home({allMembers}) {
+export default function Home({ allMembers }) {
 
     const getTimeAtCompany = (employee) => {
         const currentDate = new Date();
@@ -43,7 +43,7 @@ export default function Home({allMembers}) {
                                 w="120%"
                                 as="h1"
                                 pb={[2, 2]}
-                                fontSize={["24px", "36px", "54px", "72px"]}
+                                fontSize={["24px", "36px", "54px", "60px"]}
                                 textTransform="uppercase"
                                 color="white"
                             >
@@ -62,23 +62,23 @@ export default function Home({allMembers}) {
                             </Text>
 
                             <SimpleGrid pos="relative" columns={[1, 2, 3, 4, 5]} spacingY={["19px"]} spacingX={[null, "10%"]} w="85vw">
-                            
+
                                 {allMembers.map(employee => (
                                     <Box key={allMembers.indexOf(employee)} >
-                                        
+
                                         {/* Image */}
-                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w={["324px","219px"]} h={["324px","245px"]}></Box>
+                                        <Box bgImage={`url(${employee.image})`} bgSize="cover" bgPosition="top" w={["324px", "219px"]} h={["324px", "245px"]}></Box>
                                         {/* Name */}
-                                        <Box h="51px" w={["324px","219px"]}bgColor="#FF5100">
-                                            <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold" w={["324px","219px"]}>{employee.name.split(' ')[0]}</Text>
+                                        <Box h="51px" w={["324px", "219px"]} bgColor="#FF5100">
+                                            <Text px={[4]} lineHeight="51px" fontSize={["30px", "30px", "30px", "30px"]} fontWeight="bold" w={["324px", "219px"]}>{employee.name.split(' ')[0]}</Text>
                                         </Box>
                                         {/* Jahr(e) */}
                                         <Box>
-                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]} pl="15px" w={["324px","219px"]}>{getTimeAtCompany(employee)} bei PlanB.</Text>
+                                            <Text fontSize={["12px", "12px", "12px", "12px"]} py={[2, 4]} pl="15px" w={["324px", "219px"]}>{getTimeAtCompany(employee)} bei PlanB.</Text>
                                         </Box>
                                         {/* Quote */}
                                         <Box>
-                                            <Text fontSize={["24px","24px","24px","24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]}  pl="15px" w={["324px","219px"]}>"{employee.desc}"</Text>
+                                            <Text fontSize={["24px", "24px", "24px", "24px"]} fontWeight="100" fontStyle="italic" pb={[2, 4]} pl="15px" w={["324px", "219px"]}>"{employee.desc}"</Text>
                                         </Box>
                                     </Box>
                                 ))}
@@ -95,11 +95,11 @@ export default function Home({allMembers}) {
                 <Flex>
                     <Box p={[4, 12, 24]} pos="relative" maxW={["80%", "100%", "70%"]}>
                         <SegmentHeading title="Karriere" />
-                        <Heading as="h2" pb="4" fontWeight="bold" fontSize={["36px", "44px", null, "72px"]}>
+                        <Heading as="h2" pb="4" fontWeight="bold" fontSize={["36px", "44px", null, "60px"]}>
                             Wir haben noch Platz für dich!
                         </Heading>
                         <Heading
-                            fontSize={["36px", "44px", null, "72px"]}
+                            fontSize={["36px", "44px", null, "60px"]}
                             pb="4"
                             fontWeight="lighter"
                         >
@@ -113,7 +113,7 @@ export default function Home({allMembers}) {
                     </Box>
                 </Flex>
             </Box>
-            <About /> 
+            <About />
         </Layout>
     );
 }
