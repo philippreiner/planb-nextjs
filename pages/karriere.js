@@ -45,32 +45,32 @@ export default function Home() {
         <Layout >
             <Hero background="url(images/karriere-hero.png)" arrowDisplay="none">
 
-                    <Main maxW="full">
-                        <Box width="100%" pt={[12, 20, 32]} pb={[12, 20, 32]}>
-                            <Heading
-                                wordBreak="keep-all"
-                                overflowWrap="unset"
-                                maxW="100%"
-                                as="h1"
-                                pb={[2, 4]}
-                                fontSize={["24px", "36px", "54px", "72px"]}
-                                textTransform="uppercase"
-                                color="white"
-                            >Werde jetzt <br />teil des teams</Heading>
-                            <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
-                            {/* <Text
+                <Main maxW="full">
+                    <Box width="100%" pt={[12, 20, 32]} pb={[12, 20, 32]}>
+                        <Heading
+                            wordBreak="keep-all"
+                            overflowWrap="unset"
+                            maxW="100%"
+                            as="h1"
+                            pb={[2, 4]}
+                            fontSize={["24px", "36px", "54px", "60px"]}
+                            textTransform="uppercase"
+                            color="white"
+                        >Werde jetzt <br />teil des teams</Heading>
+                        <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
+                        {/* <Text
                                 pb={[2, 4, 6]}
                                 maxW={[null, null, "80%", "45%"]}
                                 color="white"
                             >
                                 Wir suchen #MitGestalter mit Leidenschaft für digitale Produkte.
                             </Text> */}
-                            <Box pt="12px"><Arrowlink target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
-                            <Box pt="12px"><Arrowlink target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
-                            <Box pt="12px"><Arrowlink target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
-                            {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
-                        </Box>
-                    </Main>
+                        <Box pt="12px"><Arrowlink target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
+                        <Box pt="12px"><Arrowlink target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
+                        <Box pt="12px"><Arrowlink target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
+                        {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
+                    </Box>
+                </Main>
 
             </Hero>
 
@@ -120,7 +120,7 @@ export default function Home() {
 
             {/* <Box as="section" display={["none", "block", "block", "block"]} pos="relative" p={[4, 12, 24]} bgImage="url('/images/offices/huettlingen-baustelle-blured.png')">
                 <SegmentHeading title="Karriere" />
-                <Heading as="h1" textAlign="center" w="80%" mx="10%" mt={[4, 12, 24]} fontSize={["24px", "44px", "72px"]} textTransform="uppercase" fontWeight="bold">
+                <Heading as="h1" textAlign="center" w="80%" mx="10%" mt={[4, 12, 24]} fontSize={["24px", "44px", "60px"]} textTransform="uppercase" fontWeight="bold">
                     Wir haben noch Platz für dich!
                 </Heading>
 
