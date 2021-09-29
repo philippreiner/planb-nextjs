@@ -32,7 +32,7 @@ export default function Slider({ sliderItems, backgroundColor, label, layout }) 
                 {/* Slider Header Desktop */}
                 <Flex display={["none", "none", "none", "none", "flex"]} maxW="full" w="full" py={[4, 12]} flexDir={["column", "row"]}>
                     {sliderItems.map((item, i) => (
-                        <Text onClick={() => clickItem(item)} textAlign="left" fontSize="20px" cursor="pointer" flexGrow="1" fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
+                        <Text onClick={() => clickItem(item)} textAlign="left" fontSize="20px" px={[2, 2, 4, 6, 12]} cursor="pointer" flexGrow="1" fontWeight={index === i ? 'bold' : 'normal'}>{item.title}</Text>
                     ))}
                 </Flex>
 
@@ -51,7 +51,7 @@ export default function Slider({ sliderItems, backgroundColor, label, layout }) 
 
             <Box maxW="100%" p={[4, 12, 24]}>
                 <Flex w="100%" flexDir={["column", "column", "column", "column", "row"]}>
-                    <Box w={["100%", "100%", "100%", "50%", "50%"]} p={[4, 8, 8, 8, 12]} ml={[null, null, null, "25%", null]}>
+                    <Box w={["100%", "100%", "100%", "50%", "50%"]} p={[4, 8, 8, 8, 12]} ml={[null, null, null, "25%", "auto"]}>
                         <NextImage src={sliderItems[index].image} layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
                     </Box>
 
