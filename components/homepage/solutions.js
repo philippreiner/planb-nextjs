@@ -29,7 +29,7 @@ export default function Solutions({ children, background }) {
                                     Factory<br />
                                 </Heading>
                                 <Text pb={[4, 8]} color="gray.100">
-                                    Unser komplette Lösung für erfolgreiche Produkte, neuste Technologien und digitale Geschäftsmodelle.
+                                    Unsere komplette Lösung für erfolgreiche Produkte, neuste Technologien und digitale Geschäftsmodelle.
                                 </Text>
                                 <Arrowlink url="/dpf" label="Zu unseren digitalen Lösungen" color="#FF5100" />
                             </Box>
