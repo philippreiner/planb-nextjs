@@ -1,7 +1,7 @@
 module.exports = {
     async rewrites() {
 
-        const baseUrl = 'https://www.planb.net';
+        const baseUrl = 'https://landing.planb.net';
 
         return [
             {
