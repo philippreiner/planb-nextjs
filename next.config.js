@@ -70,7 +70,12 @@ module.exports = {
                 source: '/company-information',
                 destination: '/imprint',
                 permanent: true
-            }
+            },
+            {
+                source: '/privacy',
+                destination: '/datenschutz',
+                permanent: true
+            },
         ]
     }
 }
