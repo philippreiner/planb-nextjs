@@ -83,6 +83,7 @@ export default function Home() {
                             </Box>
                         </Flex>
                     </Box>
+
                     <Box w={["100%", "50%", "50%", "50%"]} py="48px">
                         <SegmentHeading title="#YOUNGPROFESSIONALS" />
                         <Heading as="h2" textTransform="uppercase" fontWeight="bold" fontFamily="fat" fontSize={["24px", "36px", "44px"]}>
