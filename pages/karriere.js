@@ -44,14 +44,14 @@ export default function Home() {
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
-                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Junior Accountant" url="/documents/PlanB_Buchhaltung.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Accountant" url="/documents/PlanB_Buchhaltung.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Praktikant UX/UI" url="/documents/PlanB_Praktikant_UX_UI.pdf" width="100%" /></Box>
                         </Box>
                         <Box display={["none", "none", "block", "block", "block"]}>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
-                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Junior Accountant" url="/documents/PlanB_Buchhaltung.pdf" width="100%" /></Box>
+                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Accountant" url="/documents/PlanB_Buchhaltung.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Praktikant UX/UI" url="/documents/PlanB_Praktikant_UX_UI.pdf" width="100%" /></Box>
                         </Box>
                         {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
