@@ -76,6 +76,11 @@ module.exports = {
                 destination: '/datenschutz',
                 permanent: true
             },
+            {
+                source: '/home',
+                destination: '/',
+                permanent: true
+            },
         ]
     }
 }
