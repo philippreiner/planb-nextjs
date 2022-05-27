@@ -34,6 +34,11 @@ export default function Header() {
                 </Box>
                 <Spacer />
                 <HStack spacing="4">
+                    <NextLink href="mailto:info@plan-b-gmbh.com">
+                        <Button className={Styles.desktop} variant="ghost">
+                            Kontakt
+                        </Button>
+                    </NextLink>
                     <NextLink href="/karriere/">
                         <Button className={Styles.desktop} variant="ghost">
                             Karriere

@@ -13,8 +13,9 @@ export default function Home() {
                 <p>
                     <strong>PlanB. GmbH</strong> <br />
                     Kocherstrasse 15 <br />
-                    73460 Huettlingen <br />
-                    info@plan-b-gmbh.com
+                    73460 Hüttlingen <br />
+                    info@plan-b-gmbh.com <br/>
+                    Tel.: +49 (0) 7361 - 556 210
                     <br />
                 </p>
                 <p>
@@ -33,9 +34,9 @@ export default function Home() {
                 </p>
 
                 <p>
-                    Datenschutzbeauftragter: HANAK-Datenschutz <br />
+                    Datenschutzbeauftragter: <br/> 
+                    HANAK-Datenschutz <br />
                     info@hanak-datenschutz.de <br />
-                    Tel.: +49 (0) 7161 - 354 026 2
                 </p>
 
             </Basicpage>
