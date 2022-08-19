@@ -25,6 +25,12 @@ export default function Slider({ sliderItems, backgroundColor, label, layout, pa
 
     }
 
+    function getLink() {
+        if(sliderItems[index].link) {
+            return <Arrowlink label="Mehr Informationen" url={sliderItems[index].link} />
+        }
+    }
+
     return (
         <Box w="full" maxW="full" pos="relative" as="section">
             <Box bgColor={backgroundColor} p={[4, 6, 12]}>
@@ -58,7 +64,7 @@ export default function Slider({ sliderItems, backgroundColor, label, layout, pa
                     <Box w={["100%", "100%", "100%", "100%", "50%"]} p={paddingDisabled ? null : [4, 12, 24]}>
                         <Text fontSize={[20, 24]} pb={[4, 8, 12]} fontWeight="bold">{sliderItems[index].headline}</Text>
                         <Text pb={[4, 8, 12]}>{sliderItems[index].text}</Text>
-                        <Arrowlink label="Mehr Informationen" url={sliderItems[index].link} />
+                        { getLink() }
                     </Box>
                 </Flex>
             </Box>
