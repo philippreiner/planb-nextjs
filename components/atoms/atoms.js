@@ -24,7 +24,7 @@ export function DevNote({children}) {
   );
 }
 
-export function SegmentHeading({title}) {
+export function SegmentHeading({title, opacity}) {
   return (
     <Heading
       as="h2"
@@ -32,7 +32,8 @@ export function SegmentHeading({title}) {
       textTransform="uppercase"
       fontSize="1rem"
       fontWeight="normal"
-      opacity=".8"
+      opacity={opacity ? opacity : ".8"}
+      color={opacity ? 'white' : null}
     >
       {title}
     </Heading>

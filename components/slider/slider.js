@@ -11,7 +11,7 @@ import {
 import NextImage from 'next/image';
 import React, { useState } from "react";
 
-export default function Slider({ sliderItems, backgroundColor, label, layout }) {
+export default function Slider({ sliderItems, backgroundColor, label, layout, paddingDisabled }) {
 
 
     const [index, setIndex] = useState(0);
@@ -51,11 +51,11 @@ export default function Slider({ sliderItems, backgroundColor, label, layout }) 
 
             <Box maxW="100%" p={[4, 12, 24]}>
                 <Flex w="100%" flexDir={["column", "column", "column", "column", "row"]}>
-                    <Box w={["100%", "100%", "100%", "50%", "50%"]} p={[4, 8, 8, 8, 12]} ml={[null, null, null, "25%", "auto"]}>
+                    <Box w={["100%", "100%", "100%", "50%", "50%"]} p={paddingDisabled ? null : [4, 8, 8, 8, 12]} px={paddingDisabled ? [null, null, null, null, 12] : null} ml={[null, null, null, "25%", "auto"]}>
                         <NextImage src={sliderItems[index].image} layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
                     </Box>
 
-                    <Box w={["100%", "100%", "100%", "100%", "50%"]} p={[4, 12, 24]}>
+                    <Box w={["100%", "100%", "100%", "100%", "50%"]} p={paddingDisabled ? null : [4, 12, 24]}>
                         <Text fontSize={[20, 24]} pb={[4, 8, 12]} fontWeight="bold">{sliderItems[index].headline}</Text>
                         <Text pb={[4, 8, 12]}>{sliderItems[index].text}</Text>
                         <Arrowlink label="Mehr Informationen" url={sliderItems[index].link} />

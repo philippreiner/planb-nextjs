@@ -61,6 +61,11 @@ export default function Header() {
                                     Modern Work
                                 </MenuItem>
                             </NextLink>
+                            <NextLink href="/cyber-security/">
+                                <MenuItem padding={[3, 4]}>
+                                    Cyber Security
+                                </MenuItem>
+                            </NextLink>
                             <NextLink href="/about/">
                                 <MenuItem padding={[3, 4]}>
                                     Über PlanB.

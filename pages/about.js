@@ -70,11 +70,14 @@ export default function Home() {
                             Es sind Ergebnisse die jeden Tag Menschen glücklich machen und Mehrwert für das Unternehmen bringen.
                         </Text>
                         <Box pb="200">
-                            <Box py="4">
+                            <Box>
                                 <Arrowlink label="Digitale Produktfabrik" url="dpf" />
                             </Box>
-                            <Box>
+                            <Box py="4">
                                 <Arrowlink label="Modern Workplace" url="modern-work" />
+                            </Box>
+                            <Box>
+                                <Arrowlink label="Cyber Security" url="cyber-security" />
                             </Box>
                         </Box>
                     </Box>
