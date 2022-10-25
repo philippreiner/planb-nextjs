@@ -44,7 +44,7 @@ export default function Home() {
                                 pb={[2, 4, 6]}
                                 maxW={[null, null, "80%", "45%"]}
                                 color="white">
-                                Wir sind 130 kluge Köpfe für die digitale Transformation und Zukunft der Zusammenarbeit.
+                                Wir sind 150+ kluge Köpfe für die digitale Transformation und Zukunft der Zusammenarbeit.
                                 Jeden Tag arbeiten wir an den digitalen Produkten, innovativen Geschäftsmodellen,
                                 skalierbaren Cloud-Architekturen und der Zufriedenheit von hunderttausenden Menschen bei Ihrer Arbeit.
                             </Text>
@@ -119,10 +119,10 @@ export default function Home() {
                             <Text pb={[2, 4, 6]} maxW={[null, null, null, "60%", null, null]}>
                                 Wir sind agil. Das bedeutet für unsere Kunden großartige Ergebnisse in kleinen Schritten. Jeden Tag arbeiten wir mit agilen Methoden und Denkweisen und validieren konstant Ergebnisse. Veränderungen bedeuten Wettbewerbsvorteile und daher bleiben wir flexibel. Das reduziert das Risiko und bringt unseren Kunden gleichzeitig konstant höheren Mehrwert.
                                 Warum empfehlen Kunden PlanB. gerne weiter? Mit unserem agilen Denkmuster reduziert sich die Time-to-Market von Monaten auf wenige Wochen. Projekte bieten konstanten Fortschritt anstatt ungeplanter Kosten – inkl. Transparenz durch gemeinsame Aufgabenplanung. Bisher versteckte Möglichkeiten der IT werden neu genutzt und verbessert. PlanB. ermöglicht effizienteres Arbeiten und neue Geschäftsmodelle.
-                                Das Fachwissen der über 130 Köpfe bei PlanB. hat sich aus jahrelanger Erfahrung entwickelt und wird auch morgen durch Trainings und Zertifizierungen stärker. Wir haben für jede Aufgabe der Digitalisierung die richtige Person. Wir sind ständig auf der Suche. Und unsere eigene Ausbildung und Netzwerke sorgen für konstant neue Mindsets im Team.
+                                Das Fachwissen der über 150+ Köpfe bei PlanB. hat sich aus jahrelanger Erfahrung entwickelt und wird auch morgen durch Trainings und Zertifizierungen stärker. Wir haben für jede Aufgabe der Digitalisierung die richtige Person. Wir sind ständig auf der Suche. Und unsere eigene Ausbildung und Netzwerke sorgen für konstant neue Mindsets im Team.
                                 Als Partner von Microsoft profitieren unsere Kunden von dem Zugang zu Technologien von Morgen die schon heute in Unternehmen eingesetzt werden können. Das zeigen unsere einzigartigen Referenzen zusammen mit Microsoft und unsere Zertifizierungen.
                             </Text>
-                            <Arrowlink label="Agiles Projektmanagement" url="" />
+                            {/* <Arrowlink label="Agiles Projektmanagement" url="" /> */}
                         </Box>
                     </Box>
                 </Box>
@@ -155,7 +155,7 @@ export default function Home() {
                             Wir sind uns sicher, dass die Digitalisierung die Art und Weise,
                             wie Menschen und Unternehmen handeln, kommunizieren und zusammenarbeiten verändert.
                             Unsere Mission ist es Kunden zu begeistern,
-                            inspirieren und Menschen noch näher an ihre Ziele zu bringen.
+                            zu inspirieren und Menschen noch näher an ihre Ziele zu bringen.
                             Dabei bieten wir eine Vielzahl an Lösungen für geschäftliche Herausforderungen und digitale Innovationen.
                         </Text>
                     </Box>
@@ -178,11 +178,11 @@ export default function Home() {
                                 <ListItem mb="4">Projekte bieten <code>konstanten Fortschritt</code> anstatt ungeplanter Kosten - inkl. <code>Transparenz</code> durch gemeinsame Aufgabenplanung.</ListItem>
                                 <ListItem mb="4">Versteckte <code>Möglichkeiten der IT werden neu genutzt</code> und verbessert.</ListItem>
                                 <ListItem mb="4">PlanB. ermöglicht <code>effizienteres Arbeiten</code> und <code>neue Geschäftsmodelle</code></ListItem>
-                                <ListItem mb="4">Zugang zu <code>marktführenden Expert*Innen</code> und <code>neuester Technologie.</code></ListItem>
+                                <ListItem mb="4">Zugang zu <code>marktführenden Experten/Expertinnen</code> und <code>neuester Technologie.</code></ListItem>
                             </UnorderedList>
                             <UnorderedList pb={[2, 4, 6]} pr={[4, 8, 12]} maxW={["100%", "100%", "100%", "100%", "75%"]}>
                                 <ListItem mb="4">Umfangreiches <code>Fachwissen</code> wird durch langjährige Erfahrung, Training und Zertifizierung ausgebaut.</ListItem>
-                                <ListItem mb="4"><code>Ausbildung</code> und eine vielseitiges und weitreichendes <code>Netzwerk and Expert*Innen</code> sorgen konstant für neue Mindsets im Team.</ListItem>
+                                <ListItem mb="4"><code>Ausbildung</code> und ein vielseitiges und weitreichendes <code>Netzwerk und Experten/Expertinnen</code> sorgen konstant für neue Mindsets im Team.</ListItem>
                                 <ListItem mb="4">Als <code>Microsoft Partner</code> ermöglichen wir schon heute Zugang zu den Technologien von morgen.</ListItem>
                                 <ListItem mb="4">Zusammen mit Microsoft besitzt PlanB. <code>einzigartige Referenzen</code> und hatte in der Vergangenheit bereits unzählige <code>Projekterfolge</code>.</ListItem>
                             </UnorderedList>

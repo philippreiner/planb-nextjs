@@ -23,7 +23,7 @@ export default function About() {
 
                 <Text mb={[2, 4]} color="gray.500" fontSize="sm">Über PlanB.</Text>
                 <Heading fontSize={["2xl", "4xl"]} as="p" pb={[4, 8]}>
-                    PlanB. sind 130 kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
+                    PlanB. sind 150+ kluge Köpfe welche mutig die digitale Transformation und die Zukunft der Arbeit schon heute gestalten.
                 </Heading>
                 <Stack direction={["column", "row"]} spacing={[2, 4]} pb={[4, 12]}>
                     <Link href="/about" color="primary">

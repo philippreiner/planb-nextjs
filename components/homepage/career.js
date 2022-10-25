@@ -8,7 +8,7 @@ import Styles from "./homepage.module.css";
 // Career Reference
 export default function Career({ children }) {
     return (
-        <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url('/images/offices/huettlingen-baustelle.jpg')" className={Styles.career}>
+        <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url('/images/office_neubau.png')" className={Styles.career}>
             <Box as="div" className={Styles.overlay}>&nbsp;</Box>
             <Main maxW="full">
                 <SegmentHeading title="Karriere" />
@@ -19,7 +19,7 @@ export default function Career({ children }) {
                         fontWeight="normal"
                     >
                         <strong>Wir haben noch Platz für dich!</strong><br />
-                        Egal ob hier, im Neubau oder in deinem persönlichen Homeoffice.
+                        Egal ob hier im Büro oder in deinem persönlichen Homeoffice.
                     </Heading>
                     <Arrowlink url="/karriere" label="Werde Teil unseres Teams" />
                 </Box>

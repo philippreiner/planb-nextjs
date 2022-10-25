@@ -18,7 +18,7 @@ export default function About({ children, background }) {
         <Box as="section" pt={[4, 12, 24]}>
             <Main maxW="full">
                 <Box pt={[4, 8, 2]} pb={[2]}>
-                    <Countline number="130" label="Kluge Köpfe" />
+                    <Countline number="150+" label="Kluge Köpfe" />
                     <Countline number="2007" label="gegründet" />
                     <Countline number="3" label="Standorte" />
                 </Box>

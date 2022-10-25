@@ -57,7 +57,7 @@ export default function Home({ allMembers }) {
                                 maxW={[null, null, "80%", "100%"]}
                                 color="white"
                             >
-                                <strong>130</strong> Mitarbeiter <strong>30</strong> Auszubildende
+                                <strong>150+ </strong> Mitarbeiter <strong>30</strong> Auszubildende
 
                             </Text>
 
