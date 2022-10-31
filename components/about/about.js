@@ -15,7 +15,7 @@ export default function About() {
             <Flex>
                 <Spacer />
                 <Box transform="translateY(-50%)" borderRadius="50%" backgroundColor="red" width="58px" height="58px" lineHeight="58px" textAlign="center" cursor="pointer" onClick={() => scrollUp()}>
-                    <NextImage src="/assets/icons/uparrow.png" layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
+                    <NextImage src="/assets/icons/uparrow.png" layout="responsive" p={[4, 8, 12]} width="58px" height="58px" />
                 </Box>
             </Flex>
 

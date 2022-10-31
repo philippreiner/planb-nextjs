@@ -33,26 +33,21 @@ export default function Home() {
                             color="white"
                         >Werde jetzt <br />teil des teams</Heading>
                         <Box w="100px" bg="white" h="6px" my="2" mb={[4, 6]}></Box>
-                        {/* <Text
-                                pb={[2, 4, 6]}
-                                maxW={[null, null, "80%", "45%"]}
-                                color="white"
-                            >
-                                Wir suchen #MitGestalter mit Leidenschaft für digitale Produkte.
-                            </Text> */}
+
                         <Box display={["block", "block", "none", "none", "none"]}>
+                            <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Azure Solution Expert" url="/documents/PlanB_AzureSolutionExpert.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FF5100" target="_blank" label="Praktikant UX/UI" url="/documents/PlanB_Praktikant_UX_UI.pdf" width="100%" /></Box>
                         </Box>
                         <Box display={["none", "none", "block", "block", "block"]}>
+                            <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Azure Solution Expert" url="/documents/PlanB_AzureSolutionExpert.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Data Scientist" url="/documents/PlanB_DataScientist.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Software Engineer" url="/documents/PlanB_SoftwareEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="System Engineer" url="/documents/PlanB_SystemEngineer.pdf" width="100%" /></Box>
                             <Box pt="12px"><Arrowlink color="#FFF" target="_blank" label="Praktikant UX/UI" url="/documents/PlanB_Praktikant_UX_UI.pdf" width="100%" /></Box>
                         </Box>
-                        {/*</Box> <Arrowlink label="Die Menschen hinter PlanB." url="/about" /> */}
                     </Box>
                 </Main>
 
@@ -101,87 +96,6 @@ export default function Home() {
                     </Box>
                 </Flex>
             </Box>
-
-            {/* <Box as="section" display={["none", "block", "block", "block"]} pos="relative" p={[4, 12, 24]} bgImage="url('/images/offices/huettlingen-baustelle-blured.png')">
-                <SegmentHeading title="Karriere" />
-                <Heading as="h1" textAlign="center" w="80%" mx="10%" mt={[4, 12, 24]} fontSize={["24px", "44px", "60px"]} textTransform="uppercase" fontWeight="bold">
-                    Wir haben noch Platz für dich!
-                </Heading>
-
-                <Box w="100%">
-                    <Text mt={[8, 12]} as="p" textAlign="center" w="100%" fontSize={["16px", "28px", "36px"]} fontWeight="bold" color="#FF5100">
-                        <Text as="a" href="mailto:professionals@plan-b-gmbh.com">
-                            professionals@plan-b-gmbh.com
-                        </Text>
-                    </Text>
-
-                    <Text mt={[8, 12]} as="p" textAlign="center" w="100%" fontSize={["12px", "16px", "24px"]} color="#FF5100">
-                        <Text as="a" href="mailto:young.professionals@plan-b-gmbh.com">
-                            young.professionals@plan-b-gmbh.com
-                        </Text>
-                    </Text>
-                </Box>
-
-                <Flex mt={[12, 24, 48]}>
-                    <Box w="33%">
-                        <Flex mt="12px" alignItems="center" align="center" alignContent="center">
-                            <Box mt="18px" w="10%">
-                                <NextImage src="/assets/icons/location-icon.png" height="41px" width="30px" />
-                            </Box>
-                            <Box w="80%">
-                                <Text>PlanB. GmbH</Text>
-                                <Text>Kocherstrasse 10</Text>
-                                <Text>DE-73460 Hüttlingen</Text>
-                            </Box>
-                        </Flex>
-                    </Box>
-
-                    <Box w="33%">
-                        <Flex direction="column" alignItems="center" align="center" alignContent="center">
-                            <Box width="100%">
-                                <Flex>
-                                    <NextImage src="/assets/icons/phone-icon.png" height="30px" width="30px" />
-                                    <Text width="80%" ml="12px">+49 7361 55 62 10</Text>
-                                </Flex>
-                            </Box>
-                            <Box width="100%" mt={[4, 8, 8]}>
-                                <Flex>
-                                    <NextImage src="/assets/icons/mail-icon.png" height="21px" width="30px" />
-                                    <Text width="80%" ml="12px" as="a" href="mailto:info@plan-b-gmbh.com">info@plan-b-gmbh.com</Text>
-                                </Flex>
-                            </Box>
-                        </Flex>
-                    </Box>
-
-                    <Box w="33%">
-                        <Flex mt="36px" px="48px" alignItems="center" align="center" alignContent="center">
-                            <Box w="25%">
-                                <a target="_blank" href="https://www.facebook.com/PlanBGmbH">
-                                    <NextImage src="/assets/icons/facebook-icon.png" width="30px" height="30px" />
-                                </a>
-                            </Box>
-                            <Box w="25%">
-                                <a target="_blank" href="https://www.instagram.com/planb.gmbh/">
-                                    <NextImage src="/assets/icons/instagram-icon.png" width="30px" height="30px" />
-                                </a>
-                            </Box>
-                            <Box w="25%">
-                                <a target="_blank" href="https://twitter.com/planbgmbh">
-                                    <NextImage src="/assets/icons/twitter-icon.png" width="30px" height="30px" />
-                                </a>
-                            </Box>
-                            <Box w="25%">
-                                <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/">
-                                    <NextImage src="/assets/icons/linkedin-icon.png" width="30px" height="30px" />
-                                </a>
-                            </Box>
-                        </Flex>
-                    </Box>
-
-
-                </Flex>
-            </Box> */}
-
             <About />
         </Layout>
     );

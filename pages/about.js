@@ -131,11 +131,11 @@ export default function Home() {
             {/* Microsoft Partnership */}
             <Box maxW="full" as="section" p={[4, 12, 24]} pos="relative">
                 <Flex flexDir={["column", "column", "column", "row", "row"]}>
-                    <NextImage src="/images/microsoft/silver.png" width="600px" height="auto" objectFit="contain" />
+                    <NextImage src="/images/microsoft/silver.png" width="600px" height="280px" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/gold_a.png" width="600px" height="auto" objectFit="contain" />
+                    <NextImage src="/images/microsoft/gold_a.png" width="600px" height="280px" objectFit="contain" />
                     <Spacer />
-                    <NextImage src="/images/microsoft/gold_d.png" width="600px" height="auto" objectFit="contain" />
+                    <NextImage src="/images/microsoft/gold_d.png" width="600px" height="280px" objectFit="contain" />
                 </Flex>
             </Box>
 

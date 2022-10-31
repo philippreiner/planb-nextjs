@@ -58,7 +58,7 @@ export default function Slider({ sliderItems, backgroundColor, label, layout, pa
             <Box maxW="100%" p={[4, 12, 24]}>
                 <Flex w="100%" flexDir={["column", "column", "column", "column", "row"]}>
                     <Box w={["100%", "100%", "100%", "50%", "50%"]} p={paddingDisabled ? null : [4, 8, 8, 8, 12]} px={paddingDisabled ? [null, null, null, null, 12] : null} ml={[null, null, null, "25%", "auto"]}>
-                        <NextImage src={sliderItems[index].image} layout="responsive" p={[4, 8, 12]} width="auto" height="auto" />
+                        <NextImage src={sliderItems[index].image} layout="responsive" width="512px" height="512px" p={[4, 8, 12]}  />
                     </Box>
 
                     <Box w={["100%", "100%", "100%", "100%", "50%"]} p={paddingDisabled ? null : [4, 12, 24]}>
