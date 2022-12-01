@@ -38,12 +38,6 @@ export default function Layout({ children, title }) {
             {children}
 
             <Footer />
-            <script
-                async
-                defer
-                data-domain="www.planb.net"
-                src="/js/p.js"
-            />
 
         </Box>
     );
