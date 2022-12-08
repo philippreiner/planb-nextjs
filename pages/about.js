@@ -9,6 +9,7 @@ import Hero from '@components/hero/hero';
 import { Fade } from "react-awesome-reveal";
 
 import About from "@components/about/about";
+import MSBadges from '@components/microsoft/msbadges';
 
 
 import {
@@ -129,15 +130,7 @@ export default function Home() {
             </Box>
 
             {/* Microsoft Partnership */}
-            <Box maxW="full" as="section" p={[4, 12, 24]} pos="relative">
-                <Flex flexDir={["column", "column", "column", "row", "row"]}>
-                    <NextImage src="/images/microsoft/silver.png" width="600px" height="280px" objectFit="contain" />
-                    <Spacer />
-                    <NextImage src="/images/microsoft/gold_a.png" width="600px" height="280px" objectFit="contain" />
-                    <Spacer />
-                    <NextImage src="/images/microsoft/gold_d.png" width="600px" height="280px" objectFit="contain" />
-                </Flex>
-            </Box>
+            <MSBadges />
 
             {/* Unsere Mission */}
             <Box pos="relative" as="section" py={[4, 12, 24]} bgImage="url(images/future_is_creative.png)" bgSize="cover" bgRepeat="no-repeat">

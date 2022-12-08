@@ -76,6 +76,11 @@ export default function Header() {
                                     Karriere
                                 </MenuItem>
                             </NextLink>
+                            <NextLink href="/partners/">
+                                <MenuItem padding={[3, 4]}>
+                                    Partners
+                                </MenuItem>
+                            </NextLink>
                         </MenuList>
                     </Menu>
 

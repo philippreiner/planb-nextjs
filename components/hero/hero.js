@@ -5,11 +5,11 @@ import Header from "@components/header/header";
 import NextImage from 'next/image';
 
 // Hero Wrap
-export default function Hero({ children, background, backgroundSize, backgroundPosition, backgroundColor, arrowDisplay }) {
+export default function Hero({ children, background, backgroundSize, backgroundPosition, backgroundColor, backgroundBlendMode, arrowDisplay }) {
 
 
   return (
-    <Box bgImage={background} bgSize={backgroundSize} bgPos={backgroundPosition} backgroundColor={backgroundColor} className={Styles.hero}>
+    <Box bgImage={background} bgSize={backgroundSize} bgPos={backgroundPosition} backgroundColor={backgroundColor} backgroundBlendMode={backgroundBlendMode} className={Styles.hero}>
       <Header />
       <Box pos="absolute" left="calc(50% - (42px / 2))" bottom="48px" transform="scale(1.5)" display={arrowDisplay}>
         <NextImage src="/assets/icons/downarrow.png" width="42px" height="11px"/>
