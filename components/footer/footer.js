@@ -20,13 +20,21 @@ export default function Posthead({ title, published }) {
         <Divided>
             <Container maxW={["100em", null, null, null, "90%"]} pt={[4, 12]} pb={[0, 0]}>
                 <Flex as="footer" align={["flex-start",null,"center"]} direction={["column-reverse", null, "row"]}>
-                    <Flex w="100%" grow={null,null,1} direction={["row"]} align={["center"]}>
+                    <Flex w="100%" grow={[null,null,1]} direction={["row"]} align={["center"]}>
                         <NextLink passHref href="/">
                             <a>
                                 <Image src="/assets/planb-logo.png" alt="PlanB." height="100px" mr="40px" />
                             </a>
                         </NextLink>
                         <Spacer/>
+
+                        <a target="_blank" href="https://www.allianz-fuer-cybersicherheit.de" title="Verweis zur Webpräsenz der Allianz für Cyber-Sicherheit">
+                            <Image src="/images/lacs.png" height="64px" alt="Webpräsenz der Allianz für Cyber-Sicherheit"/>
+                        </a>
+
+                        <Image src="/images/iso_isso.png" height="100px" ml={[4, 6, 8]}/>
+
+                        <Spacer />
                         <Stack direction={["row"]} mt={[null,null,"-8px"]} spacing="16px">
                             <a target="_blank" href="https://www.linkedin.com/company/planbgmbh/"><Image src="/assets/icons/linkedin-icon-296px.png" width="16px"/></a>
                             <a target="_blank" href="https://twitter.com/planbgmbh"><Image src="/assets/icons/twitter-icon-296px.png" width="16px"  /></a>

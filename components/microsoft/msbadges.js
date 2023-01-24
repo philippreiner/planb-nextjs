@@ -31,6 +31,10 @@ export default function MSBadges({background}) {
             <NextImage src="/images/microsoft/gold_a.png" width="600px" height="280px" objectFit="contain" />
             <Spacer />
             <NextImage src="/images/microsoft/gold_d.png" width="600px" height="280px" objectFit="contain" />
+            <Spacer />
+            <NextImage src="/images/microsoft/partnership_inf.png" width="600px" height="280px" objectFit="contain" />
+            <Spacer />
+            <NextImage src="/images/microsoft/partnership_sec.png" width="600px" height="280px" objectFit="contain" />
         </Flex>
     </Box>
 );

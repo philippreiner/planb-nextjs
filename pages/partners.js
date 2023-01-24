@@ -117,6 +117,22 @@ export default function Partners() {
                             </Box>
                         </Flex>
                     </Box>
+
+                    <Box position="relative" w="100%" p={[4, null]} pb={[4, 4, null]} bg="gray.900">
+                        <Flex p={[4, 4, 6, 12]} alignItems="center" flexDirection="column">
+                            <NextImage src="/images/lacs.png" layout="fixed" width="282px" height="109px"/>
+                            <Box w={'100%'}>
+                                <Text pb={[4, 8]} color="gray.100" fontSize={["16px", "24px", "36px"]}>
+                                    Allianz für Cybersicherheit
+                                </Text>
+                                <Text pb={[4, 8]} color="gray.100">
+                                    Als Kompetenz-Träger im Bereich IT Security ist PlanB. seit 2023 Teil der Allianz für Cybersicherheit (ACS). 
+                                    Das Privat-Public-Partnership für IT-Sicherheit wurde 2012 unter der Schirmherrschaft des Bundeamtes für Sicherheit in der Informationstechnik (BSI) und dem Bitkom ins Leben gerufen und hat sich zum Ziel gemacht, die digitale Sicherheit am Wirtschaftsstandort Deutschland zu stärken und weiterzuentwickeln.
+                                </Text>
+                                <Arrowlink url="https://www.allianz-fuer-cybersicherheit.de" label="https://www.allianz-fuer-cybersicherheit.de" />
+                            </Box>
+                        </Flex>
+                    </Box>
                 </Grid>
             </Main>
         </Box>

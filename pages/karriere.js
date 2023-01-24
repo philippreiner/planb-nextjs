@@ -10,7 +10,9 @@ import {
     Heading,
     Text,
     Flex,
-    Box
+    Box,
+    List,
+    ListItem
 } from "@chakra-ui/react";
 
 import About from "@components/about/about";
@@ -83,14 +85,26 @@ export default function Home() {
                     <Box w={["100%", "50%", "50%", "50%"]} py="48px">
                         <SegmentHeading title="#YOUNGPROFESSIONALS" />
                         <Heading as="h2" textTransform="uppercase" fontWeight="bold" fontFamily="fat" fontSize={["24px", "36px", "44px"]}>
-                            Ausbildung und Duales Studium bei PlanB.
+                            Ausbildung bei PlanB.
                         </Heading>
                         <Text fontSize={["14px", "16px", "18px"]} pt={[4, 8, 12]} w={["100%", "100%", "80%", "80%"]}>
-                            Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. Aus diesem Grund bieten wir abwechslungsreiche Praktika-, Ausbildungs- und Studienmöglichkeiten an. Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
+                            Das Ausbilden unserer Young Professionals ist ein wichtiger Bestandteil unserer Unternehmensphilosophie. 
+                            Aus diesem Grund bieten wir abwechslungsreiche Praktika- und Ausbildungsmöglichkeiten an.
+                            Dabei sammelst du vom ersten Tag an spannende Praxiserfahrung rund um digitale Produkte – beim eigenen „doing“ in ersten internen Projekten an unserem Standort in Hüttlingen und später als fester Bestandteil in interessanten Kundenprojekten.
                         </Text>
-                        <Text mt={[4, 6, 8]} as="p" textAlign="left" w="100%" fontSize={["14px", "16px", "18px"]} color="#FF5100">
-                            <Text as="a" href="mailto:young.professionals@plan-b-gmbh.com">
-                                young.professionals@plan-b-gmbh.com
+                        <Text fontSize={["14px", "16px", "18px"]} pt={[4, 8, 12]}  w={["100%", "100%", "80%", "80%"]}>
+                            Starte deine Ausbildung bei uns als: 
+                        </Text>
+                        <List fontSize={["14px", "16px", "18px"]} pt={4} pl={[4, 8, 12]} w={["100%", "100%", "80%", "80%"]}>
+                            <ListItem>Fachinformatiker Anwendungsentwicklung (m/w/d)</ListItem>
+                            <ListItem>Fachinformatiker Systemintegration  (m/w/d)</ListItem>
+                        </List>
+                        <Text fontSize={["14px", "16px", "18px"]} pt={[4]} w={["100%", "100%", "80%", "80%"]}>
+                            Interesse? Dann schreibe uns eine Email an
+                            <Text  as="p" textAlign="left" w="100%" fontSize={["14px", "16px", "18px"]} color="#FF5100">
+                                <Text as="a" href="mailto:young.professionals@plan-b-gmbh.com">
+                                    young.professionals@plan-b-gmbh.com
+                                </Text>
                             </Text>
                         </Text>
                     </Box>
