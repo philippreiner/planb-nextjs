@@ -82,5 +82,19 @@ module.exports = {
                 permanent: true
             },
         ]
+    },
+
+    async headers() {
+        return [
+            {
+                source: '*',
+                headers: [
+                    { 
+                        key: 'X-Frame-Options',
+                        value: 'DENY'
+                    }
+                ]
+            }
+        ]
     }
 }
